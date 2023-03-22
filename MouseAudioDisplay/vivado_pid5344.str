@@ -337,3 +337,135 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 3); // k (j, ck)
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "random_generator.v", 2); // k (j, ck)
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "whack_a_mole.v", 1); // k (j, ck)
+// Elapsed time: 176 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_seg.v", 4); // k (j, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("display_seg.v", 290, 438); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'v'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 420, 312); // ce (w, ck)
+selectCodeEditor("display_seg.v", 40, 328); // ce (w, ck)
+selectCodeEditor("display_seg.v", 42, 348); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("display_seg.v", 320, 414); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'c'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 218, 110); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'v'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 319, 431); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'c'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 217, 127); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'v'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 322, 451); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'c'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 215, 146); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'v'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 321, 466); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'c'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 215, 156); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'v'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 319, 482); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'c'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 215, 180); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'v'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 324, 505); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'c'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 216, 195); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'v'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 322, 517); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'c'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 218, 216); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'v'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 320, 536); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'c'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 217, 231); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'v'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 320, 549); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'c'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 216, 262); // ce (w, ck)
+selectCodeEditor("display_seg.v", 217, 248); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'v'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 321, 537); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'c'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 215, 263); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'v'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 234, 257); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("display_seg.v", 80, 198); // ce (w, ck)
+typeControlKey((HResource) null, "display_seg.v", 'v'); // ce (w, ck)
+selectCodeEditor("display_seg.v", 90, 195); // ce (w, ck)
+selectCodeEditor("display_seg.v", 117, 210); // ce (w, ck)
+selectCodeEditor("display_seg.v", 118, 226); // ce (w, ck)
+selectCodeEditor("display_seg.v", 117, 245); // ce (w, ck)
+selectCodeEditor("display_seg.v", 101, 261); // ce (w, ck)
+selectCodeEditor("display_seg.v", 120, 278); // ce (w, ck)
+selectCodeEditor("display_seg.v", 132, 301); // ce (w, ck)
+selectCodeEditor("display_seg.v", 144, 315); // ce (w, ck)
+selectCodeEditor("display_seg.v", 106, 281); // ce (w, ck)
+selectCodeEditor("display_seg.v", 120, 297); // ce (w, ck)
+selectCodeEditor("display_seg.v", 139, 311); // ce (w, ck)
+selectCodeEditor("display_seg.v", 146, 331); // ce (w, ck)
+selectCodeEditor("display_seg.v", 215, 310); // ce (w, ck)
+selectCodeEditor("display_seg.v", 176, 282); // ce (w, ck)
+selectCodeEditor("display_seg.v", 299, 315); // ce (w, ck)
+selectCodeEditor("display_seg.v", 202, 302); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("display_seg.v", 260, 331); // ce (w, ck)
+selectCodeEditor("display_seg.v", 197, 245); // ce (w, ck)
+selectCodeEditor("display_seg.v", 97, 241); // ce (w, ck)
+selectCodeEditor("display_seg.v", 168, 316); // ce (w, ck)
+selectCodeEditor("display_seg.v", 198, 335); // ce (w, ck)
+selectCodeEditor("display_seg.v", 136, 315); // ce (w, ck)
+selectCodeEditor("display_seg.v", 147, 330); // ce (w, ck)
+selectCodeEditor("display_seg.v", 229, 348); // ce (w, ck)
+selectCodeEditor("display_seg.v", 130, 349); // ce (w, ck)
+selectCodeEditor("display_seg.v", 131, 366); // ce (w, ck)
+selectCodeEditor("display_seg.v", 117, 380); // ce (w, ck)
+selectCodeEditor("display_seg.v", 205, 365); // ce (w, ck)
+selectCodeEditor("display_seg.v", 265, 362); // ce (w, ck)
+selectCodeEditor("display_seg.v", 300, 331); // ce (w, ck)
+selectCodeEditor("display_seg.v", 133, 400); // ce (w, ck)
+selectCodeEditor("display_seg.v", 168, 398); // ce (w, ck)
+selectCodeEditor("display_seg.v", 132, 400); // ce (w, ck)
+selectCodeEditor("display_seg.v", 119, 416); // ce (w, ck)
+selectCodeEditor("display_seg.v", 103, 436); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 707 MB. GUI used memory: 51 MB. Current time: 3/22/23 10:45:48 PM SGT
+// Elapsed time: 15 seconds
+selectCodeEditor("display_seg.v", 71, 127); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("display_seg.v", 109, 195); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("display_seg.v", 148, 196); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("display_seg.v", 146, 314); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("display_seg.v", 144, 468); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), clk20k : clk_variable (clk_variable.v)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), clk20k : clk_variable (clk_variable.v)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_seg.v", 4); // k (j, ck)
+selectCodeEditor("display_seg.v", 175, 366); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_variable.v", 5); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_seg.v", 4); // k (j, ck)
+selectCodeEditor("display_seg.v", 131, 370); // ce (w, ck)
+selectCodeEditor("display_seg.v", 90, 367); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("display_seg.v", 357, 325); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectCodeEditor("display_seg.v", 119, 313); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
