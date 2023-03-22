@@ -37,7 +37,7 @@ module display_seg(
     reg [3:0] an_on = 4'b0001;
     assign an = ~an_on;//4'b1110; //for mic
 
-    
+    //thhh
     always @(posedge CLK) begin
     
         if (an_on == 4'b0001) begin
