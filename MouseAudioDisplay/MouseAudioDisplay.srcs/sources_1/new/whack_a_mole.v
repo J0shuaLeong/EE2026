@@ -45,12 +45,14 @@ module whack_a_mole(
         //assign void = !(lines || a || b || c || d || e || f || g || seg7 || cursor);
     
     wire mole_pos;
+    //if cursor is on mole
     assign mole_pos = (x_pos >= 11 && x_pos <= 27 && y_pos >= 40 && y_pos <= 55) || (x_pos >= 12 && x_pos <= 26 && y_pos == 39) || (x_pos >= 13 && x_pos <= 25 && y_pos == 38) || (x_pos >= 14 && x_pos <= 24 && y_pos == 37) || (x_pos >= 16 && x_pos <= 22 && y_pos == 36);
     
     reg mole_down;
     
     always @ (*) begin
         if (left) begin
+            //if mole is clicked
             if (mole_pos) mole_down = 1;
         end
          
