@@ -32,6 +32,8 @@ module Top_Student (
     
     );
     
+    wire score;
+    
     //Menu
     integer menu = 0;
     always @ (posedge clock) begin
@@ -64,8 +66,7 @@ module Top_Student (
     
     Audio_Input ai (clock, count_20khz, J_MIC_Pin3, J_MIC_Pin1, J_MIC_Pin4, MIC_IN);
     audio_intensity ait (clock, maxvalue, led, seg_status);
-   // display_led dl (clock, mic_led, led);
-    display_seg ds (clock, seg, an, seg_status, dp, seg_num1, seg_num2, score);
+    display_seg ds (clock, seg, an, seg_status, dp, seg_num1, seg_num2, score, sw[0]);
     
     //assign led = (right)? 16'b1000_0000_0000_0000 : (middle)? 16'b0100_0000_0000_0000 : (left)? 16'b0010_0000_0000_0000 : 16'b0000_0000_0000_0000;
  
@@ -97,10 +98,11 @@ module Top_Student (
     .sample_pixel(sample_pixel), .pixel_index(pixel_index), .pixel_data(oled_data), 
     .cs(JC[0]), .sdin(JC[1]), .sclk(JC[3]), .d_cn(JC[4]), .resn(JC[5]), .vccen(JC[6]), .pmoden(JC[7]));
     
-    //Whack_a_mole
-    wire score;
+    //Whack a mole
+    wire reset_n, Q;
     whack_a_mole wm (.x(x), .y(y), .pixel_color(oled_data),.x_pos(nxpos), .y_pos(nypos), .left(left), .score(score));
-
+    random_generator rg (clock, reset_n, Q);
+    
 endmodule
 
 module mouse_task (input [7:0] x, y, input middle, input [11:0] xpos, input [11:0] ypos, output reg [15:0] pixel_color);

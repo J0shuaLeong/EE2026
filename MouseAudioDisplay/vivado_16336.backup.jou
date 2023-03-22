@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Mar 22 11:17:23 2023
+# Process ID: 16336
+# Current directory: C:/Users/Student/Desktop/MouseAudioDisplayCombi
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5372 C:\Users\Student\Desktop\MouseAudioDisplayCombi\MouseAudioDisplay.xpr
+# Log file: C:/Users/Student/Desktop/MouseAudioDisplayCombi/vivado.log
+# Journal file: C:/Users/Student/Desktop/MouseAudioDisplayCombi\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Student/Desktop/MouseAudioDisplayCombi/MouseAudioDisplay.xpr
+update_compile_order -fileset sources_1
+archive_project C:/Users/Student/Desktop/MouseAudioDisplayCombi.xpr.zip -temp_dir C:/Users/Student/Desktop/MouseAudioDisplayCombi/.Xil/Vivado-16336-EED0900A -force -include_local_ip_cache

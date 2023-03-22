@@ -55,7 +55,7 @@ module whack_a_mole(
             //if mole is clicked
             if (mole_pos) begin
                 mole_down = 1;
-                score++;
+                score <= score + 1;
             end
 
         end
