@@ -42,7 +42,6 @@ module whack_a_mole(
         assign hole = (x >= 10 && x <= 28 && y >= 52 && y <= 57);
         assign mole = (x >= 11 && x <= 27 && y >= 40 && y <= 55) || (x >= 12 && x <= 26 && y == 39) || (x >= 13 && x <= 25 && y == 38) || (x >= 14 && x <= 24 && y == 37) || (x >= 16 && x <= 22 && y == 36)  ;
         assign cursor = ( x <= ((x_pos%96) + 3) && x >= (x_pos%96) && (y <= (y_pos%64) + 3) && y >= (y_pos%64));
-        //assign void = !(lines || a || b || c || d || e || f || g || seg7 || cursor);
     
     wire mole_pos;
     //if cursor is on mole
