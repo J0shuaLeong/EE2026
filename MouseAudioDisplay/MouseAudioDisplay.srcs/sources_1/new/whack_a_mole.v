@@ -25,7 +25,8 @@ module whack_a_mole(
     output reg [15:0] pixel_color,
     input [11:0] x_pos, 
     input [11:0] y_pos, 
-    input left
+    input left,
+    output reg [15:0] score = 0
     );
     
     parameter [15:0] green = 16'h07E0;
@@ -52,7 +53,11 @@ module whack_a_mole(
     always @ (*) begin
         if (left) begin
             //if mole is clicked
-            if (mole_pos) mole_down = 1;
+            if (mole_pos) begin
+                mole_down = 1;
+                score++;
+            end
+
         end
          
         if (sky) pixel_color = blue;

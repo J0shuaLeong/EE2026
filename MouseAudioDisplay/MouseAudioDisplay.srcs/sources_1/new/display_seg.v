@@ -27,7 +27,8 @@ module display_seg(
     input [3:0] seg_status,
     output reg dp,
     input [3:0] seg_num1, 
-    input [1:0] seg_num2
+    input [1:0] seg_num2,
+    input [15:0] scores
     );
     
     wire clk200;
