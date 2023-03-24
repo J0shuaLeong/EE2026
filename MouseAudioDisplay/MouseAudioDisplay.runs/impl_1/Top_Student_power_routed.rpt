@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Fri Mar 24 00:08:50 2023
+| Date             : Fri Mar 24 20:44:00 2023
 | Host             : LAPTOP-MVMLE90N running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Student_power_routed.rpt -pb Top_Student_power_summary_routed.pb -rpx Top_Student_power_routed.rpx
 | Design           : Top_Student
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.084        |
+| Total On-Chip Power (W)  | 0.087        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.012        |
+| Dynamic (W)              | 0.016        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -53,17 +53,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.004 |        3 |       --- |             --- |
-| Slice Logic    |     0.003 |     1740 |       --- |             --- |
-|   LUT as Logic |     0.003 |      790 |     20800 |            3.80 |
-|   CARRY4       |    <0.001 |      104 |      8150 |            1.28 |
-|   Register     |    <0.001 |      599 |     41600 |            1.44 |
+| Slice Logic    |     0.001 |     1150 |       --- |             --- |
+|   LUT as Logic |     0.001 |      444 |     20800 |            2.13 |
+|   CARRY4       |    <0.001 |       57 |      8150 |            0.70 |
+|   Register     |    <0.001 |      507 |     41600 |            1.22 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   F7/F8 Muxes  |    <0.001 |        1 |     32600 |           <0.01 |
-|   Others       |     0.000 |       33 |       --- |             --- |
-| Signals        |     0.002 |     1289 |       --- |             --- |
-| I/O            |     0.003 |       43 |       106 |           40.57 |
+|   Others       |     0.000 |       25 |       --- |             --- |
+| Signals        |     0.001 |      875 |       --- |             --- |
+| Block RAM      |     0.008 |        4 |        50 |            8.00 |
+| I/O            |     0.002 |       43 |       106 |           40.57 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.084 |          |           |                 |
+| Total          |     0.087 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.019 |       0.009 |      0.010 |
+| Vccint    |       1.000 |     0.023 |       0.013 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -82,7 +82,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.001 |       0.001 |      0.000 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -96,7 +96,7 @@ Table of Contents
 | User Input Data             | Confidence | Details                                                | Action                                                                                                             |
 +-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                       |                                                                                                                    |
-| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification  | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                           |                                                                                                                    |
@@ -142,23 +142,20 @@ Table of Contents
 +-----------------------+-----------+
 | Name                  | Power (W) |
 +-----------------------+-----------+
-| Top_Student           |     0.012 |
+| Top_Student           |     0.016 |
 |   ai                  |    <0.001 |
 |   ait                 |    <0.001 |
 |   clk                 |    <0.001 |
 |   clk20k              |    <0.001 |
 |   ds                  |    <0.001 |
 |     clk200hz          |    <0.001 |
+|   img                 |     0.008 |
 |   lvl                 |    <0.001 |
-|   mouse               |     0.004 |
+|   mouse               |     0.003 |
 |     Inst_Ps2Interface |     0.001 |
-|   oled                |     0.001 |
+|   oled                |    <0.001 |
 |   ps2clk_IOBUF_inst   |     0.000 |
 |   ps2data_IOBUF_inst  |     0.000 |
-|   wm                  |    <0.001 |
-|     clock             |    <0.001 |
-|     test_rand         |    <0.001 |
-|   xy                  |     0.001 |
 +-----------------------+-----------+
 
 

@@ -98,10 +98,13 @@ module Top_Student (
     .sample_pixel(sample_pixel), .pixel_index(pixel_index), .pixel_data(oled_data), 
     .cs(JC[0]), .sdin(JC[1]), .sclk(JC[3]), .d_cn(JC[4]), .resn(JC[5]), .vccen(JC[6]), .pmoden(JC[7]));
     
+    //meow
+    imagemodule img(clock, pixel_index, oled_data);
+    
     //Whack a mole
     wire reset_n, Q;
-    whack_a_mole wm (.x(x), .y(y), .pixel_color(oled_data),.x_pos(nxpos), .y_pos(nypos), .left(left), .score(score), .clk(clock));
-    random_generator rg (clock, reset_n, Q);
+    //whack_a_mole wm (.x(x), .y(y), .pixel_color(oled_data),.x_pos(nxpos), .y_pos(nypos), .left(left), .score(score), .clk(clock));
+    //random_generator rg (clock, reset_n, Q);
     
 endmodule
 

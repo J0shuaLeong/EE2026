@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Fri Mar 24 00:08:49 2023
+| Date         : Fri Mar 24 20:43:59 2023
 | Host         : LAPTOP-MVMLE90N running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Top_Student_methodology_drc_routed.rpt -pb Top_Student_methodology_drc_routed.pb -rpx Top_Student_methodology_drc_routed.rpx
 | Design       : Top_Student
@@ -23,13 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 205
+             Violations found: 199
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell   | 146        |
+| TIMING-17 | Warning  | Non-clocked sequential cell   | 143        |
 | TIMING-18 | Warning  | Missing input or output delay | 56         |
-| TIMING-20 | Warning  | Non-clocked latch             | 3          |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -749,21 +748,6 @@ Non-clocked sequential cell
 The clock pin oled/spi_word_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-17#144 Warning
-Non-clocked sequential cell  
-The clock pin wm/test_rand/Q_reg_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#145 Warning
-Non-clocked sequential cell  
-The clock pin wm/test_rand/Q_reg_reg[2]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#146 Warning
-Non-clocked sequential cell  
-The clock pin wm/test_rand/Q_reg_reg[3]/C is not reached by a timing clock
-Related violations: <none>
-
 TIMING-18#1 Warning
 Missing input or output delay  
 An input delay is missing on ps2clk relative to clock(s) sys_clk_pin
@@ -1042,21 +1026,6 @@ Related violations: <none>
 TIMING-18#56 Warning
 Missing input or output delay  
 An output delay is missing on seg[6] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-20#1 Warning
-Non-clocked latch  
-The latch wm/pixel_color_reg[10] cannot be properly analyzed as its control pin wm/pixel_color_reg[10]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#2 Warning
-Non-clocked latch  
-The latch wm/pixel_color_reg[15] cannot be properly analyzed as its control pin wm/pixel_color_reg[15]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#3 Warning
-Non-clocked latch  
-The latch wm/pixel_color_reg[4] cannot be properly analyzed as its control pin wm/pixel_color_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 

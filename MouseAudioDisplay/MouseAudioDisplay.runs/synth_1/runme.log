@@ -14,14 +14,13 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 24252 
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/whack_a_mole.v:22]
+INFO: Helper process launched with PID 5704 
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:13]
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:14]
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:15]
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:16]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 368.969 ; gain = 111.773
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 371.789 ; gain = 114.906
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:18]
 INFO: [Synth 8-638] synthesizing module 'MouseCtl' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:212]
@@ -51,10 +50,10 @@ WARNING: [Synth 8-3848] Net score in module/entity display_seg does not have dri
 INFO: [Synth 8-6155] done synthesizing module 'display_seg' (7#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/display_seg.v:23]
 WARNING: [Synth 8-689] width (1) of port connection 'score' does not match port width (16) of module 'display_seg' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:69]
 WARNING: [Synth 8-350] instance 'ds' of module 'display_seg' requires 10 connections, but only 9 given [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:69]
-INFO: [Synth 8-6157] synthesizing module 'Clk625' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:126]
-INFO: [Synth 8-6155] done synthesizing module 'Clk625' (8#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:126]
-INFO: [Synth 8-6157] synthesizing module 'xycoordinate' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:138]
-INFO: [Synth 8-6155] done synthesizing module 'xycoordinate' (9#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:138]
+INFO: [Synth 8-6157] synthesizing module 'Clk625' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'Clk625' (8#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:129]
+INFO: [Synth 8-6157] synthesizing module 'xycoordinate' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'xycoordinate' (9#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:141]
 INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
 	Parameter Width bound to: 96 - type: integer 
 	Parameter Height bound to: 64 - type: integer 
@@ -110,28 +109,12 @@ INFO: [Synth 8-226] default block is never used [C:/Users/Naychi/Documents/GitHu
 INFO: [Synth 8-226] default block is never used [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:198]
 WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:346]
 INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (10#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
-INFO: [Synth 8-6157] synthesizing module 'whack_a_mole' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/whack_a_mole.v:24]
-	Parameter green bound to: 16'b0000011111100000 
-	Parameter red bound to: 16'b1111100000000000 
-	Parameter black bound to: 16'b0000000000000000 
-	Parameter white bound to: 16'b1111111111111111 
-	Parameter blue bound to: 16'b0000000000011111 
-INFO: [Synth 8-6157] synthesizing module 'clock_1' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/whack_a_mole.v:146]
-INFO: [Synth 8-6155] done synthesizing module 'clock_1' (11#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/whack_a_mole.v:146]
-INFO: [Synth 8-6157] synthesizing module 'random_generator' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/random_generator.v:23]
-	Parameter N bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'random_generator' (12#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/random_generator.v:23]
-WARNING: [Synth 8-6090] variable 'whichmole' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/whack_a_mole.v:117]
-WARNING: [Synth 8-6090] variable 'whichmole' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/whack_a_mole.v:122]
-WARNING: [Synth 8-6090] variable 'whichmole' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/whack_a_mole.v:127]
-INFO: [Synth 8-6155] done synthesizing module 'whack_a_mole' (13#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/whack_a_mole.v:24]
-WARNING: [Synth 8-689] width (1) of port connection 'score' does not match port width (16) of module 'whack_a_mole' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:103]
-WARNING: [Synth 8-689] width (1) of port connection 'Q' does not match port width (3) of module 'random_generator' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:104]
+INFO: [Synth 8-6157] synthesizing module 'imagemodule' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/image.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'imagemodule' (11#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/image.v:23]
 WARNING: [Synth 8-6014] Unused sequential element menu_reg was removed.  [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:40]
 WARNING: [Synth 8-3848] Net seg_num1 in module/entity Top_Student does not have driver. [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:61]
 WARNING: [Synth 8-3848] Net seg_num2 in module/entity Top_Student does not have driver. [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:62]
-WARNING: [Synth 8-3848] Net reset_n in module/entity Top_Student does not have driver. [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:102]
-INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (14#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (12#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:18]
 WARNING: [Synth 8-3917] design Top_Student has port led[15] driven by constant 0
 WARNING: [Synth 8-3917] design Top_Student has port led[14] driven by constant 0
 WARNING: [Synth 8-3917] design Top_Student has port led[13] driven by constant 0
@@ -173,7 +156,7 @@ WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[3]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[2]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 417.238 ; gain = 160.043
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 430.535 ; gain = 173.652
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -188,15 +171,14 @@ WARNING: [Synth 8-3295] tying undriven pin ds:seg_num1[1] to constant 0 [C:/User
 WARNING: [Synth 8-3295] tying undriven pin ds:seg_num1[0] to constant 0 [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:69]
 WARNING: [Synth 8-3295] tying undriven pin ds:seg_num2[1] to constant 0 [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:69]
 WARNING: [Synth 8-3295] tying undriven pin ds:seg_num2[0] to constant 0 [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:69]
-WARNING: [Synth 8-3295] tying undriven pin rg:reset_n to constant 0 [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:104]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 417.238 ; gain = 160.043
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 430.535 ; gain = 173.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 417.238 ; gain = 160.043
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 430.535 ; gain = 173.652
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -212,22 +194,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 765.211 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 770.902 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 765.211 ; gain = 508.016
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 770.902 ; gain = 514.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 765.211 ; gain = 508.016
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 770.902 ; gain = 514.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 765.211 ; gain = 508.016
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 770.902 ; gain = 514.020
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Ps2Interface'
 INFO: [Synth 8-5546] ROM "reset_bit_count" won't be mapped to RAM because it is too sparse
@@ -302,13 +284,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "SLOW_CLOCK0" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "mole_down3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "mole_down2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "mole_down1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "mole_down3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "mole_down2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "mole_down1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rgb" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -410,10 +386,8 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
                SendPixel | 00000000000000000010000000000000 |                            10000
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
-WARNING: [Synth 8-327] inferring latch for variable 'pixel_color_reg' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/whack_a_mole.v:132]
-WARNING: [Synth 8-327] inferring latch for variable 'score_reg' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/whack_a_mole.v:116]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 765.211 ; gain = 508.016
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:57 . Memory (MB): peak = 797.457 ; gain = 540.574
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -426,25 +400,22 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 1     
-	   2 Input     26 Bit       Adders := 2     
+	   2 Input     26 Bit       Adders := 1     
 	   2 Input     24 Bit       Adders := 1     
 	   2 Input     17 Bit       Adders := 1     
-	   2 Input     16 Bit       Adders := 1     
 	   2 Input     12 Bit       Adders := 4     
 	   2 Input     11 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
 	   2 Input      7 Bit       Adders := 1     
 	   2 Input      6 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 4     
-+---XORs : 
-	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
 	               40 Bit    Registers := 1     
-	               26 Bit    Registers := 2     
+	               26 Bit    Registers := 1     
 	               24 Bit    Registers := 1     
 	               17 Bit    Registers := 1     
-	               16 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
 	               12 Bit    Registers := 9     
 	               11 Bit    Registers := 2     
 	                9 Bit    Registers := 1     
@@ -452,21 +423,20 @@ Detailed RTL Component Info :
 	                7 Bit    Registers := 2     
 	                6 Bit    Registers := 1     
 	                4 Bit    Registers := 8     
-	                3 Bit    Registers := 2     
-	                1 Bit    Registers := 40    
+	                1 Bit    Registers := 39    
 +---Muxes : 
 	   2 Input     40 Bit        Muxes := 3     
 	  37 Input     37 Bit        Muxes := 1     
 	   2 Input     37 Bit        Muxes := 69    
 	  32 Input     32 Bit        Muxes := 1     
 	   2 Input     32 Bit        Muxes := 2     
-	   2 Input     26 Bit        Muxes := 2     
+	   2 Input     26 Bit        Muxes := 1     
 	   2 Input     24 Bit        Muxes := 1     
 	  32 Input     20 Bit        Muxes := 1     
 	  17 Input     17 Bit        Muxes := 1     
 	   2 Input     17 Bit        Muxes := 19    
 	   2 Input     16 Bit        Muxes := 1     
-	   9 Input     16 Bit        Muxes := 1     
+	6145 Input     16 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 12    
 	   2 Input     11 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 2     
@@ -482,14 +452,13 @@ Detailed RTL Component Info :
 	   9 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 27    
+	   2 Input      1 Bit        Muxes := 15    
 	  17 Input      1 Bit        Muxes := 4     
 	  37 Input      1 Bit        Muxes := 20    
-	   9 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 1     
 	  11 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -614,33 +583,13 @@ Detailed RTL Component Info :
 	   2 Input      5 Bit        Muxes := 2     
 	  32 Input      5 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 2     
-Module clock_1 
+Module imagemodule 
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     26 Bit       Adders := 1     
 +---Registers : 
-	               26 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     26 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module random_generator 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input      1 Bit         XORs := 1     
-+---Registers : 
-	                3 Bit    Registers := 1     
-Module whack_a_mole 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 1     
-	   2 Input     16 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 1     
-+---Muxes : 
-	   9 Input     16 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 11    
-	   8 Input      1 Bit        Muxes := 3     
-	   9 Input      1 Bit        Muxes := 1     
+	6145 Input     16 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -664,8 +613,8 @@ INFO: [Synth 8-5546] ROM "maxvalue" won't be mapped to RAM because it is too spa
 INFO: [Synth 8-5545] ROM "clk200hz/clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "clock/SLOW_CLOCK0" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element rg/Q_reg_reg was removed.  [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/random_generator.v:33]
+WARNING: [Synth 8-6040] Register img/counter_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6014] Unused sequential element img/rgb_reg was removed.  [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/image.v:34]
 WARNING: [Synth 8-3917] design Top_Student has port led[15] driven by constant 0
 WARNING: [Synth 8-3917] design Top_Student has port led[14] driven by constant 0
 WARNING: [Synth 8-3917] design Top_Student has port led[13] driven by constant 0
@@ -706,79 +655,133 @@ WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[4]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[3]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[2]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[1]
-INFO: [Synth 8-3886] merging instance 'wm/pixel_color_reg[0]' (LD) to 'wm/pixel_color_reg[1]'
-INFO: [Synth 8-3886] merging instance 'wm/pixel_color_reg[1]' (LD) to 'wm/pixel_color_reg[2]'
-INFO: [Synth 8-3886] merging instance 'wm/pixel_color_reg[2]' (LD) to 'wm/pixel_color_reg[3]'
-INFO: [Synth 8-3886] merging instance 'wm/pixel_color_reg[3]' (LD) to 'wm/pixel_color_reg[4]'
-INFO: [Synth 8-3886] merging instance 'wm/pixel_color_reg[5]' (LD) to 'wm/pixel_color_reg[6]'
-INFO: [Synth 8-3886] merging instance 'wm/pixel_color_reg[6]' (LD) to 'wm/pixel_color_reg[7]'
-INFO: [Synth 8-3886] merging instance 'wm/pixel_color_reg[7]' (LD) to 'wm/pixel_color_reg[8]'
-INFO: [Synth 8-3886] merging instance 'wm/pixel_color_reg[8]' (LD) to 'wm/pixel_color_reg[9]'
-INFO: [Synth 8-3886] merging instance 'wm/pixel_color_reg[9]' (LD) to 'wm/pixel_color_reg[10]'
-INFO: [Synth 8-3886] merging instance 'wm/pixel_color_reg[11]' (LD) to 'wm/pixel_color_reg[12]'
-INFO: [Synth 8-3886] merging instance 'wm/pixel_color_reg[12]' (LD) to 'wm/pixel_color_reg[13]'
-INFO: [Synth 8-3886] merging instance 'mouse/y_max_reg[0]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3886] merging instance 'mouse/y_max_reg[1]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3886] merging instance 'mouse/y_max_reg[2]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3886] merging instance 'mouse/y_max_reg[3]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3886] merging instance 'mouse/y_max_reg[4]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3886] merging instance 'mouse/y_max_reg[5]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3886] merging instance 'mouse/y_max_reg[6]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3886] merging instance 'mouse/y_max_reg[7]' (FDSE) to 'mouse/x_max_reg[9]'
-INFO: [Synth 8-3886] merging instance 'mouse/y_max_reg[8]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3886] merging instance 'mouse/y_max_reg[9]' (FDSE) to 'mouse/x_max_reg[9]'
-INFO: [Synth 8-3886] merging instance 'mouse/y_max_reg[10]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3886] merging instance 'mouse/y_max_reg[11]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3886] merging instance 'mouse/x_max_reg[0]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3886] merging instance 'mouse/x_max_reg[1]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3886] merging instance 'mouse/x_max_reg[2]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3886] merging instance 'mouse/x_max_reg[3]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3886] merging instance 'mouse/x_max_reg[4]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3886] merging instance 'mouse/x_max_reg[5]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3886] merging instance 'mouse/x_max_reg[6]' (FDSE) to 'mouse/x_max_reg[9]'
-INFO: [Synth 8-3886] merging instance 'mouse/x_max_reg[7]' (FDSE) to 'mouse/x_max_reg[9]'
-INFO: [Synth 8-3886] merging instance 'mouse/x_max_reg[8]' (FDSE) to 'mouse/x_max_reg[9]'
-INFO: [Synth 8-3886] merging instance 'mouse/x_max_reg[10]' (FDRE) to 'mouse/x_max_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mouse/x_max_reg[11] )
 INFO: [Synth 8-3886] merging instance 'lvl/max_reg[12]' (FDRE) to 'lvl/max_reg[13]'
 INFO: [Synth 8-3886] merging instance 'lvl/max_reg[13]' (FDRE) to 'lvl/max_reg[14]'
 INFO: [Synth 8-3886] merging instance 'lvl/max_reg[14]' (FDRE) to 'lvl/max_reg[15]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lvl/max_reg[15] )
-INFO: [Synth 8-3886] merging instance 'wm/pixel_color_reg[13]' (LD) to 'wm/pixel_color_reg[14]'
-INFO: [Synth 8-3886] merging instance 'wm/pixel_color_reg[14]' (LD) to 'wm/pixel_color_reg[15]'
 INFO: [Synth 8-3886] merging instance 'ait/led_reg[2]' (FDRE) to 'ait/led_reg[3]'
+WARNING: [Synth 8-3332] Sequential element (mouse/x_new_reg) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_overflow_reg) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_inc_reg[7]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_inc_reg[6]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_inc_reg[5]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_inc_reg[4]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_inc_reg[3]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_inc_reg[2]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_inc_reg[1]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_inc_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_max_reg[11]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_max_reg[10]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_max_reg[9]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_max_reg[8]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_max_reg[7]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_max_reg[6]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_max_reg[5]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_max_reg[4]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_max_reg[3]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_max_reg[2]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_max_reg[1]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_max_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_sign_reg) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_pos_reg[11]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_pos_reg[10]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_pos_reg[9]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_pos_reg[8]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_pos_reg[7]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_pos_reg[6]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_pos_reg[5]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_pos_reg[4]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_pos_reg[3]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_pos_reg[2]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_pos_reg[1]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/x_pos_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/xpos_reg[11]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/xpos_reg[10]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/xpos_reg[9]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/xpos_reg[8]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/xpos_reg[7]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/xpos_reg[6]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/xpos_reg[5]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/xpos_reg[4]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/xpos_reg[3]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/xpos_reg[2]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/xpos_reg[1]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/xpos_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_new_reg) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_overflow_reg) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_inc_reg[7]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_inc_reg[6]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_inc_reg[5]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_inc_reg[4]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_inc_reg[3]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_inc_reg[2]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_inc_reg[1]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_inc_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_max_reg[11]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_max_reg[10]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_max_reg[9]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_max_reg[8]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_max_reg[7]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_max_reg[6]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_max_reg[5]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_max_reg[4]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_max_reg[3]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_max_reg[2]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_max_reg[1]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_max_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_sign_reg) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_pos_reg[11]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_pos_reg[10]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_pos_reg[9]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_pos_reg[8]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_pos_reg[7]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_pos_reg[6]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_pos_reg[5]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_pos_reg[4]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_pos_reg[3]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_pos_reg[2]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_pos_reg[1]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/y_pos_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/ypos_reg[11]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/ypos_reg[10]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/ypos_reg[9]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/ypos_reg[8]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/ypos_reg[7]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/ypos_reg[6]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/ypos_reg[5]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/ypos_reg[4]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/ypos_reg[3]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/ypos_reg[2]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/ypos_reg[1]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/ypos_reg[0]) is unused and will be removed from module Top_Student.
 WARNING: [Synth 8-3332] Sequential element (mouse/zpos_reg[3]) is unused and will be removed from module Top_Student.
 WARNING: [Synth 8-3332] Sequential element (mouse/zpos_reg[2]) is unused and will be removed from module Top_Student.
 WARNING: [Synth 8-3332] Sequential element (mouse/zpos_reg[1]) is unused and will be removed from module Top_Student.
 WARNING: [Synth 8-3332] Sequential element (mouse/zpos_reg[0]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (mouse/middle_down_reg) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (mouse/middle_reg) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (mouse/right_down_reg) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (mouse/right_reg) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (mouse/new_event_reg) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (mouse/x_max_reg[11]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (lvl/max_reg[15]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (lvl/maxvalue_reg[0]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (wm/score_reg[15]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (wm/score_reg[14]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (wm/score_reg[13]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (wm/score_reg[12]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (wm/score_reg[11]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (wm/score_reg[10]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (wm/score_reg[9]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (wm/score_reg[8]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (wm/score_reg[7]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (wm/score_reg[6]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (wm/score_reg[5]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (wm/score_reg[4]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (wm/score_reg[3]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (wm/score_reg[2]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (wm/score_reg[1]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (wm/score_reg[0]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (mouse/x_max_reg[9]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/left_down_reg) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (mouse/left_reg) is unused and will be removed from module Top_Student.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 765.211 ; gain = 508.016
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:01:10 . Memory (MB): peak = 797.457 ; gain = 540.574
 ---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-------------+---------------+----------------+
+|Module Name | RTL Object  | Depth x Width | Implemented As | 
++------------+-------------+---------------+----------------+
+|Top_Student | img/rgb_reg | 8192x16       | Block RAM      | 
++------------+-------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance i_8/img/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_8/img/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_8/img/rgb_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_8/img/rgb_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -789,13 +792,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 765.211 ; gain = 508.016
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:01:22 . Memory (MB): peak = 797.457 ; gain = 540.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 773.078 ; gain = 515.883
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:01:22 . Memory (MB): peak = 805.309 ; gain = 548.426
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -806,8 +809,12 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance img/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance img/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance img/rgb_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance img/rgb_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 801.824 ; gain = 544.629
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:01:23 . Memory (MB): peak = 824.832 ; gain = 567.949
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -833,7 +840,7 @@ INFO: [Synth 8-5365] Flop mouse/Inst_Ps2Interface/ps2_data_h_reg is being invert
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 801.824 ; gain = 544.629
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:01:24 . Memory (MB): peak = 824.832 ; gain = 567.949
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -846,7 +853,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 801.824 ; gain = 544.629
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:01:24 . Memory (MB): peak = 824.832 ; gain = 567.949
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -858,25 +865,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 801.824 ; gain = 544.629
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:01:24 . Memory (MB): peak = 824.832 ; gain = 567.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 801.824 ; gain = 544.629
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:01:24 . Memory (MB): peak = 824.832 ; gain = 567.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 801.824 ; gain = 544.629
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:01:24 . Memory (MB): peak = 824.832 ; gain = 567.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 801.824 ; gain = 544.629
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:01:24 . Memory (MB): peak = 824.832 ; gain = 567.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -889,71 +896,69 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     2|
-|2     |CARRY4 |   104|
-|3     |LUT1   |    50|
-|4     |LUT2   |   240|
-|5     |LUT3   |   148|
-|6     |LUT4   |   146|
-|7     |LUT5   |   154|
-|8     |LUT6   |   280|
-|9     |MUXF7  |     1|
-|10    |FDE_1  |    32|
-|11    |FDRE   |   555|
-|12    |FDSE   |     8|
-|13    |LD     |     3|
-|14    |IBUF   |     3|
-|15    |IOBUF  |     2|
-|16    |OBUF   |    37|
-|17    |OBUFT  |     1|
-+------+-------+------+
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |    57|
+|3     |LUT1       |    24|
+|4     |LUT2       |   146|
+|5     |LUT3       |    67|
+|6     |LUT4       |    95|
+|7     |LUT5       |    65|
+|8     |LUT6       |   166|
+|9     |RAMB36E1   |     1|
+|10    |RAMB36E1_1 |     1|
+|11    |RAMB36E1_2 |     1|
+|12    |RAMB36E1_3 |     1|
+|13    |FDE_1      |    32|
+|14    |FDRE       |   466|
+|15    |FDSE       |     8|
+|16    |IBUF       |     3|
+|17    |IOBUF      |     2|
+|18    |OBUF       |    37|
+|19    |OBUFT      |     1|
++------+-----------+------+
 
 Report Instance Areas: 
 +------+----------------------+-----------------+------+
 |      |Instance              |Module           |Cells |
 +------+----------------------+-----------------+------+
-|1     |top                   |                 |  1766|
+|1     |top                   |                 |  1175|
 |2     |  ai                  |Audio_Input      |    65|
 |3     |  ait                 |audio_intensity  |    20|
-|4     |  clk                 |Clk625           |    10|
+|4     |  clk                 |Clk625           |    11|
 |5     |  clk20k              |clk_variable     |    84|
 |6     |  ds                  |display_seg      |    80|
 |7     |    clk200hz          |clk_variable_0   |    54|
-|8     |  lvl                 |audio_level_calc |   113|
-|9     |  mouse               |MouseCtl         |   773|
-|10    |    Inst_Ps2Interface |Ps2Interface     |   284|
-|11    |  oled                |Oled_Display     |   420|
-|12    |  wm                  |whack_a_mole     |    64|
-|13    |    clock             |clock_1          |    47|
-|14    |    test_rand         |random_generator |     6|
-|15    |  xy                  |xycoordinate     |    91|
+|8     |  img                 |imagemodule      |    17|
+|9     |  lvl                 |audio_level_calc |   113|
+|10    |  mouse               |MouseCtl         |   450|
+|11    |    Inst_Ps2Interface |Ps2Interface     |   259|
+|12    |  oled                |Oled_Display     |   289|
 +------+----------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 801.824 ; gain = 544.629
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:01:24 . Memory (MB): peak = 824.832 ; gain = 567.949
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 72 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:27 . Memory (MB): peak = 801.824 ; gain = 196.656
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 801.824 ; gain = 544.629
+Synthesis finished with 0 errors, 0 critical warnings and 149 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:01:16 . Memory (MB): peak = 824.832 ; gain = 227.582
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:01:24 . Memory (MB): peak = 824.832 ; gain = 567.949
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 145 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 98 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 37 instances were transformed.
+  A total of 34 instances were transformed.
   FDE_1 => FDRE (inverted pins: C): 32 instances
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
-  LD => LDCE: 3 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-178 Infos, 142 Warnings, 0 Critical Warnings and 0 Errors encountered.
+140 Infos, 204 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:39 . Memory (MB): peak = 801.824 ; gain = 557.652
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:01:27 . Memory (MB): peak = 824.832 ; gain = 580.977
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/Top_Student.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 801.824 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Mar 24 00:07:35 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 824.832 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 24 20:42:44 2023...
