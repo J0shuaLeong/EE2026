@@ -100,7 +100,7 @@ module Top_Student (
     
     //Whack a mole
     wire reset_n, Q;
-    whack_a_mole wm (.x(x), .y(y), .pixel_color(oled_data),.x_pos(nxpos), .y_pos(nypos), .left(left), .score(score));
+    whack_a_mole wm (.x(x), .y(y), .pixel_color(oled_data),.x_pos(nxpos), .y_pos(nypos), .left(left), .score(score), .clk(clock));
     random_generator rg (clock, reset_n, Q);
     
 endmodule

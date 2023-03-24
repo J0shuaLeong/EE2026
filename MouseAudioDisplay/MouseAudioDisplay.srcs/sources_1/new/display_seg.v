@@ -97,7 +97,7 @@ module display_seg(
                     default: begin seg <= 7'b1111111; end
                 endcase
             end
-        end else begin
+        end /*else begin
             an <= 4'b0000;
             if (reset_n) begin
                 score <= 0;
@@ -114,7 +114,7 @@ module display_seg(
                     score <= 0;
                 end
             end           
-        end
+        end*/
     end
     
     always @ (posedge clk200) begin
