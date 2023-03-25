@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3b7214cfe62a44289a7f91385db1e055"/>
@@ -145,6 +145,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/frequency_detector.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/random_generator.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -196,6 +204,14 @@
       </File>
       <File Path="$PPRDIR/archive_project_summary.txt"/>
       <File Path="$PSRCDIR/sources_1/new/box_blur.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/frequency_display.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>

@@ -60,6 +60,7 @@ module Top_Student (
     wire [3:0] seg_status;
     wire [3:0] seg_num1;
     wire [1:0] seg_num2;
+   // wire [31:0] frequency;
     
     clk_variable clk20k (clock, 2499, count_20khz);
     audio_level_calc lvl (clock, MIC_IN, maxvalue);
@@ -67,6 +68,10 @@ module Top_Student (
     Audio_Input ai (clock, count_20khz, J_MIC_Pin3, J_MIC_Pin1, J_MIC_Pin4, MIC_IN);
     audio_intensity ait (clock, maxvalue, led, seg_status);
     display_seg ds (clock, seg, an, seg_status, dp, seg_num1, seg_num2, score, sw[0]);
+    
+    //Mic improvement
+    //frequency_detector fd (clock, sw[1], MIC_IN, led);
+    //frequency_display fdp (count_20khz, frequency, led);
     
     //assign led = (right)? 16'b1000_0000_0000_0000 : (middle)? 16'b0100_0000_0000_0000 : (left)? 16'b0010_0000_0000_0000 : 16'b0000_0000_0000_0000;
  

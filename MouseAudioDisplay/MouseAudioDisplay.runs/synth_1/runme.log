@@ -14,47 +14,254 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5704 
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:13]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:14]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:15]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:16]
+INFO: Helper process launched with PID 6360 
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:171]
+WARNING: [Synth 8-1102] /* in comment [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:278]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:13]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:14]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:15]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:16]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 371.789 ; gain = 114.906
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 368.898 ; gain = 111.926
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:18]
-INFO: [Synth 8-638] synthesizing module 'MouseCtl' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:212]
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-638] synthesizing module 'MouseCtl' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:212]
 	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
 	Parameter CHECK_PERIOD_MS bound to: 500 - type: integer 
 	Parameter TIMEOUT_PERIOD_MS bound to: 100 - type: integer 
-INFO: [Synth 8-3491] module 'Ps2Interface' declared at 'C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Ps2Interface.vhd:156' bound to instance 'Inst_Ps2Interface' of component 'Ps2Interface' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:374]
-INFO: [Synth 8-638] synthesizing module 'Ps2Interface' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Ps2Interface.vhd:184]
-INFO: [Synth 8-256] done synthesizing module 'Ps2Interface' (1#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Ps2Interface.vhd:184]
-WARNING: [Synth 8-6014] Unused sequential element inc_reg was removed.  [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:455]
-WARNING: [Synth 8-6014] Unused sequential element x_inter_reg was removed.  [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:461]
-WARNING: [Synth 8-6014] Unused sequential element inc_reg was removed.  [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:519]
-WARNING: [Synth 8-6014] Unused sequential element y_inter_reg was removed.  [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:525]
-INFO: [Synth 8-256] done synthesizing module 'MouseCtl' (2#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:212]
-INFO: [Synth 8-6157] synthesizing module 'clk_variable' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clk_variable.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'clk_variable' (3#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clk_variable.v:23]
-INFO: [Synth 8-6157] synthesizing module 'audio_level_calc' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_level_calc.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'audio_level_calc' (4#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_level_calc.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Audio_Input' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Input.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'Audio_Input' (5#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Input.v:25]
-INFO: [Synth 8-6157] synthesizing module 'audio_intensity' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'audio_intensity' (6#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v:23]
-WARNING: [Synth 8-689] width (16) of port connection 'led' does not match port width (9) of module 'audio_intensity' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:68]
-INFO: [Synth 8-6157] synthesizing module 'display_seg' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/display_seg.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/display_seg.v:63]
-WARNING: [Synth 8-3848] Net score in module/entity display_seg does not have driver. [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/display_seg.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'display_seg' (7#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/display_seg.v:23]
-WARNING: [Synth 8-689] width (1) of port connection 'score' does not match port width (16) of module 'display_seg' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:69]
-WARNING: [Synth 8-350] instance 'ds' of module 'display_seg' requires 10 connections, but only 9 given [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:69]
-INFO: [Synth 8-6157] synthesizing module 'Clk625' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:129]
-INFO: [Synth 8-6155] done synthesizing module 'Clk625' (8#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:129]
-INFO: [Synth 8-6157] synthesizing module 'xycoordinate' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:141]
-INFO: [Synth 8-6155] done synthesizing module 'xycoordinate' (9#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:141]
-INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
+INFO: [Synth 8-3491] module 'Ps2Interface' declared at 'C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Ps2Interface.vhd:156' bound to instance 'Inst_Ps2Interface' of component 'Ps2Interface' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:374]
+INFO: [Synth 8-638] synthesizing module 'Ps2Interface' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Ps2Interface.vhd:184]
+INFO: [Synth 8-256] done synthesizing module 'Ps2Interface' (1#1) [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Ps2Interface.vhd:184]
+WARNING: [Synth 8-6014] Unused sequential element inc_reg was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:455]
+WARNING: [Synth 8-6014] Unused sequential element x_inter_reg was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:461]
+WARNING: [Synth 8-6014] Unused sequential element inc_reg was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:519]
+WARNING: [Synth 8-6014] Unused sequential element y_inter_reg was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:525]
+INFO: [Synth 8-256] done synthesizing module 'MouseCtl' (2#1) [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:212]
+INFO: [Synth 8-6157] synthesizing module 'clk_variable' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clk_variable.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_variable' (3#1) [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clk_variable.v:23]
+INFO: [Synth 8-6157] synthesizing module 'audio_level_calc' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_level_calc.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'audio_level_calc' (4#1) [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_level_calc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Input' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Input.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Input' (5#1) [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Input.v:25]
+INFO: [Synth 8-6157] synthesizing module 'frequency_detector' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:22]
+	Parameter NUM_LEDS bound to: 9 - type: integer 
+	Parameter FREQ_MIN bound to: 20 - type: integer 
+	Parameter FREQ_MAX bound to: 20000 - type: integer 
+	Parameter FREQ_BIN_SIZE bound to: 2220 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:74]
+	Parameter FFT_SIZE bound to: 1024 - type: integer 
+	Parameter FFT_STAGES bound to: 10 - type: integer 
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:108]
+WARNING: [Synth 8-639] system function call 'rtoi' not supported [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:109]
+INFO: [Common 17-14] Message 'Synth 8-639' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element angle_reg was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:106]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[1] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[2] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[3] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[4] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[5] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[6] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[7] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[8] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[9] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[10] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[11] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[12] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[13] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[14] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[15] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[16] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[17] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[18] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[19] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[20] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[21] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[22] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[23] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[24] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[25] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[26] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[27] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[28] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[29] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[30] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[31] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[32] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[33] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[34] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[35] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[36] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[37] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[38] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[39] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[40] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[41] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[42] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[43] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[44] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[45] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[46] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[47] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[48] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[49] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[50] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[51] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[52] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[53] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[54] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[55] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[56] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[57] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[58] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[59] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[60] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[61] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[62] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[63] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[64] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[65] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[66] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[67] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[68] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[69] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[70] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[71] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[72] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[73] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[74] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[75] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[76] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[77] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[78] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[79] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[80] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[81] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[82] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[83] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[84] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[85] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[86] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[87] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[88] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[89] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[90] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[91] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[92] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[93] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[94] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+WARNING: [Synth 8-6014] Unused sequential element twiddle_factors_reg[95] was removed.  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:107]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'FFT' (6#1) [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:74]
+INFO: [Synth 8-6157] synthesizing module 'find_highest_bin' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'find_highest_bin' (7#1) [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:172]
+WARNING: [Synth 8-689] width (12) of port connection 'fft_output' does not match port width (2048) of module 'find_highest_bin' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:51]
+WARNING: [Synth 8-689] width (1) of port connection 'max_idx' does not match port width (11) of module 'find_highest_bin' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:52]
+WARNING: [Synth 8-5788] Register highest_bin_reg in module frequency_detector is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'frequency_detector' (8#1) [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/frequency_detector.v:22]
+WARNING: [Synth 8-689] width (16) of port connection 'led_output' does not match port width (9) of module 'frequency_detector' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:73]
+INFO: [Synth 8-6157] synthesizing module 'Clk625' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:134]
+INFO: [Synth 8-6155] done synthesizing module 'Clk625' (9#1) [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:134]
+INFO: [Synth 8-6157] synthesizing module 'xycoordinate' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:146]
+INFO: [Synth 8-6155] done synthesizing module 'xycoordinate' (10#1) [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:146]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
 	Parameter Width bound to: 96 - type: integer 
 	Parameter Height bound to: 64 - type: integer 
 	Parameter PixelCount bound to: 6144 - type: integer 
@@ -105,16 +312,16 @@ INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/Naychi/Documen
 	Parameter SendPixel bound to: 5'b10000 
 	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
 	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
-INFO: [Synth 8-226] default block is never used [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:123]
-INFO: [Synth 8-226] default block is never used [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:198]
-WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:346]
-INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (10#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
-INFO: [Synth 8-6157] synthesizing module 'imagemodule' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/image.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'imagemodule' (11#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/image.v:23]
-WARNING: [Synth 8-6014] Unused sequential element menu_reg was removed.  [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:40]
-WARNING: [Synth 8-3848] Net seg_num1 in module/entity Top_Student does not have driver. [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:61]
-WARNING: [Synth 8-3848] Net seg_num2 in module/entity Top_Student does not have driver. [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (12#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:123]
+INFO: [Synth 8-226] default block is never used [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:198]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (11#1) [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'imagemodule' [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/image.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'imagemodule' (12#1) [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/image.v:23]
+WARNING: [Synth 8-3848] Net an in module/entity Top_Student does not have driver. [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:29]
+WARNING: [Synth 8-3848] Net seg in module/entity Top_Student does not have driver. [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:30]
+WARNING: [Synth 8-3848] Net dp in module/entity Top_Student does not have driver. [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (13#1) [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:18]
 WARNING: [Synth 8-3917] design Top_Student has port led[15] driven by constant 0
 WARNING: [Synth 8-3917] design Top_Student has port led[14] driven by constant 0
 WARNING: [Synth 8-3917] design Top_Student has port led[13] driven by constant 0
@@ -122,41 +329,109 @@ WARNING: [Synth 8-3917] design Top_Student has port led[12] driven by constant 0
 WARNING: [Synth 8-3917] design Top_Student has port led[11] driven by constant 0
 WARNING: [Synth 8-3917] design Top_Student has port led[10] driven by constant 0
 WARNING: [Synth 8-3917] design Top_Student has port led[9] driven by constant 0
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[15]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[14]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[13]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[12]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[11]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[10]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[9]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[8]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[7]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[6]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[5]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[4]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[3]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[2]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[1]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[0]
-WARNING: [Synth 8-3331] design display_seg has unconnected port reset_n
-WARNING: [Synth 8-3331] design Top_Student has unconnected port JC[2]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[15]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[14]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[13]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[12]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[11]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[10]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[9]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[8]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[7]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[6]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[5]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[4]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[3]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[2]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[1]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2047]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2046]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2045]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2044]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2043]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2042]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2041]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2040]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2039]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2038]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2037]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2036]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2035]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2034]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2033]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2032]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2031]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2030]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2029]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2028]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2027]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2026]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2025]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2024]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2023]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2022]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2021]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2020]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2019]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2018]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2017]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2016]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2015]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2014]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2013]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2012]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2011]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2010]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2009]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2008]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2007]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2006]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2005]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2004]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2003]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2002]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2001]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[2000]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1999]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1998]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1997]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1996]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1995]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1994]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1993]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1992]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1991]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1990]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1989]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1988]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1987]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1986]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1985]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1984]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1983]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1982]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1981]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1980]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1979]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1978]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1977]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1976]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1975]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1974]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1973]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1972]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1971]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1970]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1969]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1968]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1967]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1966]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1965]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1964]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1963]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1962]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1961]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1960]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1959]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1958]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1957]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1956]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1955]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1954]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1953]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1952]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1951]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1950]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1949]
+WARNING: [Synth 8-3331] design find_highest_bin has unconnected port fft_output[1948]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 430.535 ; gain = 173.652
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 567.508 ; gain = 310.535
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -165,51 +440,45 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin ds:seg_num1[3] to constant 0 [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:69]
-WARNING: [Synth 8-3295] tying undriven pin ds:seg_num1[2] to constant 0 [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:69]
-WARNING: [Synth 8-3295] tying undriven pin ds:seg_num1[1] to constant 0 [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:69]
-WARNING: [Synth 8-3295] tying undriven pin ds:seg_num1[0] to constant 0 [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:69]
-WARNING: [Synth 8-3295] tying undriven pin ds:seg_num2[1] to constant 0 [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:69]
-WARNING: [Synth 8-3295] tying undriven pin ds:seg_num2[0] to constant 0 [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:69]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 430.535 ; gain = 173.652
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 567.508 ; gain = 310.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 430.535 ; gain = 173.652
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 567.508 ; gain = 310.535
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
-Finished Parsing XDC File [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Parsing XDC File [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 770.902 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 771.156 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 770.902 ; gain = 514.020
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 771.156 ; gain = 514.184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 770.902 ; gain = 514.020
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 771.156 ; gain = 514.184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 770.902 ; gain = 514.020
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 771.156 ; gain = 514.184
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Ps2Interface'
 INFO: [Synth 8-5546] ROM "reset_bit_count" won't be mapped to RAM because it is too sparse
@@ -279,7 +548,6 @@ INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address si
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "maxvalue" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "dp0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -387,7 +655,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:57 . Memory (MB): peak = 797.457 ; gain = 540.574
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 800.773 ; gain = 543.801
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -403,7 +671,8 @@ Detailed RTL Component Info :
 	   2 Input     26 Bit       Adders := 1     
 	   2 Input     24 Bit       Adders := 1     
 	   2 Input     17 Bit       Adders := 1     
-	   2 Input     12 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 5     
+	   3 Input     12 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 1     
 	   2 Input      7 Bit       Adders := 1     
@@ -416,14 +685,14 @@ Detailed RTL Component Info :
 	               17 Bit    Registers := 1     
 	               16 Bit    Registers := 2     
 	               13 Bit    Registers := 1     
-	               12 Bit    Registers := 9     
+	               12 Bit    Registers := 12    
 	               11 Bit    Registers := 2     
 	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 4     
-	                7 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
 	                6 Bit    Registers := 1     
-	                4 Bit    Registers := 8     
-	                1 Bit    Registers := 39    
+	                4 Bit    Registers := 6     
+	                1 Bit    Registers := 37    
 +---Muxes : 
 	   2 Input     40 Bit        Muxes := 3     
 	  37 Input     37 Bit        Muxes := 1     
@@ -440,25 +709,15 @@ Detailed RTL Component Info :
 	   2 Input     12 Bit        Muxes := 12    
 	   2 Input     11 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 2     
-	   9 Input      9 Bit        Muxes := 1     
 	  37 Input      8 Bit        Muxes := 3     
-	   2 Input      7 Bit        Muxes := 3     
-	   3 Input      7 Bit        Muxes := 1     
 	  32 Input      6 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 2     
 	  32 Input      5 Bit        Muxes := 1     
 	  37 Input      4 Bit        Muxes := 1     
-	   9 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 15    
+	   2 Input      1 Bit        Muxes := 12    
 	  17 Input      1 Bit        Muxes := 4     
 	  37 Input      1 Bit        Muxes := 20    
-	   9 Input      1 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 1     
-	  11 Input      1 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -528,30 +787,18 @@ Detailed RTL Component Info :
 +---Registers : 
 	               12 Bit    Registers := 2     
 	                1 Bit    Registers := 1     
-Module audio_intensity 
+Module FFT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 3     
+Module frequency_detector 
 Detailed RTL Component Info : 
 +---Registers : 
 	                9 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
-+---Muxes : 
-	   9 Input      9 Bit        Muxes := 1     
-	   9 Input      4 Bit        Muxes := 1     
-	   9 Input      1 Bit        Muxes := 1     
-Module display_seg 
-Detailed RTL Component Info : 
-+---Registers : 
-	                7 Bit    Registers := 1     
-	                4 Bit    Registers := 2     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      7 Bit        Muxes := 3     
-	   3 Input      7 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-	  11 Input      1 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 1     
 Module Clk625 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -610,11 +857,9 @@ INFO: [Synth 8-5545] ROM "periodic_check_tick" won't be mapped to RAM because ad
 INFO: [Synth 8-5546] ROM "timeout" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "maxvalue" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "clk200hz/clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6040] Register img/counter_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
-WARNING: [Synth 8-6014] Unused sequential element img/rgb_reg was removed.  [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/image.v:34]
 WARNING: [Synth 8-3917] design Top_Student has port led[15] driven by constant 0
 WARNING: [Synth 8-3917] design Top_Student has port led[14] driven by constant 0
 WARNING: [Synth 8-3917] design Top_Student has port led[13] driven by constant 0
@@ -622,44 +867,10 @@ WARNING: [Synth 8-3917] design Top_Student has port led[12] driven by constant 0
 WARNING: [Synth 8-3917] design Top_Student has port led[11] driven by constant 0
 WARNING: [Synth 8-3917] design Top_Student has port led[10] driven by constant 0
 WARNING: [Synth 8-3917] design Top_Student has port led[9] driven by constant 0
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[15]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[14]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[13]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[12]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[11]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[10]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[9]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[8]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[7]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[6]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[5]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[4]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[3]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[2]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[1]
-WARNING: [Synth 8-3331] design display_seg has unconnected port score[0]
-WARNING: [Synth 8-3331] design display_seg has unconnected port reset_n
-WARNING: [Synth 8-3331] design Top_Student has unconnected port JC[2]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[15]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[14]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[13]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[12]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[11]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[10]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[9]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[8]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[7]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[6]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[5]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[4]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[3]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[2]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[1]
-INFO: [Synth 8-3886] merging instance 'lvl/max_reg[12]' (FDRE) to 'lvl/max_reg[13]'
-INFO: [Synth 8-3886] merging instance 'lvl/max_reg[13]' (FDRE) to 'lvl/max_reg[14]'
-INFO: [Synth 8-3886] merging instance 'lvl/max_reg[14]' (FDRE) to 'lvl/max_reg[15]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lvl/max_reg[15] )
-INFO: [Synth 8-3886] merging instance 'ait/led_reg[2]' (FDRE) to 'ait/led_reg[3]'
+INFO: [Synth 8-3886] merging instance 'fd/detected_led_reg[3]' (FDC) to 'fd/detected_led_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fd/detected_led_reg[2]' (FDC) to 'fd/detected_led_reg[1]'
+INFO: [Synth 8-3886] merging instance 'fd/detected_led_reg[1]' (FDC) to 'fd/detected_led_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fd/detected_led_reg[0] )
 WARNING: [Synth 8-3332] Sequential element (mouse/x_new_reg) is unused and will be removed from module Top_Student.
 WARNING: [Synth 8-3332] Sequential element (mouse/x_overflow_reg) is unused and will be removed from module Top_Student.
 WARNING: [Synth 8-3332] Sequential element (mouse/x_inc_reg[7]) is unused and will be removed from module Top_Student.
@@ -762,7 +973,7 @@ WARNING: [Synth 8-3332] Sequential element (mouse/left_down_reg) is unused and w
 WARNING: [Synth 8-3332] Sequential element (mouse/left_reg) is unused and will be removed from module Top_Student.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:01:10 . Memory (MB): peak = 797.457 ; gain = 540.574
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 800.773 ; gain = 543.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -778,10 +989,10 @@ ROM:
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4480] The timing for the instance i_8/img/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance i_8/img/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance i_8/img/rgb_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance i_8/img/rgb_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_7/img/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_7/img/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_7/img/rgb_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_7/img/rgb_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -792,13 +1003,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:01:22 . Memory (MB): peak = 797.457 ; gain = 540.574
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 800.773 ; gain = 543.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:01:22 . Memory (MB): peak = 805.309 ; gain = 548.426
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 810.832 ; gain = 553.859
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -814,7 +1025,7 @@ INFO: [Synth 8-4480] The timing for the instance img/rgb_reg_1 (implemented as a
 INFO: [Synth 8-4480] The timing for the instance img/rgb_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance img/rgb_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:01:23 . Memory (MB): peak = 824.832 ; gain = 567.949
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 827.945 ; gain = 570.973
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -840,7 +1051,7 @@ INFO: [Synth 8-5365] Flop mouse/Inst_Ps2Interface/ps2_data_h_reg is being invert
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:01:24 . Memory (MB): peak = 824.832 ; gain = 567.949
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 827.945 ; gain = 570.973
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -853,7 +1064,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:01:24 . Memory (MB): peak = 824.832 ; gain = 567.949
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 827.945 ; gain = 570.973
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -865,25 +1076,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:01:24 . Memory (MB): peak = 824.832 ; gain = 567.949
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 827.945 ; gain = 570.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:01:24 . Memory (MB): peak = 824.832 ; gain = 567.949
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 827.945 ; gain = 570.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:01:24 . Memory (MB): peak = 824.832 ; gain = 567.949
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 827.945 ; gain = 570.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:01:24 . Memory (MB): peak = 824.832 ; gain = 567.949
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 827.945 ; gain = 570.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -900,51 +1111,48 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BUFG       |     2|
-|2     |CARRY4     |    57|
-|3     |LUT1       |    24|
-|4     |LUT2       |   146|
-|5     |LUT3       |    67|
-|6     |LUT4       |    95|
-|7     |LUT5       |    65|
-|8     |LUT6       |   166|
+|2     |CARRY4     |    41|
+|3     |LUT1       |    16|
+|4     |LUT2       |   143|
+|5     |LUT3       |    61|
+|6     |LUT4       |    62|
+|7     |LUT5       |    52|
+|8     |LUT6       |   139|
 |9     |RAMB36E1   |     1|
 |10    |RAMB36E1_1 |     1|
 |11    |RAMB36E1_2 |     1|
 |12    |RAMB36E1_3 |     1|
-|13    |FDE_1      |    32|
-|14    |FDRE       |   466|
-|15    |FDSE       |     8|
-|16    |IBUF       |     3|
+|13    |FDCE       |     1|
+|14    |FDE_1      |    32|
+|15    |FDRE       |   343|
+|16    |IBUF       |     2|
 |17    |IOBUF      |     2|
-|18    |OBUF       |    37|
-|19    |OBUFT      |     1|
+|18    |OBUF       |    25|
+|19    |OBUFT      |    13|
 +------+-----------+------+
 
 Report Instance Areas: 
-+------+----------------------+-----------------+------+
-|      |Instance              |Module           |Cells |
-+------+----------------------+-----------------+------+
-|1     |top                   |                 |  1175|
-|2     |  ai                  |Audio_Input      |    65|
-|3     |  ait                 |audio_intensity  |    20|
-|4     |  clk                 |Clk625           |    11|
-|5     |  clk20k              |clk_variable     |    84|
-|6     |  ds                  |display_seg      |    80|
-|7     |    clk200hz          |clk_variable_0   |    54|
-|8     |  img                 |imagemodule      |    17|
-|9     |  lvl                 |audio_level_calc |   113|
-|10    |  mouse               |MouseCtl         |   450|
-|11    |    Inst_Ps2Interface |Ps2Interface     |   259|
-|12    |  oled                |Oled_Display     |   289|
-+------+----------------------+-----------------+------+
++------+----------------------+-------------------+------+
+|      |Instance              |Module             |Cells |
++------+----------------------+-------------------+------+
+|1     |top                   |                   |   938|
+|2     |  ai                  |Audio_Input        |    41|
+|3     |  clk                 |Clk625             |    11|
+|4     |  clk20k              |clk_variable       |    84|
+|5     |  fd                  |frequency_detector |     1|
+|6     |  img                 |imagemodule        |    17|
+|7     |  mouse               |MouseCtl           |   450|
+|8     |    Inst_Ps2Interface |Ps2Interface       |   259|
+|9     |  oled                |Oled_Display       |   289|
++------+----------------------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:01:24 . Memory (MB): peak = 824.832 ; gain = 567.949
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 827.945 ; gain = 570.973
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 149 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:01:16 . Memory (MB): peak = 824.832 ; gain = 227.582
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:01:24 . Memory (MB): peak = 824.832 ; gain = 567.949
+Synthesis finished with 0 errors, 0 critical warnings and 218 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 827.945 ; gain = 367.324
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 827.945 ; gain = 570.973
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 98 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -954,11 +1162,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-140 Infos, 204 Warnings, 0 Critical Warnings and 0 Errors encountered.
+141 Infos, 429 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:01:27 . Memory (MB): peak = 824.832 ; gain = 580.977
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 827.945 ; gain = 584.043
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/Top_Student.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 824.832 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Mar 24 20:42:44 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 827.945 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 25 13:20:13 2023...

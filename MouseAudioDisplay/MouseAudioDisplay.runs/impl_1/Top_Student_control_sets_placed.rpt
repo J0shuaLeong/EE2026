@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Fri Mar 24 20:43:32 2023
-| Host         : LAPTOP-MVMLE90N running 64-bit major release  (build 9200)
+| Date         : Sat Mar 25 13:20:51 2023
+| Host         : DESKTOP-GHKQD81 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
 | Design       : Top_Student
 | Device       : xc7a35t
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    34 |
-| Unused register locations in slices containing registers |    98 |
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    40 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,11 +34,10 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      2 |            9 |
-|      4 |            1 |
-|      8 |            2 |
-|     14 |            2 |
-|    16+ |           20 |
+|      2 |            2 |
+|      8 |            1 |
+|     14 |            1 |
+|    16+ |           14 |
 +--------+--------------+
 
 
@@ -48,55 +47,39 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             284 |           46 |
-| No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             422 |           62 |
-| Yes          | No                    | No                     |             178 |           23 |
+| No           | No                    | No                     |             210 |           37 |
+| No           | No                    | Yes                    |               2 |            1 |
+| No           | Yes                   | No                     |             312 |           45 |
+| Yes          | No                    | No                     |             156 |           21 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             130 |           25 |
+| Yes          | Yes                   | No                     |              72 |           10 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+---------------------+------------------------------------------------------+------------------------------------------------------+------------------+----------------+
-|     Clock Signal    |                     Enable Signal                    |                   Set/Reset Signal                   | Slice Load Count | Bel Load Count |
-+---------------------+------------------------------------------------------+------------------------------------------------------+------------------+----------------+
-| ~clk6p25m_BUFG      |                                                      |                                                      |                1 |              2 |
-|  clock_IBUF_BUFG    | lvl/Q[0]                                             | lvl/SR[0]                                            |                1 |              2 |
-|  clock_IBUF_BUFG    | lvl/led_reg[4]                                       | lvl/SR[3]                                            |                1 |              2 |
-|  clock_IBUF_BUFG    | lvl/led_reg[6]                                       | lvl/SR[5]                                            |                1 |              2 |
-|  clock_IBUF_BUFG    | lvl/led_reg[8]                                       | lvl/SR[7]                                            |                1 |              2 |
-|  clock_IBUF_BUFG    | lvl/led_reg[7]                                       | lvl/SR[6]                                            |                1 |              2 |
-|  clock_IBUF_BUFG    | ds/p_1_in                                            | ds/dp_i_1_n_0                                        |                1 |              2 |
-|  clock_IBUF_BUFG    | lvl/led_reg[5]                                       | lvl/SR[4]                                            |                1 |              2 |
-|  clock_IBUF_BUFG    | lvl/led_reg[1]                                       | lvl/SR[1]                                            |                1 |              2 |
-|  clock_IBUF_BUFG    | lvl/led_reg[3]                                       | lvl/SR[2]                                            |                1 |              4 |
-|  ds/clk200hz/CLK    |                                                      |                                                      |                1 |              8 |
-|  clock_IBUF_BUFG    | mouse/Inst_Ps2Interface/shift_frame                  | mouse/Inst_Ps2Interface/reset_bit_count              |                2 |              8 |
-|  clock_IBUF_BUFG    | mouse/Inst_Ps2Interface/delay_63clk_count[6]_i_2_n_0 | mouse/Inst_Ps2Interface/delay_63clk_count[6]_i_1_n_0 |                2 |             14 |
-|  clock_IBUF_BUFG    | ait/E[0]                                             | ds/seg[6]_i_1_n_0                                    |                2 |             14 |
-|  clock_IBUF_BUFG    | mouse/write_data                                     |                                                      |                4 |             16 |
-|  clock_IBUF_BUFG    | mouse/Inst_Ps2Interface/load_rx_data                 |                                                      |                2 |             16 |
-|  clock_IBUF_BUFG    | mouse/Inst_Ps2Interface/frame[9]_i_1_n_0             |                                                      |                2 |             20 |
-|  clock_IBUF_BUFG    | lvl/max[11]_i_1_n_0                                  |                                                      |                3 |             22 |
-|  clock_IBUF_BUFG    | mouse/Inst_Ps2Interface/delay_20us_count[10]_i_2_n_0 | mouse/Inst_Ps2Interface/delay_20us_count[10]_i_1_n_0 |                2 |             22 |
-|  clock_IBUF_BUFG    |                                                      | clk20k/CLK                                           |                3 |             24 |
-|  clock_IBUF_BUFG    | lvl/p_0_in                                           | lvl/max[11]_i_1_n_0                                  |                4 |             24 |
-|  clk20k/CLK         |                                                      |                                                      |                2 |             24 |
-| ~ai/J_MIC_Pin4_OBUF |                                                      |                                                      |                3 |             24 |
-|  clock_IBUF_BUFG    | mouse/Inst_Ps2Interface/delay_100us_count[0]_i_2_n_0 | mouse/Inst_Ps2Interface/clear                        |                4 |             28 |
-| ~clk6p25m_BUFG      |                                                      | oled/frame_counter[16]_i_1_n_0                       |                5 |             34 |
-| ~clk6p25m_BUFG      | oled/delay[0]_i_1_n_0                                |                                                      |                5 |             40 |
-|  clock_IBUF_BUFG    |                                                      | lvl/clear                                            |                6 |             46 |
-|  clock_IBUF_BUFG    |                                                      | mouse/reset_timeout_cnt_reg_n_0                      |                7 |             48 |
-|  clock_IBUF_BUFG    |                                                      | mouse/reset_periodic_check_cnt__0                    |                7 |             52 |
-|  clock_IBUF_BUFG    |                                                      | clk20k/clear                                         |                8 |             64 |
-|  clock_IBUF_BUFG    |                                                      | ds/clk200hz/clear                                    |                8 |             64 |
-| ~clk6p25m_BUFG      | oled/state                                           |                                                      |                7 |             64 |
-| ~clk6p25m_BUFG      |                                                      | oled/spi_word[39]_i_1_n_0                            |               18 |             90 |
-|  clock_IBUF_BUFG    |                                                      |                                                      |               39 |            226 |
-+---------------------+------------------------------------------------------+------------------------------------------------------+------------------+----------------+
++-------------------------+------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+|       Clock Signal      |                     Enable Signal                    |                   Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++-------------------------+------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+| ~clk6p25m_BUFG          |                                                      |                                                      |                1 |              2 |
+|  clk20k/J_MIC_Pin1_OBUF |                                                      | sw_IBUF[1]                                           |                1 |              2 |
+|  clock_IBUF_BUFG        | mouse/Inst_Ps2Interface/shift_frame                  | mouse/Inst_Ps2Interface/reset_bit_count              |                1 |              8 |
+|  clock_IBUF_BUFG        | mouse/Inst_Ps2Interface/delay_63clk_count[6]_i_2_n_0 | mouse/Inst_Ps2Interface/delay_63clk_count[6]_i_1_n_0 |                2 |             14 |
+|  clock_IBUF_BUFG        | mouse/Inst_Ps2Interface/load_rx_data                 |                                                      |                2 |             16 |
+|  clock_IBUF_BUFG        | mouse/write_data                                     |                                                      |                4 |             16 |
+|  clock_IBUF_BUFG        | mouse/Inst_Ps2Interface/frame[9]_i_1_n_0             |                                                      |                2 |             20 |
+|  clock_IBUF_BUFG        | mouse/Inst_Ps2Interface/delay_20us_count[10]_i_2_n_0 | mouse/Inst_Ps2Interface/delay_20us_count[10]_i_1_n_0 |                3 |             22 |
+|  clock_IBUF_BUFG        |                                                      | clk20k/J_MIC_Pin1_OBUF                               |                3 |             24 |
+|  clock_IBUF_BUFG        | mouse/Inst_Ps2Interface/delay_100us_count[0]_i_2_n_0 | mouse/Inst_Ps2Interface/clear                        |                4 |             28 |
+| ~clk6p25m_BUFG          |                                                      | oled/frame_counter[16]_i_1_n_0                       |                5 |             34 |
+| ~clk6p25m_BUFG          | oled/delay[0]_i_1_n_0                                |                                                      |                5 |             40 |
+|  clock_IBUF_BUFG        |                                                      | mouse/reset_timeout_cnt_reg_n_0                      |                6 |             48 |
+|  clock_IBUF_BUFG        |                                                      | mouse/reset_periodic_check_cnt__0                    |                6 |             52 |
+| ~clk6p25m_BUFG          | oled/state                                           |                                                      |                8 |             64 |
+|  clock_IBUF_BUFG        |                                                      | clk20k/clear                                         |                8 |             64 |
+| ~clk6p25m_BUFG          |                                                      | oled/spi_word[39]_i_1_n_0                            |               17 |             90 |
+|  clock_IBUF_BUFG        |                                                      |                                                      |               36 |            208 |
++-------------------------+------------------------------------------------------+------------------------------------------------------+------------------+----------------+
 
 
