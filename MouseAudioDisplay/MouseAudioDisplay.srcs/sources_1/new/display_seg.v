@@ -24,7 +24,7 @@ module display_seg(
     input CLK,
     output reg [6:0] seg,
     output reg [3:0] an,
-    input [3:0] seg_status,
+    input [3:0] volume,
     output reg dp,
     input [3:0] seg_num1, 
     input [1:0] seg_num2,
@@ -60,16 +60,17 @@ module display_seg(
         if (sw0 == 0) begin
             if (an_on == 4'b0001) begin
                 dp <= 1;
-                case(seg_status)
-                    0: begin seg <= 7'b1000000; end
-                    1: begin seg <= 7'b1111001; end
-                    2: begin seg <= 7'b0100100; end
-                    3: begin seg <= 7'b0110000; end
-                    4: begin seg <= 7'b0011001; end
-                    5: begin seg <= 7'b0010010; end
-                    6: begin seg <= 7'b0000010; end
-                    7: begin seg <= 7'b1111000; end
-                    8: begin seg <= 7'b0000000; end
+                case (volume)
+                    4'd0: seg <= 7'b1000000;
+                    4'd1: seg <= 7'b1111001;
+                    4'd2: seg <= 7'b0100100;
+                    4'd3: seg <= 7'b0110000;
+                    4'd4: seg <= 7'b0011001;
+                    4'd5: seg <= 7'b0010010;
+                    4'd6: seg <= 7'b0000010;
+                    4'd7: seg <= 7'b1111000;
+                    4'd8: seg <= 7'b0000000;
+                    4'd9: seg <= 7'b0010000;
                 endcase
             end else if (an_on == 4'b0010) begin
                 dp <= 1;

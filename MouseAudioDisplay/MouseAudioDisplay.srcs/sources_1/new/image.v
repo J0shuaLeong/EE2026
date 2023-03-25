@@ -23,6 +23,7 @@
 module imagemodule (
   input clk,
   input [12:0] pixel_index,
+  input [2:0] display_setting,
   output reg [15:0] rgb
 );
 
@@ -30,8 +31,9 @@ module imagemodule (
   reg [31:0] counter = 0;
 
   always @(posedge clk) begin
+    if (display_setting == 0) begin
     case(counter)
-0: rgb = 16'b1010110010001110;
+            0: rgb = 16'b1010110010001110;
           1: rgb = 16'b1010110010001110;
           2: rgb = 16'b1010110010001110;
           3: rgb = 16'b1010110010001110;
@@ -6178,6 +6180,7 @@ module imagemodule (
           default: rgb = 16'b0000000000000000;    
     endcase
     counter <= pixel_index ;
+    end
   end
 
 endmodule

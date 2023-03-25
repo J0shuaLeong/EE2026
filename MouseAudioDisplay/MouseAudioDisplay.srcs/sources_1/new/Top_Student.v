@@ -35,9 +35,18 @@ module Top_Student (
     wire score;
     
     //Menu
-    integer menu = 0;
+    reg [2:0] display_setting = 0;
+    //reg [2:0] current_setting = 0;
     always @ (posedge clock) begin
-        menu = sw[1] ? 1 : 0;
+        if (sw[15]) begin
+            display_setting = 0;
+            //current_setting = 0;
+        end 
+        
+            if (sw[14]) begin
+                display_setting = 1;
+            end
+        
     end
     
     //inputs of MouseCtl -- Setting default values
@@ -54,22 +63,34 @@ module Top_Student (
     
     //audio input
     wire count_20khz;
-    wire [11:0] MIC_IN, maxvalue; 
+    wire [11:0] MIC_IN; 
+    wire [3:0] volume;
     wire [11:0] mic_led;
     wire [3:0] led_status;
     wire [3:0] seg_status;
     wire [3:0] seg_num1;
     wire [1:0] seg_num2;
-   // wire [31:0] frequency;
+    
+    //Retrieving pixel_index for oled
+    wire [12:0] pixel_index;
+    wire [7:0] x;
+    wire [7:0] y;
+    wire [15:0] oled_data;
+    wire [15:0] oled_data1;
+    wire [15:0] oled_data2;
+    wire [15:0] oled_data3;
+    wire [11:0] nxpos;
+    wire [11:0] nypos;
     
     clk_variable clk20k (clock, 2499, count_20khz);
-    audio_level_calc lvl (clock, MIC_IN, maxvalue);
     
     Audio_Input ai (clock, count_20khz, J_MIC_Pin3, J_MIC_Pin1, J_MIC_Pin4, MIC_IN);
-    audio_intensity ait (clock, maxvalue, led, seg_status);
-    display_seg ds (clock, seg, an, seg_status, dp, seg_num1, seg_num2, score, sw[0]);
+    audio_level_calc lvl (clock, MIC_IN, volume);
+    display_led dl (volume, led);
+    display_seg ds (clock, seg, an, volume, dp, seg_num1, seg_num2, score, sw[0]);
     
     //Mic improvement
+    mic_wave mw (clock, volume, pixel_index, display_setting, oled_data2);
     //frequency_detector fd (clock, sw[1], MIC_IN, led);
     //frequency_display fdp (count_20khz, frequency, led);
     
@@ -81,14 +102,6 @@ module Top_Student (
     //6.25MHz clk input for Oled
     wire clk6p25m; 
     Clk625 clk(clock, clk6p25m);
-    
-    //Retrieving pixel_index for oled
-    wire [12:0] pixel_index;
-    wire [7:0] x;
-    wire [7:0] y;
-    wire [15:0] oled_data;
-    wire [11:0] nxpos;
-    wire [11:0] nypos;
         
     
     xycoordinate xy (.pixel_index(pixel_index), .x(x), .y(y), .xpos(xpos), .ypos(ypos), .nxpos(nxpos), .nypos(nypos));
@@ -103,8 +116,12 @@ module Top_Student (
     .sample_pixel(sample_pixel), .pixel_index(pixel_index), .pixel_data(oled_data), 
     .cs(JC[0]), .sdin(JC[1]), .sclk(JC[3]), .d_cn(JC[4]), .resn(JC[5]), .vccen(JC[6]), .pmoden(JC[7]));
     
+    assign oled_data = display_setting == 0 ? oled_data1 : display_setting == 1 ? oled_data2 : oled_data3;
+    
+    //menu
+    
     //meow
-    imagemodule img(clock, pixel_index, oled_data);
+    imagemodule img(clock, pixel_index, display_setting, oled_data1);
     
     //Whack a mole
     wire reset_n, Q;
