@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Sat Mar 25 23:20:37 2023
+| Date         : Sun Mar 26 00:53:19 2023
 | Host         : DESKTOP-GHKQD81 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Top_Student_methodology_drc_routed.rpt -pb Top_Student_methodology_drc_routed.pb -rpx Top_Student_methodology_drc_routed.rpx
 | Design       : Top_Student
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 323
+             Violations found: 345
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell   | 264        |
+| TIMING-17 | Warning  | Non-clocked sequential cell   | 286        |
 | TIMING-18 | Warning  | Missing input or output delay | 40         |
 | TIMING-20 | Warning  | Non-clocked latch             | 19         |
 +-----------+----------+-------------------------------+------------+
@@ -781,575 +781,685 @@ Related violations: <none>
 
 TIMING-17#150 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[0]/C is not reached by a timing clock
+The clock pin nolabel_line129/char_count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#151 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[10]/C is not reached by a timing clock
+The clock pin nolabel_line129/char_count_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#152 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[11]/C is not reached by a timing clock
+The clock pin nolabel_line129/char_count_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#153 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[12]/C is not reached by a timing clock
+The clock pin nolabel_line129/char_count_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#154 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[13]/C is not reached by a timing clock
+The clock pin nolabel_line129/char_count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#155 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[14]/C is not reached by a timing clock
+The clock pin nolabel_line129/char_count_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#156 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[15]/C is not reached by a timing clock
+The clock pin nolabel_line129/char_count_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#157 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[16]/C is not reached by a timing clock
+The clock pin nolabel_line129/char_count_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#158 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[17]/C is not reached by a timing clock
+The clock pin nolabel_line129/char_count_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#159 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[18]/C is not reached by a timing clock
+The clock pin nolabel_line129/char_count_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#160 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[19]/C is not reached by a timing clock
+The clock pin nolabel_line129/char_count_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#161 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[1]/C is not reached by a timing clock
+The clock pin nolabel_line129/char_count_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#162 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[20]/C is not reached by a timing clock
+The clock pin nolabel_line129/char_count_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#163 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[21]/C is not reached by a timing clock
+The clock pin nolabel_line129/char_count_reg_rep[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#164 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[22]/C is not reached by a timing clock
+The clock pin nolabel_line129/char_count_reg_rep[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#165 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[23]/C is not reached by a timing clock
+The clock pin nolabel_line129/nolabel_line129/rgb_reg_0_cooolgate_en_gate_1_cooolDelFlop/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#166 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[24]/C is not reached by a timing clock
+The clock pin nolabel_line129/nolabel_line129/rgb_reg_0_cooolgate_en_gate_2_cooolDelFlop/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#167 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[25]/C is not reached by a timing clock
+The clock pin nolabel_line129/nolabel_line129/rgb_reg_0_cooolgate_en_gate_3_cooolDelFlop/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#168 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[26]/C is not reached by a timing clock
+The clock pin nolabel_line129/rgb_reg_0/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#169 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[27]/C is not reached by a timing clock
+The clock pin nolabel_line129/rgb_reg_1/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#170 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[28]/C is not reached by a timing clock
+The clock pin nolabel_line129/rgb_reg_2/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#171 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[29]/C is not reached by a timing clock
+The clock pin nolabel_line129/rgb_reg_3/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#172 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[2]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#173 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[30]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#174 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[31]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#175 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[3]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#176 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[4]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#177 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[5]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#178 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[6]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#179 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[7]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#180 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[8]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#181 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[9]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#182 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[0]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#183 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[10]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#184 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[11]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#185 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[12]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#186 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[13]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#187 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[14]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#188 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[15]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#189 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[16]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#190 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[17]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#191 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[18]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#192 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[19]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#193 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[1]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#194 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[2]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#195 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[3]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#196 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[4]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#197 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[5]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#198 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[6]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#199 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[7]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#200 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[8]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#201 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[9]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#202 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[0]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#203 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[10]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#204 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[11]/C is not reached by a timing clock
+The clock pin oled/delay_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#205 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[12]/C is not reached by a timing clock
+The clock pin oled/delay_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#206 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[13]/C is not reached by a timing clock
+The clock pin oled/delay_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#207 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[14]/C is not reached by a timing clock
+The clock pin oled/delay_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#208 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[15]/C is not reached by a timing clock
+The clock pin oled/delay_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#209 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[16]/C is not reached by a timing clock
+The clock pin oled/delay_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#210 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[1]/C is not reached by a timing clock
+The clock pin oled/delay_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#211 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[2]/C is not reached by a timing clock
+The clock pin oled/delay_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#212 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[3]/C is not reached by a timing clock
+The clock pin oled/delay_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#213 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[4]/C is not reached by a timing clock
+The clock pin oled/delay_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#214 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[5]/C is not reached by a timing clock
+The clock pin oled/delay_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#215 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[6]/C is not reached by a timing clock
+The clock pin oled/delay_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#216 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[7]/C is not reached by a timing clock
+The clock pin oled/delay_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#217 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[8]/C is not reached by a timing clock
+The clock pin oled/delay_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#218 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[9]/C is not reached by a timing clock
+The clock pin oled/delay_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#219 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_bit_count_reg[0]/C is not reached by a timing clock
+The clock pin oled/delay_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#220 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_bit_count_reg[1]/C is not reached by a timing clock
+The clock pin oled/delay_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#221 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_bit_count_reg[2]/C is not reached by a timing clock
+The clock pin oled/delay_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#222 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_bit_count_reg[3]/C is not reached by a timing clock
+The clock pin oled/delay_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#223 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_bit_count_reg[4]/C is not reached by a timing clock
+The clock pin oled/delay_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#224 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_bit_count_reg[5]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#225 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[0]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#226 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[10]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#227 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[11]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#228 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[12]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#229 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[13]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#230 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[14]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#231 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[15]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#232 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[16]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#233 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[17]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#234 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[18]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#235 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[19]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#236 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[1]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#237 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[20]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#238 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[21]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#239 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[22]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#240 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[23]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#241 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[24]/C is not reached by a timing clock
+The clock pin oled/spi_word_bit_count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#242 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[25]/C is not reached by a timing clock
+The clock pin oled/spi_word_bit_count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#243 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[26]/C is not reached by a timing clock
+The clock pin oled/spi_word_bit_count_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#244 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[27]/C is not reached by a timing clock
+The clock pin oled/spi_word_bit_count_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#245 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[28]/C is not reached by a timing clock
+The clock pin oled/spi_word_bit_count_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#246 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[29]/C is not reached by a timing clock
+The clock pin oled/spi_word_bit_count_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#247 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[2]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#248 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[30]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#249 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[31]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#250 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[32]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#251 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[33]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#252 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[34]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#253 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[35]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#254 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[36]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#255 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[37]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#256 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[38]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#257 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[39]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#258 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[3]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#259 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[4]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#260 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[5]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#261 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[6]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#262 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[7]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#263 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[8]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#264 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#265 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#266 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#267 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#268 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#269 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#270 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#271 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#272 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[32]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#273 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[33]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#274 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[34]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#275 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[35]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#276 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[36]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#277 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[37]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#278 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[38]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#279 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[39]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#280 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#281 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#282 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#283 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#284 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#285 Warning
+Non-clocked sequential cell  
+The clock pin oled/spi_word_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#286 Warning
 Non-clocked sequential cell  
 The clock pin oled/spi_word_reg[9]/C is not reached by a timing clock
 Related violations: <none>

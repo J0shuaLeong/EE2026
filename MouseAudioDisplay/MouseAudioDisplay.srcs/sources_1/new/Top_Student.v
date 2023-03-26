@@ -22,6 +22,7 @@ module Top_Student (
     input [15:0] sw,
     inout ps2data,
     input J_MIC_Pin3,
+    input btnD, btnU,
     output J_MIC_Pin1,
     output J_MIC_Pin4,
     output [7:0] JC,
@@ -36,17 +37,18 @@ module Top_Student (
     
     //Menu
     reg [2:0] display_setting = 0;
-    //reg [2:0] current_setting = 0;
+    reg [2:0] current_setting = 0;
     always @ (posedge clock) begin
         if (sw[15]) begin
             display_setting = 0;
             //current_setting = 0;
         end 
-        
-            if (sw[14]) begin
-                display_setting = 1;
-            end
-        
+        if (sw[14]) begin
+            display_setting = 1;
+        end
+        if (sw[13]) begin
+            display_setting = 2;
+        end
     end
     
     //inputs of MouseCtl -- Setting default values
@@ -63,6 +65,8 @@ module Top_Student (
     
     //audio input
     wire count_20khz;
+    wire count_6_25MHz;
+    wire count_0_16s;
     wire [11:0] MIC_IN; 
     wire [3:0] volume;
     wire [11:0] mic_led;
@@ -82,7 +86,10 @@ module Top_Student (
     wire [11:0] nxpos;
     wire [11:0] nypos;
     
+    
     clk_variable clk20k (clock, 2499, count_20khz);
+    clk_variable clk2(clock, 7, count_6_25MHz);
+    clk_variable clk3(clock, 7999999, count_0_16s);
     
     Audio_Input ai (clock, count_20khz, J_MIC_Pin3, J_MIC_Pin1, J_MIC_Pin4, MIC_IN);
     audio_level_calc lvl (clock, MIC_IN, volume);
@@ -119,7 +126,7 @@ module Top_Student (
     assign oled_data = display_setting == 0 ? oled_data1 : display_setting == 1 ? oled_data2 : oled_data3;
     
     //menu
-    
+    menu_display (count_6_25MHz, count_0_16s, display_setting, pixel_index, current_setting, btnD, btnU, oled_data3);
     //meow
     imagemodule img(clock, pixel_index, display_setting, oled_data1);
     
