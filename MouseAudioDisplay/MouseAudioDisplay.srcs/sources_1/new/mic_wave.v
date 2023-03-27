@@ -21,7 +21,7 @@
 
 
 module mic_wave(
-    input CLK,
+    input clk,
     input [3:0] volume,
     input [12:0] pixel_index,
     input [2:0] current_option,
@@ -33,18 +33,16 @@ module mic_wave(
     output reg [15:0] oled_data
 );
     reg [3:0] capture [23:0];
-    wire count_10Hz;
-    clk_variable clk1(CLK, 4999999, count_10Hz);
     reg [6:0] x_pos = 0;
     reg [6:0] y_pos = 0;
-  
     reg [6:0] middle = 31;
-  
-    integer j;
-    
     reg [1:0] state;
     reg [15:0] background;
     reg pause = 0;
+    integer j;
+    
+    wire count_10Hz;
+    clk_variable clk1(clk, 4999999, count_10Hz);
     
     wire cursor;
     assign cursor = ( ((y >= ypos && y <= ypos + 5) && (x >= xpos) && (x <= xpos + 5)) &&
@@ -59,7 +57,7 @@ module mic_wave(
     assign low = (oled_data == 2016);
 
     always @ volume begin
-        state = volume[2]<<1 | volume[0];
+        state = volume[2] << 1 | volume[0];
         case(state)
             0: background = {5'b00000, 1'b0, volume, 1'b0, 5'b00000};
             1: background = {1'b0, volume, 5'b00000, 1'b0, 5'b00111};
@@ -139,7 +137,7 @@ module mic_wave(
       end
     end
    
-    always @ (posedge CLK) begin
+    always @ (posedge clk) begin
         if (btnC) pause = ~pause;
        // if (low) 
     end

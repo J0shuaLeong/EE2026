@@ -56,6 +56,7 @@ module Top_Student (
     wire [15:0] oled_data3;
     wire [15:0] oled_data4;
     wire [15:0] oled_data5;
+    wire [15:0] oled_data6;
     wire [11:0] nxpos;
     wire [11:0] nypos;
     //outputs of Oled_Display module
@@ -84,63 +85,60 @@ module Top_Student (
     end
     
     always @ (posedge clock) begin
-        if (sw[15]) begin
+        if (sw[14]) begin
                 main_menu_option = 0; //display main menu
                 current_option = 0; //display task
                 task_option = 0;
         end 
         if (nxpos >= 10 && nxpos <= 84 && (nypos >= 16 - scroll_count) && (nypos <= 30 - scroll_count) && main_menu_option == 0) begin
-             //Joshua
-            current_option = left ? 1 : current_option;
+            current_option = left ? 1 : current_option; //Joshua
         end
         else if (nxpos >= 10 && nxpos <= 84 && (nypos >= 32 - scroll_count) && (nypos <= 46 - scroll_count) && main_menu_option == 0) begin
-            current_option = left ? 2 : current_option;
+            current_option = left ? 2 : current_option; //Naychi
         end
         else if (nxpos >= 10 && nxpos <= 84 && (nypos >= 48 - scroll_count) && (nypos <= 62 - scroll_count) && main_menu_option == 0) begin
-            current_option = left ? 3 : current_option;
+            current_option = left ? 3 : current_option; //Shanice
         end
         if (nxpos >= 10 && nxpos <= 84 && (nypos >= 68 - scroll_count) && (nypos <= 93 - scroll_count) && main_menu_option == 0) begin
-            //current_option = left ? 4 : current_option; //Group task
+            current_option = left ? 4 : current_option; //Group task
         end
         if (nxpos >= 10 && nxpos <= 84 && (nypos >= 97 - scroll_count) && (nypos <= 122 - scroll_count) && main_menu_option == 0) begin
             //current_option = left ? 5 : current_option; //game
         end
         
             
-        if (current_option == 1) begin //joshua
+        if (current_option == 1) begin //Joshua
             main_menu_option = 1;
             if (nxpos >= 10 && nxpos <= 84 && nypos >= 5 && nypos <= 29) begin
-                task_option = left ? 1 : task_option;
+                task_option = left ? 1 : task_option; //mic task
             end
             else if (nxpos >= 10 && nxpos <= 84 && nypos >= 35 && nypos <= 59) begin
-                task_option = left ? 2 : task_option;
+                task_option = left ? 2 : task_option; //mic improvement
             end
         end
-        else if (current_option == 2) begin
+        else if (current_option == 2) begin //Naychi 
             main_menu_option = 1;
         end
-        else if (current_option == 3) begin
+        else if (current_option == 3) begin //Shanice
             main_menu_option = 1;
         end
-        else if (current_option == 4) begin
+        else if (current_option == 4) begin //Group task
             main_menu_option = 1;
         end
-        else if (current_option == 5) begin
+        else if (current_option == 5) begin //group improvement
             main_menu_option = 1;
         end
     end
     
-     clk_variable clk20k (clock, 2499, count_20khz);
+     clk_variable clk20k (clock, 2499, count_20khz); //clk for mic
      clk_variable clk2 (clock, 7, count_6_25MHz); 
      clk_variable clk3 (clock, 7999999, count_0_16s); //slow clk for menu animation
-     Clk625 clk(clock, clk6p25m);
-     clk_variable clk100 (clock, 500000, count_100hz);
+     clk_variable clk100 (clock, 499999, count_100hz);
      
-    //mic
+    //mic individual task
     Audio_Input ai (clock, count_20khz, J_MIC_Pin3, J_MIC_Pin1, J_MIC_Pin4, MIC_IN);
     audio_level_calc lvl (clock, MIC_IN, volume);
-    display_led dl (volume, task_option, led, seg, an, dp);
-    //display_seg ds (clock, seg, an, volume, dp, seg_num1, seg_num2, score, sw[0], task_option);
+    display_led dl (volume, current_option, task_option, led, seg, an, dp); //display led and seg
     
     //Mic improvement
     mic_wave mw (clock, volume, pixel_index, task_option, btnC, nxpos, nypos, x, y, oled_data3);   
@@ -151,27 +149,29 @@ module Top_Student (
     .ps2_clk(ps2clk), .ps2_data(ps2data)
     );
     xycoordinate xy (.pixel_index(pixel_index), .x(x), .y(y), .xpos(xpos), .ypos(ypos), .nxpos(nxpos), .nypos(nypos));
-    oled_indiv_task oledTask(.x(x), .y(y), .sw(sw), .current_option(current_option), .pixel_color(oled_data5));
+    //mouse individual task
+    mouse_task mouseTask(.x(x),.y(y), .xpos(nxpos), .ypos(nypos), .middle(middle), .current_option(current_option), .pixel_color(oled_data4));
    
-    //grp_task_module oledGrpTask(.x(x), .y(y), .pixel_color(oled_data),.xpos(nxpos), .ypos(nypos), .right(right), .left(left), 
-                               // .sw(sw), .led15(led[15]), .seg_num1(seg_num1), .seg_num2(seg_num2));
-    mouse_task mouseTask(.x(x),.y(y), .xpos(nxpos), .ypos(nypos), .middle(middle), .pixel_color(oled_data4), .current_option(current_option));
+    //group task
+    grp_task_module oledGrpTask(.x(x), .y(y), .pixel_color(oled_data6),.xpos(nxpos), .ypos(nypos), .right(right), .left(left), 
+                                .sw(sw), .current_option(current_option), .led15(led[15]), .seg_num1(seg_num1), .seg_num2(seg_num2));
+    display_seg ds (clock, seg, an, volume, dp, seg_num1, seg_num2, current_option, task_option);
+   
     
-    Oled_Display oled (.clk(clk6p25m), .reset(0), .frame_begin(frame_begin), .sending_pixels(sending_pixels), 
+    //Oled
+    Oled_Display oled (.clk(count_6_25MHz), .reset(0), .frame_begin(frame_begin), .sending_pixels(sending_pixels), 
     .sample_pixel(sample_pixel), .pixel_index(pixel_index), .pixel_data(oled_data), 
     .cs(JC[0]), .sdin(JC[1]), .sclk(JC[3]), .d_cn(JC[4]), .resn(JC[5]), .vccen(JC[6]), .pmoden(JC[7]));
+    //Oled individual task
+    oled_indiv_task oledTask(.x(x), .y(y), .sw(sw), .current_option(current_option), .pixel_color(oled_data5));
     
-    assign oled_data = current_option == 1 ? task_option == 2 ? oled_data3 : oled_data2 : current_option == 2 ? oled_data4 : current_option == 3 ? oled_data5 : oled_data1;
-    
-    
+    assign oled_data = current_option == 1 ? task_option == 2 ? oled_data3 : oled_data2 : current_option == 2 ? oled_data4 : current_option == 3 ? oled_data5 : current_option == 4 ? oled_data6 : oled_data1;
+
     //menu
-    //menu_display (count_6_25MHz, count_0_16s, main_menu_option, pixel_index, current_option, btnD, btnU, nxpos, nypos, x, y, scroll_count, oled_data1);
-    //menu_2 (count_6_25MHz, count_0_16s, pixel_index, current_option, nxpos, nypos, x, y, oled_data2);
+    menu_display (count_6_25MHz, count_0_16s, main_menu_option, pixel_index, current_option, btnD, btnU, nxpos, nypos, x, y, scroll_count, oled_data1);
+    menu_2 (clock, count_6_25MHz, pixel_index, current_option, nxpos, nypos, x, y, oled_data2);
     //meow
     //imagemodule img(clock, pixel_index, display_setting, oled_data1);
-    
-    //mouse_scroll ms(.z_pos(zpos), .led(led));
-    //assign led = zpos;
     
     //Whack a mole
     //whack_a_mole wm (.x(x), .y(y), .pixel_color(oled_data),.x_pos(nxpos), .y_pos(nypos), .left(left), .score(score), .clk(clock));
@@ -179,8 +179,8 @@ module Top_Student (
     
 endmodule
 
-module mouse_task (input [7:0] x, y, input middle, input [11:0] xpos, input [11:0] ypos, output reg [15:0] pixel_color, input [2:0] current_option);
-    /*Part b*/
+/*(module mouse_task (input [7:0] x, y, input middle, input [11:0] xpos, input [11:0] ypos, output reg [15:0] pixel_color, input [2:0] current_option);
+    //part b
     wire cursor1, cursor2;
     assign cursor1 = ((x>40 && x<51 && y>30 && y<35));
     assign cursor2 = ((x>30 && x<55 && y>25 && y<40));
@@ -191,30 +191,18 @@ module mouse_task (input [7:0] x, y, input middle, input [11:0] xpos, input [11:
                pixel_color = ( x <= ((xpos%96) + 3) && x >= (xpos%96) && (y <= (ypos%64) + 3) && y >= (ypos%64))? red : black;
            else
                pixel_color = ( x <= ((xpos%96) + 5) && x >= (xpos%96) && (y <= (ypos%64) + 5) && y >= (ypos%64))? red : black;
-           end
+       end
     end
-endmodule
+endmodule*/
 
-module Clk625 (input CLOCK, output clk6p25m);
-    reg SLOW_CLOCK;
-    reg [3:0] COUNT = 4'b0000;
-    
-    assign clk6p25m = SLOW_CLOCK;
-    
-    always @ (posedge CLOCK) begin
-        COUNT <= COUNT + 1;
-        SLOW_CLOCK <= (COUNT == 4'b0000) ? ~SLOW_CLOCK : SLOW_CLOCK;
-    end
-endmodule
-
-module xycoordinate (input [12:0] pixel_index, output [7:0] x, [7:0] y, input [11:0] xpos, [11:0] ypos, output [11:0] nxpos, [11:0] nypos);
+/*module xycoordinate (input [12:0] pixel_index, output [7:0] x, [7:0] y, input [11:0] xpos, [11:0] ypos, output [11:0] nxpos, [11:0] nypos);
     assign x = pixel_index % 96;
     assign y = pixel_index / 96;
     assign nxpos = (xpos > 92) ? 92 : xpos;
     assign nypos = (ypos > 60) ? 60 : ypos;
-endmodule
+endmodule*/
 
-module oled_indiv_task (input [7:0] x, y, input [3:0] sw, input [2:0] current_option, output reg [15:0] pixel_color);
+/*module oled_indiv_task (input [7:0] x, y, input [3:0] sw, input [2:0] current_option, output reg [15:0] pixel_color);
 
     //boolean for display, OR (||) to combine, AND (&&!) unselect within selected area
     wire lines, zero, one, two;
@@ -237,4 +225,4 @@ module oled_indiv_task (input [7:0] x, y, input [3:0] sw, input [2:0] current_op
             if (lines) pixel_color = sw[3] ? green : black;
         end     
     end
-endmodule
+endmodule*/

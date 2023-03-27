@@ -22,7 +22,7 @@
 
 module menu_2(
     input clk,
-    input slow_clk,
+    input clk_6_25Mhz,
     input [12:0] pixel_index,
     input [2:0] current_option,
     input [11:0] xpos, 
@@ -35,7 +35,10 @@ module menu_2(
     reg [31:0] char_count = 0;
     reg [1:0] frame_count = 0;
     reg slow = 0;
+    wire slow_clk;
     wire cursor;
+    
+    clk_variable (clk, 7999999, slow_clk);
     
     always @ (posedge slow_clk) begin
         slow = slow + 1;
@@ -48,7 +51,7 @@ module menu_2(
                                !((y == ypos + 4) && (x == xpos + 2)) &&
                                !((y == ypos + 5) && (x >= xpos + 2) && (x <= xpos + 3)) );
         
-    always @ (posedge clk) begin
+    always @ (posedge clk_6_25Mhz) begin
         if (current_option == 1) begin
             if (frame_count == 0) begin
             case(char_count)
