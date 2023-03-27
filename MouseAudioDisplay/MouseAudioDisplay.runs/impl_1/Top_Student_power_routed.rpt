@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Mon Mar 27 22:34:04 2023
+| Date             : Mon Mar 27 22:56:39 2023
 | Host             : LAPTOP-MVMLE90N running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Student_power_routed.rpt -pb Top_Student_power_summary_routed.pb -rpx Top_Student_power_routed.rpx
 | Design           : Top_Student
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.109        |
+| Total On-Chip Power (W)  | 0.089        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.037        |
+| Dynamic (W)              | 0.018        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.5         |
-| Junction Temperature (C) | 25.5         |
+| Max Ambient (C)          | 84.6         |
+| Junction Temperature (C) | 25.4         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,17 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.004 |        3 |       --- |             --- |
-| Slice Logic    |     0.017 |     5640 |       --- |             --- |
-|   LUT as Logic |     0.016 |     3703 |     20800 |           17.80 |
-|   CARRY4       |    <0.001 |      320 |      8150 |            3.93 |
-|   F7/F8 Muxes  |    <0.001 |      162 |     32600 |            0.50 |
-|   Register     |    <0.001 |      883 |     41600 |            2.12 |
-|   BUFG         |    <0.001 |        4 |        32 |           12.50 |
-|   Others       |     0.000 |       47 |       --- |             --- |
-| Signals        |     0.015 |     4466 |       --- |             --- |
-| I/O            |     0.002 |       50 |       106 |           47.17 |
+| Slice Logic    |     0.007 |     3392 |       --- |             --- |
+|   LUT as Logic |     0.006 |     1926 |     20800 |            9.26 |
+|   CARRY4       |    <0.001 |      253 |      8150 |            3.10 |
+|   Register     |    <0.001 |      748 |     41600 |            1.80 |
+|   BUFG         |    <0.001 |        3 |        32 |            9.38 |
+|   Others       |     0.000 |       33 |       --- |             --- |
+| Signals        |     0.006 |     2599 |       --- |             --- |
+| I/O            |     0.001 |       50 |       106 |           47.17 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.109 |          |           |                 |
+| Total          |     0.089 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.046 |       0.036 |      0.010 |
+| Vccint    |       1.000 |     0.026 |       0.017 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -142,24 +141,20 @@ Table of Contents
 +-----------------------+-----------+
 | Name                  | Power (W) |
 +-----------------------+-----------+
-| Top_Student           |     0.037 |
+| Top_Student           |     0.018 |
 |   ai                  |    <0.001 |
 |   clk                 |    <0.001 |
 |   clk100              |    <0.001 |
-|   clk2                |    <0.001 |
 |   clk20k              |    <0.001 |
-|   clk3                |    <0.001 |
 |   dl                  |     0.000 |
 |   lvl                 |    <0.001 |
 |     clk1              |    <0.001 |
 |   mouse               |     0.005 |
 |     Inst_Ps2Interface |     0.001 |
 |   mouseTask           |    <0.001 |
-|   mw                  |     0.001 |
+|   mw                  |     0.002 |
 |     clk1              |    <0.001 |
-|   nolabel_line168     |     0.014 |
-|   nolabel_line169     |    <0.001 |
-|   oled                |     0.011 |
+|   oled                |     0.007 |
 |   oledTask            |    <0.001 |
 |   ps2clk_IOBUF_inst   |     0.000 |
 |   ps2data_IOBUF_inst  |     0.000 |

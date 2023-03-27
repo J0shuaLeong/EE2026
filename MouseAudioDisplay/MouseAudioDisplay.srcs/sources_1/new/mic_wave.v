@@ -52,6 +52,11 @@ module mic_wave(
                           !((y == ypos + 3) && (x == xpos + 5)) &&
                           !((y == ypos + 4) && (x == xpos + 2)) &&
                           !((y == ypos + 5) && (x >= xpos + 2) && (x <= xpos + 3)) );
+                          
+    wire low, mid, high;
+    assign high = oled_data == 63488;
+    assign mid = oled_data == 65504;
+    assign low = (oled_data == 2016);
 
     always @ volume begin
         state = volume[2]<<1 | volume[0];
@@ -126,14 +131,17 @@ module mic_wave(
                        end
                         else begin
                             oled_data = background;
+                            
                         end 
             end
         end
+        if (cursor) oled_data = 16'hFFFF;
       end
     end
    
     always @ (posedge CLK) begin
         if (btnC) pause = ~pause;
+       // if (low) 
     end
     
     always @ (posedge count_10Hz) begin

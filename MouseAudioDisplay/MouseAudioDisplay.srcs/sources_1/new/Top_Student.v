@@ -71,8 +71,8 @@ module Top_Student (
     
     //Menu
     reg [2:0] main_menu_option = 0;
-    reg [2:0] current_option = 0;
-    reg [2:0] task_option = 0;
+    reg [2:0] current_option = 1;
+    reg [2:0] task_option = 2;
     reg [31:0] scroll_count = 0;
     always @ (posedge count_100hz) begin
         if (btnU) begin
@@ -165,8 +165,8 @@ module Top_Student (
     
     
     //menu
-    menu_display (count_6_25MHz, count_0_16s, main_menu_option, pixel_index, current_option, btnD, btnU, nxpos, nypos, x, y, scroll_count, oled_data1);
-    menu_2 (count_6_25MHz, count_0_16s, pixel_index, current_option, nxpos, nypos, x, y, oled_data2);
+    //menu_display (count_6_25MHz, count_0_16s, main_menu_option, pixel_index, current_option, btnD, btnU, nxpos, nypos, x, y, scroll_count, oled_data1);
+    //menu_2 (count_6_25MHz, count_0_16s, pixel_index, current_option, nxpos, nypos, x, y, oled_data2);
     //meow
     //imagemodule img(clock, pixel_index, display_setting, oled_data1);
     
