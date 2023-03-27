@@ -26,6 +26,10 @@ module mic_wave(
     input [12:0] pixel_index,
     input [2:0] current_option,
     input btnC,
+    input [11:0] xpos, 
+    input [11:0] ypos,
+    input [7:0] x, 
+    input [7:0] y,
     output reg [15:0] oled_data
 );
     reg [3:0] capture [23:0];
@@ -42,6 +46,13 @@ module mic_wave(
     reg [15:0] background;
     reg pause = 0;
     
+    wire cursor;
+    assign cursor = ( ((y >= ypos && y <= ypos + 5) && (x >= xpos) && (x <= xpos + 5)) &&
+                          !((y == ypos + 2) && (x >= xpos + 4) && (x <= xpos + 5)) &&
+                          !((y == ypos + 3) && (x == xpos + 5)) &&
+                          !((y == ypos + 4) && (x == xpos + 2)) &&
+                          !((y == ypos + 5) && (x >= xpos + 2) && (x <= xpos + 3)) );
+
     always @ volume begin
         state = volume[2]<<1 | volume[0];
         case(state)
@@ -126,6 +137,7 @@ module mic_wave(
     end
     
     always @ (posedge count_10Hz) begin
+        if (!pause) begin
             capture[23] = volume;
             capture[22] <= capture[23];
             capture[21] <= capture[22];
@@ -150,5 +162,6 @@ module mic_wave(
             capture[2] <= capture[3];
             capture[1] <= capture[2];
             capture[0] <= capture[1];
+        end
    end 
 endmodule

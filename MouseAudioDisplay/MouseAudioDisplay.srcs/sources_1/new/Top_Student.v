@@ -143,7 +143,7 @@ module Top_Student (
     //display_seg ds (clock, seg, an, volume, dp, seg_num1, seg_num2, score, sw[0], task_option);
     
     //Mic improvement
-    mic_wave mw (clock, volume, pixel_index, task_option, btnC, oled_data3);   
+    mic_wave mw (clock, volume, pixel_index, task_option, btnC, nxpos, nypos, x, y, oled_data3);   
     
     //instantiation of MouseCtl
     MouseCtl mouse(.clk(clock), .rst(0), .value(defaultvalue), .setx(setx), .sety(sety), .setmax_x(setmax_x), .setmax_y(setmax_y),
@@ -214,7 +214,7 @@ module xycoordinate (input [12:0] pixel_index, output [7:0] x, [7:0] y, input [1
     assign nypos = (ypos > 60) ? 60 : ypos;
 endmodule
 
-module oled_indiv_task (input [7:0] x, y, input [2:0] sw, input [2:0] current_option, output reg [15:0] pixel_color);
+module oled_indiv_task (input [7:0] x, y, input [3:0] sw, input [2:0] current_option, output reg [15:0] pixel_color);
 
     //boolean for display, OR (||) to combine, AND (&&!) unselect within selected area
     wire lines, zero, one, two;

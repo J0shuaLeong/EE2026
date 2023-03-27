@@ -14,60 +14,57 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 32120 
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:13]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:14]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:15]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:16]
+INFO: Helper process launched with PID 2356 
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:13]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:14]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:15]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:16]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 384.070 ; gain = 124.773
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 382.973 ; gain = 126.367
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:18]
-INFO: [Synth 8-6157] synthesizing module 'clk_variable' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clk_variable.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'clk_variable' (1#1) [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clk_variable.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Clk625' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:198]
-INFO: [Synth 8-6155] done synthesizing module 'Clk625' (2#1) [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:198]
-INFO: [Synth 8-6157] synthesizing module 'Audio_Input' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Input.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'Audio_Input' (3#1) [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Input.v:25]
-INFO: [Synth 8-6157] synthesizing module 'audio_level_calc' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_level_calc.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'audio_level_calc' (4#1) [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_level_calc.v:23]
-INFO: [Synth 8-6157] synthesizing module 'display_led' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v:35]
-INFO: [Synth 8-6155] done synthesizing module 'display_led' (5#1) [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v:23]
-INFO: [Synth 8-6157] synthesizing module 'mic_wave' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v:23]
-WARNING: [Synth 8-567] referenced signal 'current_option' should be on the sensitivity list [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v:53]
-WARNING: [Synth 8-567] referenced signal 'capture' should be on the sensitivity list [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v:53]
-WARNING: [Synth 8-567] referenced signal 'background' should be on the sensitivity list [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v:53]
-INFO: [Synth 8-4471] merging register 'capture_reg[22][3:0]' into 'capture_reg[23][3:0]' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v:122]
-WARNING: [Synth 8-6014] Unused sequential element capture_reg[22] was removed.  [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v:122]
-INFO: [Synth 8-6155] done synthesizing module 'mic_wave' (6#1) [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v:23]
-INFO: [Synth 8-638] synthesizing module 'MouseCtl' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:212]
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-6157] synthesizing module 'clk_variable' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clk_variable.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_variable' (1#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clk_variable.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Clk625' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:198]
+INFO: [Synth 8-6155] done synthesizing module 'Clk625' (2#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:198]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Input' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Input.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Input' (3#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Input.v:25]
+INFO: [Synth 8-6157] synthesizing module 'audio_level_calc' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_level_calc.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'audio_level_calc' (4#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_level_calc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_led' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'display_led' (5#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mic_wave' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v:23]
+WARNING: [Synth 8-567] referenced signal 'current_option' should be on the sensitivity list [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v:66]
+WARNING: [Synth 8-567] referenced signal 'capture' should be on the sensitivity list [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v:66]
+WARNING: [Synth 8-567] referenced signal 'background' should be on the sensitivity list [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'mic_wave' (6#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v:23]
+INFO: [Synth 8-638] synthesizing module 'MouseCtl' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:212]
 	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
 	Parameter CHECK_PERIOD_MS bound to: 500 - type: integer 
 	Parameter TIMEOUT_PERIOD_MS bound to: 100 - type: integer 
-INFO: [Synth 8-3491] module 'Ps2Interface' declared at 'C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Ps2Interface.vhd:156' bound to instance 'Inst_Ps2Interface' of component 'Ps2Interface' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:374]
-INFO: [Synth 8-638] synthesizing module 'Ps2Interface' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Ps2Interface.vhd:184]
-INFO: [Synth 8-256] done synthesizing module 'Ps2Interface' (7#1) [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Ps2Interface.vhd:184]
-WARNING: [Synth 8-6014] Unused sequential element inc_reg was removed.  [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:455]
-WARNING: [Synth 8-6014] Unused sequential element x_inter_reg was removed.  [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:461]
-WARNING: [Synth 8-6014] Unused sequential element inc_reg was removed.  [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:519]
-WARNING: [Synth 8-6014] Unused sequential element y_inter_reg was removed.  [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:525]
-INFO: [Synth 8-256] done synthesizing module 'MouseCtl' (8#1) [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:212]
-INFO: [Synth 8-6157] synthesizing module 'xycoordinate' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:210]
-INFO: [Synth 8-6155] done synthesizing module 'xycoordinate' (9#1) [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:210]
-INFO: [Synth 8-6157] synthesizing module 'oled_indiv_task' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:217]
-WARNING: [Synth 8-324] index 3 out of range [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:237]
-WARNING: [Synth 8-567] referenced signal 'current_option' should be on the sensitivity list [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:226]
-WARNING: [Synth 8-567] referenced signal 'sw' should be on the sensitivity list [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:226]
-WARNING: [Synth 8-567] referenced signal 'zero' should be on the sensitivity list [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:226]
-WARNING: [Synth 8-567] referenced signal 'one' should be on the sensitivity list [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:226]
-WARNING: [Synth 8-567] referenced signal 'two' should be on the sensitivity list [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:226]
-WARNING: [Synth 8-567] referenced signal 'lines' should be on the sensitivity list [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:226]
-INFO: [Synth 8-6155] done synthesizing module 'oled_indiv_task' (10#1) [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:217]
-WARNING: [Synth 8-689] width (16) of port connection 'sw' does not match port width (3) of module 'oled_indiv_task' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:154]
-INFO: [Synth 8-6157] synthesizing module 'mouse_task' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:182]
-INFO: [Synth 8-6155] done synthesizing module 'mouse_task' (11#1) [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:182]
-INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
+INFO: [Synth 8-3491] module 'Ps2Interface' declared at 'C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Ps2Interface.vhd:156' bound to instance 'Inst_Ps2Interface' of component 'Ps2Interface' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:374]
+INFO: [Synth 8-638] synthesizing module 'Ps2Interface' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Ps2Interface.vhd:184]
+INFO: [Synth 8-256] done synthesizing module 'Ps2Interface' (7#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Ps2Interface.vhd:184]
+WARNING: [Synth 8-6014] Unused sequential element inc_reg was removed.  [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:455]
+WARNING: [Synth 8-6014] Unused sequential element x_inter_reg was removed.  [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:461]
+WARNING: [Synth 8-6014] Unused sequential element inc_reg was removed.  [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:519]
+WARNING: [Synth 8-6014] Unused sequential element y_inter_reg was removed.  [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:525]
+INFO: [Synth 8-256] done synthesizing module 'MouseCtl' (8#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd:212]
+INFO: [Synth 8-6157] synthesizing module 'xycoordinate' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:210]
+INFO: [Synth 8-6155] done synthesizing module 'xycoordinate' (9#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:210]
+INFO: [Synth 8-6157] synthesizing module 'oled_indiv_task' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:217]
+WARNING: [Synth 8-567] referenced signal 'current_option' should be on the sensitivity list [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:226]
+WARNING: [Synth 8-567] referenced signal 'sw' should be on the sensitivity list [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:226]
+WARNING: [Synth 8-567] referenced signal 'zero' should be on the sensitivity list [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:226]
+WARNING: [Synth 8-567] referenced signal 'one' should be on the sensitivity list [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:226]
+WARNING: [Synth 8-567] referenced signal 'two' should be on the sensitivity list [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:226]
+WARNING: [Synth 8-567] referenced signal 'lines' should be on the sensitivity list [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:226]
+INFO: [Synth 8-6155] done synthesizing module 'oled_indiv_task' (10#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:217]
+WARNING: [Synth 8-689] width (16) of port connection 'sw' does not match port width (4) of module 'oled_indiv_task' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:154]
+INFO: [Synth 8-6157] synthesizing module 'mouse_task' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:182]
+INFO: [Synth 8-6155] done synthesizing module 'mouse_task' (11#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:182]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
 	Parameter Width bound to: 96 - type: integer 
 	Parameter Height bound to: 64 - type: integer 
 	Parameter PixelCount bound to: 6144 - type: integer 
@@ -118,21 +115,61 @@ INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/tangs/OneDrive
 	Parameter SendPixel bound to: 5'b10000 
 	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
 	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
-INFO: [Synth 8-226] default block is never used [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:123]
-INFO: [Synth 8-226] default block is never used [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:198]
-WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:346]
-INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (12#1) [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
-INFO: [Synth 8-6157] synthesizing module 'menu_display' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/menu_display.v:23]
-WARNING: [Synth 8-6014] Unused sequential element char_count_reg was removed.  [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/menu_display.v:54]
-INFO: [Synth 8-6155] done synthesizing module 'menu_display' (13#1) [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/menu_display.v:23]
-INFO: [Synth 8-6157] synthesizing module 'menu_2' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/menu_2.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'menu_2' (14#1) [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/menu_2.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (15#1) [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:123]
+INFO: [Synth 8-226] default block is never used [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:198]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (12#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'menu_display' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/menu_display.v:23]
+WARNING: [Synth 8-6014] Unused sequential element char_count_reg was removed.  [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/menu_display.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'menu_display' (13#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/menu_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'menu_2' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/menu_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'menu_2' (14#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/menu_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (15#1) [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:18]
 WARNING: [Synth 8-3331] design menu_display has unconnected port slow_clk
 WARNING: [Synth 8-3331] design menu_display has unconnected port main_menu_option[2]
 WARNING: [Synth 8-3331] design menu_display has unconnected port main_menu_option[1]
 WARNING: [Synth 8-3331] design menu_display has unconnected port main_menu_option[0]
 WARNING: [Synth 8-3331] design menu_display has unconnected port btnU
+WARNING: [Synth 8-3331] design mic_wave has unconnected port xpos[11]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port xpos[10]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port xpos[9]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port xpos[8]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port xpos[7]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port xpos[6]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port xpos[5]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port xpos[4]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port xpos[3]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port xpos[2]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port xpos[1]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port xpos[0]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port ypos[11]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port ypos[10]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port ypos[9]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port ypos[8]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port ypos[7]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port ypos[6]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port ypos[5]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port ypos[4]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port ypos[3]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port ypos[2]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port ypos[1]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port ypos[0]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port x[7]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port x[6]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port x[5]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port x[4]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port x[3]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port x[2]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port x[1]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port x[0]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port y[7]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port y[6]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port y[5]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port y[4]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port y[3]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port y[2]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port y[1]
+WARNING: [Synth 8-3331] design mic_wave has unconnected port y[0]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port JC[2]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[14]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[13]
@@ -145,9 +182,8 @@ WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[7]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[6]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[5]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[4]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 517.516 ; gain = 258.219
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 516.445 ; gain = 259.840
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -160,45 +196,47 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 517.516 ; gain = 258.219
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 516.445 ; gain = 259.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 517.516 ; gain = 258.219
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 516.445 ; gain = 259.840
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
-Finished Parsing XDC File [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Parsing XDC File [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 832.742 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 831.469 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 832.742 ; gain = 573.445
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 831.469 ; gain = 574.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 832.742 ; gain = 573.445
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 831.469 ; gain = 574.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 832.742 ; gain = 573.445
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 831.469 ; gain = 574.863
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "volume0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "an" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'capture_reg[23][3:0]' into 'capture_reg[22][3:0]' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v:141]
+WARNING: [Synth 8-6014] Unused sequential element capture_reg[23] was removed.  [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v:141]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Ps2Interface'
 INFO: [Synth 8-5546] ROM "reset_bit_count" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "busy" won't be mapped to RAM because it is too sparse
@@ -267,7 +305,6 @@ INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address si
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "pixel_color" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "pixel_color" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "pixel_color" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -279,11 +316,11 @@ INFO: [Synth 8-5545] ROM "rgb" won't be mapped to RAM because address size (32) 
 INFO: [Synth 8-5545] ROM "rgb" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "scroll_count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "scroll_count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-327] inferring latch for variable 'led_reg' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v:36]
-WARNING: [Synth 8-327] inferring latch for variable 'seg_reg' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v:36]
-WARNING: [Synth 8-327] inferring latch for variable 'an_reg' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'dp_reg' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v:34]
-WARNING: [Synth 8-327] inferring latch for variable 'oled_data_reg' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'led_reg' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_reg' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'an_reg' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'dp_reg' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'oled_data_reg' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v:73]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -348,8 +385,8 @@ reset_enable_reporting_wait_ack | 0000000010000000000000000000000000000 |       
    check_read_id_wait_id | 1000000000000000000000000000000000000 |                           100011
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'MouseCtl'
-WARNING: [Synth 8-327] inferring latch for variable 'pixel_color_reg' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:229]
-WARNING: [Synth 8-327] inferring latch for variable 'pixel_color_reg' [C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:191]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_color_reg' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:229]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_color_reg' [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:191]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -388,14 +425,14 @@ WARNING: [Synth 8-327] inferring latch for variable 'pixel_color_reg' [C:/Users/
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:54 . Memory (MB): peak = 853.531 ; gain = 594.234
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:01:18 . Memory (MB): peak = 851.535 ; gain = 594.930
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |Top_Student__GB0 |           1|     35351|
+|1     |Top_Student__GB0 |           1|     35190|
 |2     |Top_Student__GB1 |           1|     33321|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -432,7 +469,7 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 29    
 	                3 Bit    Registers := 3     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 43    
+	                1 Bit    Registers := 44    
 +---Multipliers : 
 	                 7x32  Multipliers := 1     
 +---Muxes : 
@@ -447,7 +484,7 @@ Detailed RTL Component Info :
 	  17 Input     17 Bit        Muxes := 1     
 	   2 Input     17 Bit        Muxes := 19    
 	   4 Input     16 Bit        Muxes := 2     
-	   2 Input     16 Bit        Muxes := 396   
+	   2 Input     16 Bit        Muxes := 400   
 	   5 Input     16 Bit        Muxes := 1     
 	   6 Input     16 Bit        Muxes := 1     
 	6147 Input     16 Bit        Muxes := 1     
@@ -455,7 +492,7 @@ Detailed RTL Component Info :
 	12289 Input     16 Bit        Muxes := 1     
 	   2 Input     13 Bit        Muxes := 3     
 	   2 Input     12 Bit        Muxes := 12    
-	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
 	   2 Input      9 Bit        Muxes := 2     
 	  37 Input      8 Bit        Muxes := 3     
 	  32 Input      6 Bit        Muxes := 1     
@@ -565,6 +602,7 @@ Module mic_wave
 Detailed RTL Component Info : 
 +---Registers : 
 	                4 Bit    Registers := 23    
+	                1 Bit    Registers := 1     
 +---Muxes : 
 	   4 Input     16 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 391   
@@ -619,6 +657,8 @@ Detailed RTL Component Info :
 Module oled_indiv_task 
 Detailed RTL Component Info : 
 +---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input     11 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
 Module mouse_task 
 Detailed RTL Component Info : 
@@ -728,7 +768,6 @@ WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[7]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[6]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[5]
 WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[4]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[3]
 INFO: [Synth 8-3886] merging instance 'i_0/mw/oled_data_reg[0]' (LD) to 'i_0/mw/oled_data_reg[1]'
 INFO: [Synth 8-3886] merging instance 'i_0/oledTask/pixel_color_reg[0]' (LD) to 'i_0/oledTask/pixel_color_reg[1]'
 INFO: [Synth 8-3886] merging instance 'i_0/mouseTask/pixel_color_reg[0]' (LD) to 'i_0/mouseTask/pixel_color_reg[10]'
@@ -741,7 +780,7 @@ INFO: [Synth 8-3886] merging instance 'i_0/mw/oled_data_reg[3]' (LD) to 'i_0/mw/
 INFO: [Synth 8-3886] merging instance 'i_0/oledTask/pixel_color_reg[3]' (LD) to 'i_0/oledTask/pixel_color_reg[4]'
 INFO: [Synth 8-3886] merging instance 'i_0/mouseTask/pixel_color_reg[3]' (LD) to 'i_0/mouseTask/pixel_color_reg[10]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/mw/\oled_data_reg[4] )
-INFO: [Synth 8-3886] merging instance 'i_0/oledTask/pixel_color_reg[4]' (LD) to 'i_0/oledTask/pixel_color_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_0/oledTask/pixel_color_reg[4]' (LD) to 'i_0/oledTask/pixel_color_reg[11]'
 INFO: [Synth 8-3886] merging instance 'i_0/mouseTask/pixel_color_reg[4]' (LD) to 'i_0/mouseTask/pixel_color_reg[10]'
 INFO: [Synth 8-3886] merging instance 'i_0/mw/oled_data_reg[5]' (LD) to 'i_0/mw/oled_data_reg[10]'
 INFO: [Synth 8-3886] merging instance 'i_0/oledTask/pixel_color_reg[5]' (LD) to 'i_0/oledTask/pixel_color_reg[6]'
@@ -754,7 +793,6 @@ INFO: [Synth 8-3886] merging instance 'i_0/oledTask/pixel_color_reg[8]' (LD) to 
 INFO: [Synth 8-3886] merging instance 'i_0/mouseTask/pixel_color_reg[8]' (LD) to 'i_0/mouseTask/pixel_color_reg[10]'
 INFO: [Synth 8-3886] merging instance 'i_0/oledTask/pixel_color_reg[9]' (LD) to 'i_0/oledTask/pixel_color_reg[10]'
 INFO: [Synth 8-3886] merging instance 'i_0/mouseTask/pixel_color_reg[9]' (LD) to 'i_0/mouseTask/pixel_color_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_0/oledTask/pixel_color_reg[10]' (LD) to 'i_0/oledTask/pixel_color_reg[11]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/mouseTask/\pixel_color_reg[10] )
 INFO: [Synth 8-3886] merging instance 'i_0/oledTask/pixel_color_reg[11]' (LD) to 'i_0/oledTask/pixel_color_reg[12]'
 INFO: [Synth 8-3886] merging instance 'i_0/mouseTask/pixel_color_reg[11]' (LD) to 'i_0/mouseTask/pixel_color_reg[12]'
@@ -819,7 +857,7 @@ INFO: [Synth 8-3886] merging instance 'i_1/nolabel_line168/rgb_reg[9]' (FDRE) to
 WARNING: [Synth 8-3332] Sequential element (x_max_reg[9]) is unused and will be removed from module MouseCtl.
 INFO: [Synth 8-3886] merging instance 'i_0/mw/oled_data_reg[6]' (LD) to 'i_0/mw/oled_data_reg[8]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:02:39 . Memory (MB): peak = 953.934 ; gain = 694.637
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:03:24 . Memory (MB): peak = 948.809 ; gain = 692.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -842,27 +880,27 @@ Report RTL Partitions:
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |Top_Student__GB0 |           1|      7943|
+|1     |Top_Student__GB0 |           1|      7988|
 |2     |Top_Student__GB1 |           1|      4093|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:02:47 . Memory (MB): peak = 953.934 ; gain = 694.637
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:30 ; elapsed = 00:03:35 . Memory (MB): peak = 948.809 ; gain = 692.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:02:53 . Memory (MB): peak = 953.934 ; gain = 694.637
+Finished Timing Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:03:45 . Memory (MB): peak = 948.809 ; gain = 692.203
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+----------------+------------+----------+
 |      |RTL Partition   |Replication |Instances |
 +------+----------------+------------+----------+
-|1     |Top_Student_GT0 |           1|     11882|
+|1     |Top_Student_GT0 |           1|     11990|
 +------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -870,7 +908,7 @@ Start Technology Mapping
 WARNING: [Synth 8-3332] Sequential element (current_option_reg[2]) is unused and will be removed from module Top_Student.
 INFO: [Synth 8-3886] merging instance 'nolabel_line169/rgb_reg[11]' (FDSE) to 'nolabel_line169/rgb_reg[15]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:02:55 . Memory (MB): peak = 963.305 ; gain = 704.008
+Finished Technology Mapping : Time (s): cpu = 00:01:35 ; elapsed = 00:03:48 . Memory (MB): peak = 965.348 ; gain = 708.742
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -896,7 +934,7 @@ INFO: [Synth 8-5365] Flop mouse/Inst_Ps2Interface/ps2_data_h_reg is being invert
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:02:56 . Memory (MB): peak = 963.305 ; gain = 704.008
+Finished IO Insertion : Time (s): cpu = 00:01:35 ; elapsed = 00:03:50 . Memory (MB): peak = 965.348 ; gain = 708.742
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -909,7 +947,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:02:56 . Memory (MB): peak = 963.305 ; gain = 704.008
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:35 ; elapsed = 00:03:50 . Memory (MB): peak = 965.348 ; gain = 708.742
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -921,25 +959,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:02:56 . Memory (MB): peak = 963.305 ; gain = 704.008
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:35 ; elapsed = 00:03:50 . Memory (MB): peak = 965.348 ; gain = 708.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:02:56 . Memory (MB): peak = 963.305 ; gain = 704.008
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:35 ; elapsed = 00:03:50 . Memory (MB): peak = 965.348 ; gain = 708.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:02:56 . Memory (MB): peak = 963.305 ; gain = 704.008
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:35 ; elapsed = 00:03:50 . Memory (MB): peak = 965.348 ; gain = 708.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:02:56 . Memory (MB): peak = 963.305 ; gain = 704.008
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:35 ; elapsed = 00:03:50 . Memory (MB): peak = 965.348 ; gain = 708.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -957,19 +995,19 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     5|
 |2     |CARRY4 |   325|
-|3     |LUT1   |   281|
-|4     |LUT2   |   565|
-|5     |LUT3   |   298|
-|6     |LUT4   |   468|
-|7     |LUT5   |   645|
-|8     |LUT6   |  1983|
+|3     |LUT1   |   282|
+|4     |LUT2   |   568|
+|5     |LUT3   |   300|
+|6     |LUT4   |   460|
+|7     |LUT5   |   646|
+|8     |LUT6   |  1999|
 |9     |MUXF7  |   149|
 |10    |MUXF8  |    13|
 |11    |FDE_1  |    32|
-|12    |FDRE   |   813|
+|12    |FDRE   |   814|
 |13    |FDSE   |     8|
-|14    |LD     |    28|
-|15    |IBUF   |     8|
+|14    |LD     |    29|
+|15    |IBUF   |    10|
 |16    |IOBUF  |     2|
 |17    |OBUF   |    37|
 |18    |OBUFT  |     1|
@@ -979,7 +1017,7 @@ Report Instance Areas:
 +------+----------------------+-----------------+------+
 |      |Instance              |Module           |Cells |
 +------+----------------------+-----------------+------+
-|1     |top                   |                 |  5661|
+|1     |top                   |                 |  5680|
 |2     |  dl                  |display_led      |    16|
 |3     |  ai                  |Audio_Input      |    73|
 |4     |  clk                 |Clk625           |    11|
@@ -989,39 +1027,39 @@ Report Instance Areas:
 |8     |  clk3                |clk_variable_2   |    58|
 |9     |  lvl                 |audio_level_calc |   138|
 |10    |    clk1              |clk_variable_4   |    54|
-|11    |  mouse               |MouseCtl         |  1059|
+|11    |  mouse               |MouseCtl         |  1062|
 |12    |    Inst_Ps2Interface |Ps2Interface     |   282|
-|13    |  mouseTask           |mouse_task       |     7|
-|14    |  mw                  |mic_wave         |   682|
+|13    |  mouseTask           |mouse_task       |     3|
+|14    |  mw                  |mic_wave         |   695|
 |15    |    clk1              |clk_variable_3   |    80|
-|16    |  nolabel_line168     |menu_display     |  1293|
-|17    |  nolabel_line169     |menu_2           |   721|
-|18    |  oled                |Oled_Display     |   877|
-|19    |  oledTask            |oled_indiv_task  |    19|
+|16    |  nolabel_line168     |menu_display     |  1297|
+|17    |  nolabel_line169     |menu_2           |   718|
+|18    |  oled                |Oled_Display     |   883|
+|19    |  oledTask            |oled_indiv_task  |    17|
 +------+----------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:02:56 . Memory (MB): peak = 963.305 ; gain = 704.008
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:35 ; elapsed = 00:03:50 . Memory (MB): peak = 965.348 ; gain = 708.742
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:19 ; elapsed = 00:02:49 . Memory (MB): peak = 963.305 ; gain = 388.781
-Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:02:56 . Memory (MB): peak = 963.305 ; gain = 704.008
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:27 ; elapsed = 00:03:41 . Memory (MB): peak = 965.348 ; gain = 393.719
+Synthesis Optimization Complete : Time (s): cpu = 00:01:35 ; elapsed = 00:03:51 . Memory (MB): peak = 965.348 ; gain = 708.742
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 557 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 560 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 62 instances were transformed.
+  A total of 63 instances were transformed.
   FDE_1 => FDRE (inverted pins: C): 32 instances
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
-  LD => LDCE: 28 instances
+  LD => LDCE: 29 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-228 Infos, 77 Warnings, 0 Critical Warnings and 0 Errors encountered.
+226 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:24 ; elapsed = 00:02:59 . Memory (MB): peak = 963.305 ; gain = 716.793
+synth_design: Time (s): cpu = 00:01:37 ; elapsed = 00:03:54 . Memory (MB): peak = 965.348 ; gain = 721.617
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/Top_Student.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 963.305 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 27 22:02:35 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 965.348 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 27 22:32:24 2023...

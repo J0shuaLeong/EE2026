@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Mon Mar 27 22:03:48 2023
-| Host             : ShansLappie running 64-bit major release  (build 9200)
+| Date             : Mon Mar 27 22:34:04 2023
+| Host             : LAPTOP-MVMLE90N running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Student_power_routed.rpt -pb Top_Student_power_summary_routed.pb -rpx Top_Student_power_routed.rpx
 | Design           : Top_Student
 | Device           : xc7a35tcpg236-1
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.108        |
+| Total On-Chip Power (W)  | 0.109        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.037        |
@@ -52,18 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.005 |        3 |       --- |             --- |
-| Slice Logic    |     0.016 |     5623 |       --- |             --- |
-|   LUT as Logic |     0.016 |     3684 |     20800 |           17.71 |
+| Clocks         |     0.004 |        3 |       --- |             --- |
+| Slice Logic    |     0.017 |     5640 |       --- |             --- |
+|   LUT as Logic |     0.016 |     3703 |     20800 |           17.80 |
 |   CARRY4       |    <0.001 |      320 |      8150 |            3.93 |
 |   F7/F8 Muxes  |    <0.001 |      162 |     32600 |            0.50 |
-|   Register     |    <0.001 |      881 |     41600 |            2.12 |
+|   Register     |    <0.001 |      883 |     41600 |            2.12 |
 |   BUFG         |    <0.001 |        4 |        32 |           12.50 |
 |   Others       |     0.000 |       47 |       --- |             --- |
-| Signals        |     0.014 |     4444 |       --- |             --- |
-| I/O            |     0.002 |       48 |       106 |           45.28 |
+| Signals        |     0.015 |     4466 |       --- |             --- |
+| I/O            |     0.002 |       50 |       106 |           47.17 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.108 |          |           |                 |
+| Total          |     0.109 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.045 |       0.035 |      0.010 |
+| Vccint    |       1.000 |     0.046 |       0.036 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -157,9 +157,9 @@ Table of Contents
 |   mouseTask           |    <0.001 |
 |   mw                  |     0.001 |
 |     clk1              |    <0.001 |
-|   nolabel_line168     |     0.013 |
+|   nolabel_line168     |     0.014 |
 |   nolabel_line169     |    <0.001 |
-|   oled                |     0.010 |
+|   oled                |     0.011 |
 |   oledTask            |    <0.001 |
 |   ps2clk_IOBUF_inst   |     0.000 |
 |   ps2data_IOBUF_inst  |     0.000 |
