@@ -24,7 +24,7 @@ module mic_wave(
     input CLK,
     input [3:0] volume,
     input [12:0] pixel_index,
-    input [2:0] display_setting,
+    input [2:0] current_option,
     output reg [15:0] oled_data
 );
     reg [3:0] capture [23:0];
@@ -53,7 +53,7 @@ module mic_wave(
     always @ pixel_index begin
          x_pos = pixel_index % 96; // [0:95]
          y_pos =  63 - pixel_index / 96; // [0:63]
-        if (display_setting == 1) begin
+        if (current_option == 2) begin
         for(j = 0; j < 24; j = j + 1) begin
             if(x_pos >= (j * 4) && x_pos <= (j*4 + 3) ) begin
                         if (capture[j] >= 0 && y_pos == middle ) begin
