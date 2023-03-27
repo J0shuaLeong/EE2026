@@ -34,47 +34,18 @@ module Top_Student (
     );
     
     wire score;
-    
-    //Menu
-    reg [2:0] display_setting = 0;
-    reg [2:0] current_setting = 0;
-    always @ (posedge clock) begin
-        if (sw[15]) begin
-            display_setting = 0;
-            //current_setting = 0;
-        end 
-        if (sw[14]) begin
-            display_setting = 1;
-        end
-        if (sw[13]) begin
-            display_setting = 2;
-        end
-    end
-    
-    //inputs of MouseCtl -- Setting default values
-    reg [11:0] defaultvalue = 0;
-    reg setx = 0, sety = 0, setmax_x = 0, setmax_y = 0;
     //outputs of MouseCtl 
     wire left, middle, right, newevent;
     wire [11:0] xpos; wire [11:0] ypos; wire [3:0] zpos;
-    //instantiation of MouseCtl
-    MouseCtl mouse(.clk(clock), .rst(0), .value(defaultvalue), .setx(setx), .sety(sety), .setmax_x(setmax_x), .setmax_y(setmax_y),
-    .xpos(xpos), .ypos(ypos), .zpos(zpos), .left(left), .middle(middle), .right(right), .new_event(newevent),
-    .ps2_clk(ps2clk), .ps2_data(ps2data)
-    );
-    
     //audio input
     wire count_20khz;
     wire count_6_25MHz;
     wire count_0_16s;
     wire [11:0] MIC_IN; 
     wire [3:0] volume;
-    wire [11:0] mic_led;
-    wire [3:0] led_status;
     wire [3:0] seg_status;
     wire [3:0] seg_num1;
     wire [1:0] seg_num2;
-    
     //Retrieving pixel_index for oled
     wire [12:0] pixel_index;
     wire [7:0] x;
@@ -85,32 +56,68 @@ module Top_Student (
     wire [15:0] oled_data3;
     wire [11:0] nxpos;
     wire [11:0] nypos;
+    //outputs of Oled_Display module
+    wire frame_begin, sending_pixels, sample_pixel, cs, sdin, sclk, d_cn, resn, vccen, pmoden;
+    //6.25MHz clk input for Oled
+    wire clk6p25m; 
+    //Whack a mole
+    wire reset_n, Q;
     
+    //inputs of MouseCtl -- Setting default values
+    reg [11:0] defaultvalue = 0;
+    reg setx = 0, sety = 0, setmax_x = 0, setmax_y = 0;
+    //Menu
+    reg [2:0] main_menu_option = 0;
+    reg [2:0] current_option = 0;
+    integer scroll_count = 0;
+    always @ (posedge clock) begin
+        if (btnU) begin
+            scroll_count <= scroll_count + 1;
+        end
+        if (btnD) begin
+            scroll_count <= scroll_count - 1;
+        end
+        if (sw[15]) begin
+            main_menu_option = 0; //display menu
+            current_option = 0;
+        end 
+        if (nxpos >= 10 && nxpos <= 84 && (nypos >= 16 + scroll_count) && (nypos <= 30 + scroll_count)) begin
+            main_menu_option = 1; //Joshua
+                //if left click current opotion 1
+        end
+        if (nxpos >= 10 && nxpos <= 84 && (nypos >= 32 + scroll_count) && (nypos <= 46 + scroll_count)) begin
+            main_menu_option = 2; //Naychi
+        end
+        if (nxpos >= 10 && nxpos <= 84 && (nypos >= 48 + scroll_count) && (nypos <= 62 + scroll_count)) begin
+            main_menu_option = 3; //Shanice
+        end
+        if (nxpos >= 10 && nxpos <= 84 && (nypos >= 68 + scroll_count) && (nypos <= 93 + scroll_count)) begin
+            main_menu_option = 4; //Group task
+        end
+        if (nxpos >= 10 && nxpos <= 84 && (nypos >= 97 + scroll_count) && (nypos <= 122 + scroll_count)) begin
+            main_menu_option = 5; //game
+        end
+    end
     
-    clk_variable clk20k (clock, 2499, count_20khz);
-    clk_variable clk2(clock, 7, count_6_25MHz);
-    clk_variable clk3(clock, 7999999, count_0_16s);
-    
+     clk_variable clk20k (clock, 2499, count_20khz);
+     clk_variable clk2(clock, 7, count_6_25MHz); 
+     clk_variable clk3(clock, 7999999, count_0_16s); //slow clk for menu animation
+     Clk625 clk(clock, clk6p25m);
+     
+    //mic
     Audio_Input ai (clock, count_20khz, J_MIC_Pin3, J_MIC_Pin1, J_MIC_Pin4, MIC_IN);
     audio_level_calc lvl (clock, MIC_IN, volume);
     display_led dl (volume, led);
     display_seg ds (clock, seg, an, volume, dp, seg_num1, seg_num2, score, sw[0]);
     
     //Mic improvement
-    mic_wave mw (clock, volume, pixel_index, display_setting, oled_data2);
-    //frequency_detector fd (clock, sw[1], MIC_IN, led);
-    //frequency_display fdp (count_20khz, frequency, led);
+    mic_wave mw (clock, volume, pixel_index, current_option, oled_data2);   
     
-    //assign led = (right)? 16'b1000_0000_0000_0000 : (middle)? 16'b0100_0000_0000_0000 : (left)? 16'b0010_0000_0000_0000 : 16'b0000_0000_0000_0000;
- 
-    //outputs of Oled_Display module
-    wire frame_begin, sending_pixels, sample_pixel, cs, sdin, sclk, d_cn, resn, vccen, pmoden;
-    
-    //6.25MHz clk input for Oled
-    wire clk6p25m; 
-    Clk625 clk(clock, clk6p25m);
-        
-    
+    //instantiation of MouseCtl
+    MouseCtl mouse(.clk(clock), .rst(0), .value(defaultvalue), .setx(setx), .sety(sety), .setmax_x(setmax_x), .setmax_y(setmax_y),
+    .xpos(xpos), .ypos(ypos), .zpos(zpos), .left(left), .middle(middle), .right(right), .new_event(newevent),
+    .ps2_clk(ps2clk), .ps2_data(ps2data)
+    );
     xycoordinate xy (.pixel_index(pixel_index), .x(x), .y(y), .xpos(xpos), .ypos(ypos), .nxpos(nxpos), .nypos(nypos));
     //oled_indiv_task oledTask(.x(x), .y(y), .sw(sw), .pixel_color(oled_data));
    
@@ -118,20 +125,22 @@ module Top_Student (
                                // .sw(sw), .led15(led[15]), .seg_num1(seg_num1), .seg_num2(seg_num2));
     //mouse_task mouseTask(.x(x),.y(y), .xpos(nxpos), .ypos(nypos), .middle(middle), .pixel_color(oled_data));
     
-    
     Oled_Display oled (.clk(clk6p25m), .reset(0), .frame_begin(frame_begin), .sending_pixels(sending_pixels), 
     .sample_pixel(sample_pixel), .pixel_index(pixel_index), .pixel_data(oled_data), 
     .cs(JC[0]), .sdin(JC[1]), .sclk(JC[3]), .d_cn(JC[4]), .resn(JC[5]), .vccen(JC[6]), .pmoden(JC[7]));
     
-    assign oled_data = display_setting == 0 ? oled_data1 : display_setting == 1 ? oled_data2 : oled_data3;
+    assign oled_data = current_option == 0 ? oled_data1 : current_option == 1 ? oled_data2 : oled_data3;
     
     //menu
-    menu_display (count_6_25MHz, count_0_16s, display_setting, pixel_index, current_setting, btnD, btnU, oled_data3);
+    menu_display (count_6_25MHz, count_0_16s, main_menu_option, pixel_index, current_option, btnD, btnU, nxpos, nypos, x, y, oled_data1);
+    
     //meow
-    imagemodule img(clock, pixel_index, display_setting, oled_data1);
+    //imagemodule img(clock, pixel_index, display_setting, oled_data1);
+    
+    //mouse_scroll ms(.z_pos(zpos), .led(led));
+    //assign led = zpos;
     
     //Whack a mole
-    wire reset_n, Q;
     //whack_a_mole wm (.x(x), .y(y), .pixel_color(oled_data),.x_pos(nxpos), .y_pos(nypos), .left(left), .score(score), .clk(clock));
     //random_generator rg (clock, reset_n, Q);
     
