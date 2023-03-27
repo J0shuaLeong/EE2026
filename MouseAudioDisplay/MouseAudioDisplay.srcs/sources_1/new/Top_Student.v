@@ -22,7 +22,7 @@ module Top_Student (
     input [15:0] sw,
     inout ps2data,
     input J_MIC_Pin3,
-    input btnD, btnU,
+    input btnD, btnU, btnC,
     output J_MIC_Pin1,
     output J_MIC_Pin4,
     output [7:0] JC,
@@ -143,7 +143,7 @@ module Top_Student (
     //display_seg ds (clock, seg, an, volume, dp, seg_num1, seg_num2, score, sw[0], task_option);
     
     //Mic improvement
-    mic_wave mw (clock, volume, pixel_index, task_option, oled_data3);   
+    mic_wave mw (clock, volume, pixel_index, task_option, btnC, oled_data3);   
     
     //instantiation of MouseCtl
     MouseCtl mouse(.clk(clock), .rst(0), .value(defaultvalue), .setx(setx), .sety(sety), .setmax_x(setmax_x), .setmax_y(setmax_y),
@@ -226,12 +226,15 @@ module oled_indiv_task (input [7:0] x, y, input [2:0] sw, input [2:0] current_op
     always @ (x,y) begin
         if (current_option == 3) begin            
             if (sw[0])
-                pixel_color = lines ? green : zero ? white : black;
+                pixel_color = zero ? white : black;
             else if (sw[1])
-                pixel_color = lines ? green : one ? white : black;
+                pixel_color = one ? white : black;
+            else if (sw[2])
+                pixel_color = two ? white : black;
             else            
                 pixel_color = black;
-            if (sw[3]) pixel_color = lines ? green : black;
+                
+            if (lines) pixel_color = sw[3] ? green : black;
         end     
     end
 endmodule

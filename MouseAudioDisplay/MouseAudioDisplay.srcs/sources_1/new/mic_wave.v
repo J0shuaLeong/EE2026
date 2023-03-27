@@ -25,6 +25,7 @@ module mic_wave(
     input [3:0] volume,
     input [12:0] pixel_index,
     input [2:0] current_option,
+    input btnC,
     output reg [15:0] oled_data
 );
     reg [3:0] capture [23:0];
@@ -39,6 +40,7 @@ module mic_wave(
     
     reg [1:0] state;
     reg [15:0] background;
+    reg pause = 0;
     
     always @ volume begin
         state = volume[2]<<1 | volume[0];
@@ -118,6 +120,11 @@ module mic_wave(
         end
       end
     end
+   
+    always @ (posedge CLK) begin
+        if (btnC) pause = ~pause;
+    end
+    
     always @ (posedge count_10Hz) begin
             capture[23] = volume;
             capture[22] <= capture[23];
