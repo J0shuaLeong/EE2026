@@ -39,7 +39,10 @@ module menu_display(
     reg [12:0] char_count = 0;
     wire cursor;
     
-    assign cursor = ( x <= ((xpos%96) + 3) && x >= (xpos%96) && (y <= (ypos%64) + 3) && y >= (ypos%64));
+    //assign cursor = ( x <= ((xpos%96) + 3) && x >= (xpos%96) && (y <= (ypos%64) + 3) && y >= (ypos%64));
+    assign cursor = ( x <= ((xpos) + 5) && x >= (xpos) && (y <= (ypos) + 2) && y >= (ypos)) && 
+    !( x <= ((xpos) + 1) && x >= (xpos) && (y <= (ypos) + 2) && y >= (ypos));
+
 
     always @ (posedge clk) begin
         if (current_option == 0) begin

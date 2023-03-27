@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Mar 27 13:18:52 2023
+| Date         : Mon Mar 27 14:53:31 2023
 | Host         : ShansLappie running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
 | Design       : Top_Student
@@ -152,11 +152,11 @@ Table of Contents
 +----------+------+---------------------+
 | FDRE     |  605 |        Flop & Latch |
 | LUT2     |  238 |                 LUT |
-| LUT6     |  190 |                 LUT |
-| LUT4     |  150 |                 LUT |
-| LUT5     |  132 |                 LUT |
-| LUT3     |  129 |                 LUT |
-| CARRY4   |  114 |          CarryLogic |
+| LUT6     |  192 |                 LUT |
+| LUT4     |  151 |                 LUT |
+| LUT5     |  129 |                 LUT |
+| LUT3     |  127 |                 LUT |
+| CARRY4   |  117 |          CarryLogic |
 | OBUF     |   37 |                  IO |
 | LUT1     |   37 |                 LUT |
 | LDCE     |    9 |        Flop & Latch |

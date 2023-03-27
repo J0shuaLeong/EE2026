@@ -41,6 +41,7 @@ module Top_Student (
     wire count_20khz;
     wire count_6_25MHz;
     wire count_0_16s;
+    wire count_100hz;
     wire [11:0] MIC_IN; 
     wire [3:0] volume;
     wire [3:0] seg_status;
@@ -70,20 +71,25 @@ module Top_Student (
     reg [2:0] main_menu_option = 0;
     reg [2:0] current_option = 0;
     integer scroll_count = 0;
-    always @ (posedge clock) begin
+    always @ (posedge count_100hz) begin
         if (btnU) begin
-            scroll_count <= scroll_count + 1;
+            scroll_count <= (scroll_count == 0) ? 0 : scroll_count - 1;
         end
-        if (btnD) begin
-            scroll_count <= scroll_count - 1;
+        else if (btnD) begin
+            scroll_count <= (scroll_count == 64)? 64 : scroll_count + 1;
         end
+    end
+    
+    always @ (posedge clock) begin
         if (sw[15]) begin
-            main_menu_option = 0; //display menu
-            current_option = 0;
+                main_menu_option = 0; //display menu
+                current_option = 0;
         end 
         if (nxpos >= 10 && nxpos <= 84 && (nypos >= 16 + scroll_count) && (nypos <= 30 + scroll_count)) begin
             main_menu_option = 1; //Joshua
-                //if left click current opotion 1
+                if (left) begin
+                    current_option = 1;
+                end
         end
         if (nxpos >= 10 && nxpos <= 84 && (nypos >= 32 + scroll_count) && (nypos <= 46 + scroll_count)) begin
             main_menu_option = 2; //Naychi
@@ -100,9 +106,10 @@ module Top_Student (
     end
     
      clk_variable clk20k (clock, 2499, count_20khz);
-     clk_variable clk2(clock, 7, count_6_25MHz); 
-     clk_variable clk3(clock, 7999999, count_0_16s); //slow clk for menu animation
+     clk_variable clk2 (clock, 7, count_6_25MHz); 
+     clk_variable clk3 (clock, 7999999, count_0_16s); //slow clk for menu animation
      Clk625 clk(clock, clk6p25m);
+     clk_variable clk100 (clock, 500000, count_100hz);
      
     //mic
     Audio_Input ai (clock, count_20khz, J_MIC_Pin3, J_MIC_Pin1, J_MIC_Pin4, MIC_IN);
