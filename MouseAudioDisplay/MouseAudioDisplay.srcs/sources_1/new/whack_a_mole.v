@@ -28,6 +28,7 @@ module whack_a_mole(
     input [11:0] y_pos, 
     input left,
     input clk,
+    input [2:0] current_option,
     output reg [15:0] score = 0
     );
     
@@ -37,7 +38,7 @@ module whack_a_mole(
     parameter [15:0] white = 16'hFFFF;
     parameter [15:0] blue = 16'h001F;
     //parameter [15:0] brown = 16'h;
-   
+    
     //display game
     wire sky, ground, hole1, hole2, hole3, mole1, mole2, mole3, cursor;      
     assign sky = (x >= 0 && x <= 95 && y >= 0 && y <= 38 );
@@ -62,95 +63,84 @@ module whack_a_mole(
     reg [25:0] COUNT1 = -1; integer whichmole = 0; wire [3:1] which_mole;
     
     wire one_hz; 
-    clock_1 clock(clk, one_hz);
+    clk_variable clk1hz(clk, 49000000, one_hz);
     random_generator test_rand(one_hz, 1, which_mole);
     
     always @ (*) begin
-        whichmole = (which_mole[3] * 1 + which_mole[2] * 2 + which_mole[1] * 4);
-        case(whichmole)
-            1:begin
-                mole_down1 <= 1;
-                mole_down2 <= 1;
-                mole_down3 <= 1;
-            end
-            2:begin
-                mole_down1 <= 0;
-                mole_down2 <= 1;
-                mole_down3 <= 1;
-            end
-            3:begin
-                mole_down1 <= 1;
-                mole_down2 <= 0;
-                mole_down3 <= 1;
-            end
-            4:begin
-                mole_down1 <= 1;
-                mole_down2 <= 1;
-                mole_down3 <= 0;
-            end
-            5:begin
-                mole_down1 <= 0;
-                mole_down2 <= 1;
-                mole_down3 <= 0;
-            end
-            6:begin
-                mole_down1 <= 1;
-                mole_down2 <= 0;
-                mole_down3 <= 0;
-            end
-            7:begin
-                mole_down1 <= 0;
-                mole_down2 <= 0;
-                mole_down3 <= 0;
-            end
-            default: begin
-                mole_down1 <= 1;
-                mole_down2 <= 1;
-                mole_down3 <= 1;
-            end
-        endcase
-        if (left) begin
-            //if mole is clicked
-            if (mole_pos1) begin
-                mole_down1 <= 1;
-                score <= score + 1;
-                whichmole <= 8;
-            end
-            if (mole_pos2) begin
-                mole_down2 <= 1;
-                score <= score + 1;
-                whichmole <= 8;
-            end
-            if (mole_pos3) begin
-                mole_down3 <= 1;
-                score <= score + 1;
-                whichmole <= 8;
-            end
+        if (current_option == 5) begin
+            whichmole = (which_mole[3] * 1 + which_mole[2] * 2 + which_mole[1] * 4);
+            case(whichmole)
+                1:begin
+                    mole_down1 <= 1;
+                    mole_down2 <= 1;
+                    mole_down3 <= 1;
+                end
+                2:begin
+                    mole_down1 <= 0;
+                    mole_down2 <= 1;
+                    mole_down3 <= 1;
+                end
+                3:begin
+                    mole_down1 <= 1;
+                    mole_down2 <= 0;
+                    mole_down3 <= 1;
+                end
+                4:begin
+                    mole_down1 <= 1;
+                    mole_down2 <= 1;
+                    mole_down3 <= 0;
+                end
+                5:begin
+                    mole_down1 <= 0;
+                    mole_down2 <= 1;
+                    mole_down3 <= 0;
+                end
+                6:begin
+                    mole_down1 <= 1;
+                    mole_down2 <= 0;
+                    mole_down3 <= 0;
+                end
+                7:begin
+                    mole_down1 <= 0;
+                    mole_down2 <= 0;
+                    mole_down3 <= 0;
+                end
+                default: begin
+                    mole_down1 <= 1;
+                    mole_down2 <= 1;
+                    mole_down3 <= 1;
+                end
+            endcase
+            if (left) begin
+                //if mole is clicked
+                if (mole_pos1) begin
+                    mole_down1 <= 1;
+                    score <= score + 1;
+                    whichmole <= 8;
+                end
+                if (mole_pos2) begin
+                    mole_down2 <= 1;
+                    score <= score + 1;
+                    whichmole <= 8;
+                end
+                if (mole_pos3) begin
+                    mole_down3 <= 1;
+                    score <= score + 1;
+                    whichmole <= 8;
+                end
 
-        end
+            end
          
-        if (sky) pixel_color = blue;
-        if (ground) pixel_color = green;
-        if (hole1) pixel_color = black;
-        if (hole2) pixel_color = black;
-        if (hole3) pixel_color = black;
-        if (mole1 && !mole_down1) pixel_color = red;
-        if (mole2 && !mole_down2) pixel_color = red;
-        if (mole3 && !mole_down3) pixel_color = red;
-        if (cursor) pixel_color = white;
+            if (sky) pixel_color = blue;
+            if (ground) pixel_color = green;
+            if (hole1) pixel_color = black;
+            if (hole2) pixel_color = black;
+            if (hole3) pixel_color = black;
+            if (mole1 && !mole_down1) pixel_color = red;
+            if (mole2 && !mole_down2) pixel_color = red;
+            if (mole3 && !mole_down3) pixel_color = red;
+            if (cursor) pixel_color = white;
+        end
     end
     
-endmodule
-
-//1Hz
-module clock_1 (input CLOCK, output LED);
-    reg [25:0] COUNT = 0;
-    reg SLOW_CLOCK = 0;
-    
-    assign LED = SLOW_CLOCK;
-    
-    always @ (posedge CLOCK) begin
-        COUNT <= (COUNT == 26'd50_000_000) ? 0 : COUNT + 1;      
-        SLOW_CLOCK <= (COUNT == 0) ? ~SLOW_CLOCK : SLOW_CLOCK;
-    end
 endmodule

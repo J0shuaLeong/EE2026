@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Tue Mar 28 01:56:18 2023
+| Date             : Tue Mar 28 11:06:17 2023
 | Host             : DESKTOP-GHKQD81 running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Student_power_routed.rpt -pb Top_Student_power_summary_routed.pb -rpx Top_Student_power_routed.rpx
 | Design           : Top_Student
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.096        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.025        |
+| Dynamic (W)              | 0.024        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.004 |        3 |       --- |             --- |
-| Slice Logic    |     0.011 |     5932 |       --- |             --- |
-|   LUT as Logic |     0.010 |     3847 |     20800 |           18.50 |
-|   CARRY4       |    <0.001 |      393 |      8150 |            4.82 |
-|   Register     |    <0.001 |      920 |     41600 |            2.21 |
-|   F7/F8 Muxes  |    <0.001 |      157 |     32600 |            0.48 |
-|   Others       |     0.000 |       53 |       --- |             --- |
+| Slice Logic    |     0.011 |     6300 |       --- |             --- |
+|   LUT as Logic |     0.010 |     4086 |     20800 |           19.64 |
+|   CARRY4       |    <0.001 |      429 |      8150 |            5.26 |
+|   Register     |    <0.001 |      962 |     41600 |            2.31 |
+|   F7/F8 Muxes  |    <0.001 |      155 |     32600 |            0.48 |
+|   Others       |     0.000 |       59 |       --- |             --- |
 |   BUFG         |     0.000 |        3 |        32 |            9.38 |
-| Signals        |     0.008 |     4574 |       --- |             --- |
+| Signals        |     0.008 |     4867 |       --- |             --- |
 | I/O            |    <0.001 |       50 |       106 |           47.17 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.096 |          |           |                 |
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.033 |       0.024 |      0.010 |
+| Vccint    |       1.000 |     0.033 |       0.023 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -142,28 +142,31 @@ Table of Contents
 +-----------------------+-----------+
 | Name                  | Power (W) |
 +-----------------------+-----------+
-| Top_Student           |     0.025 |
+| Top_Student           |     0.024 |
 |   ai                  |    <0.001 |
 |   clk100              |    <0.001 |
 |   clk2                |    <0.001 |
 |   clk20k              |    <0.001 |
 |   clk3                |    <0.001 |
-|   dl                  |     0.000 |
+|   dl                  |    <0.001 |
 |   lvl                 |    <0.001 |
 |     clk1              |    <0.001 |
 |   mouse               |     0.004 |
 |     Inst_Ps2Interface |     0.001 |
-|   mouseTask           |     0.000 |
+|   mouseTask           |    <0.001 |
 |   mw                  |    <0.001 |
 |     clk1              |    <0.001 |
-|   nolabel_line171     |     0.002 |
-|   nolabel_line172     |    <0.001 |
+|   nolabel_line173     |    <0.001 |
+|   nolabel_line174     |    <0.001 |
 |     nolabel_line41    |    <0.001 |
 |   oled                |     0.012 |
-|   oledGrpTask         |     0.000 |
-|   oledTask            |     0.000 |
+|   oledGrpTask         |    <0.001 |
+|   oledTask            |    <0.001 |
 |   ps2clk_IOBUF_inst   |     0.000 |
 |   ps2data_IOBUF_inst  |     0.000 |
+|   wm                  |    <0.001 |
+|     clk1hz            |    <0.001 |
+|     test_rand         |     0.000 |
 +-----------------------+-----------+
 
 
