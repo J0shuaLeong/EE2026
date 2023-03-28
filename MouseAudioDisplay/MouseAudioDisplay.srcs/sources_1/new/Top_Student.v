@@ -140,7 +140,7 @@ module Top_Student (
     //mic individual task
     Audio_Input ai (clock, count_20khz, J_MIC_Pin3, J_MIC_Pin1, J_MIC_Pin4, MIC_IN);
     audio_level_calc lvl (clock, MIC_IN, volume);
-    display_led dl (volume, current_option, task_option, led, seg, an, dp); //display led
+    display_led dl (volume, current_option, task_option, led); //display led
     
     //Mic improvement
     mic_wave mw (clock, volume, pixel_index, task_option, btnC, nxpos, nypos, x, y, oled_data3);   

@@ -24,10 +24,7 @@ module display_led(
     input [3:0] volume,
     input [2:0] current_option,
     input [2:0] task_option,
-    output reg [15:0] led,
-    output reg [6:0] seg,
-    output reg [3:0] an,
-    output reg dp
+    output reg [15:0] led
     );
     always @(*) begin
         if (task_option == 1 || current_option == 4) begin

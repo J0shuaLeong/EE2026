@@ -34,7 +34,7 @@ module display_seg(
     );
     
     wire clk200;
-    clk_variable clk200hz(CLK, 250000, clk200);
+    clk_variable clk200hz(CLK, 249000, clk200);
     
     reg [3:0] an_on = 4'b0001;
     
@@ -85,11 +85,11 @@ module display_seg(
     end
     
     always @ (posedge clk200) begin
-        if (current_option == 4) begin
+        if (task_option == 1 || current_option == 4) begin
             an_on <= (an_on == 4'b1000) ? 4'b0001 : an_on << 1;
-        end else if (task_option == 1) begin
+        end /*else if (task_option == 1) begin
             an_on <= 4'b0001;
-        end
+        end*/
     end
     
 endmodule

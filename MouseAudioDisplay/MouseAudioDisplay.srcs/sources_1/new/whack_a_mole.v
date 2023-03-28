@@ -49,13 +49,22 @@ module whack_a_mole(
     assign mole1 = (x >= 11 && x <= 27 && y >= 40 && y <= 55) || (x >= 12 && x <= 26 && y == 39) || (x >= 13 && x <= 25 && y == 38) || (x >= 14 && x <= 24 && y == 37) || (x >= 16 && x <= 22 && y == 36)  ;
     assign mole2 = (x >= 39 && x <= 55 && y >= 30 && y <= 45) || (x >= 40 && x <= 54 && y == 29) || (x >= 41 && x <= 53 && y == 28) || (x >= 42 && x <= 52 && y == 27) || (x >= 44 && x <= 50 && y == 26)  ;
     assign mole3 = (x >= 68 && x <= 84 && y >= 40 && y <= 55) || (x >= 69 && x <= 83 && y == 39) || (x >= 70 && x <= 82 && y == 38) || (x >= 71 && x <= 81 && y == 37) || (x >= 73 && x <= 79 && y == 36)  ;
-    assign cursor = ( x <= ((x_pos%96) + 3) && x >= (x_pos%96) && (y <= (y_pos%64) + 3) && y >= (y_pos%64));
+    //assign cursor = ( x <= ((x_pos%96) + 3) && x >= (x_pos%96) && (y <= (y_pos%64) + 3) && y >= (y_pos%64));
+    assign cursor = ( (x == (x_pos%96) && y == ((y_pos%64) + 5)) && (x == ((x_pos%96) + 1) && y >= ((y_pos%64) + 4) && y <= ((y_pos%64) + 6))
+                        && ((x == (x_pos%96) + 2) && y >= ((y_pos%64) + 3) && y <= ((y_pos%64) + 7)) 
+                        && ((x == (x_pos%96) + 3) && y >= ((y_pos%64) + 2) && y <= ((y_pos%64) + 8))
+                        && (x == ((x_pos%96) + 4) && y >= ((y_pos%64) + 1) && y <= ((y_pos%64) + 7))
+                        && (x == ((x_pos%96) + 5) && y >= (y_pos%64) && y <= ((y_pos%64) + 6))
+                        && (x == ((x_pos%96) + 6) && y >= ((y_pos%64) + 1) && y <= ((y_pos%64) + 7))
+                        && (x == ((x_pos%96) + 7) && y >= ((y_pos%64) + 2) && y <= ((y_pos%64) + 4) && y >= ((y_pos%64) + 6) && y <= ((y_pos%64) + 8))
+                        && (x == ((x_pos%96) + 8) && y == ((y_pos%64) + 3) && y >= ((y_pos%64) + 7) && y <= ((y_pos%64) + 9))
+                        && (x == ((x_pos%96) + 9) && y >= ((y_pos%64) + 8) && y <= ((y_pos%64) + 9)));
     
     wire mole_pos1, mole_pos2, mole_pos3;
     //if cursor is on mole
     assign mole_pos1 = (x_pos >= 11 && x_pos <= 27 && y_pos >= 40 && y_pos <= 55) || (x_pos >= 12 && x_pos <= 26 && y_pos == 39) || (x_pos >= 13 && x_pos <= 25 && y_pos == 38) || (x_pos >= 14 && x_pos <= 24 && y_pos == 37) || (x_pos >= 16 && x_pos <= 22 && y_pos == 36);
-    assign mole_pos2 = (x_pos >= 39 && x_pos <= 55 && y_pos >= 30 && y_pos <= 45) || (x_pos >= 40 && x_pos <= 54 && y_pos == 29) || (x_pos >= 41 && x_pos <= 53 && y_pos == 28) || (x_pos >= 42 && x_pos <= 52 && y_pos == 27) || (x_pos >= 44 && x_pos <= 50 && y_pos == 26)  ;
-    assign mole_pos3 = (x_pos >= 68 && x_pos <= 84 && y_pos >= 40 && y_pos <= 55) || (x_pos >= 69 && x_pos <= 83 && y_pos == 39) || (x_pos >= 70 && x_pos <= 82 && y_pos == 38) || (x_pos >= 71 && x_pos <= 81 && y_pos == 37) || (x_pos >= 73 && x_pos <= 79 && y_pos == 36)  ;
+    assign mole_pos2 = (x_pos >= 39 && x_pos <= 55 && y_pos >= 30 && y_pos <= 45) || (x_pos >= 40 && x_pos <= 54 && y_pos == 29) || (x_pos >= 41 && x_pos <= 53 && y_pos == 28) || (x_pos >= 42 && x_pos <= 52 && y_pos == 27) || (x_pos >= 44 && x_pos <= 50 && y_pos == 26);
+    assign mole_pos3 = (x_pos >= 68 && x_pos <= 84 && y_pos >= 40 && y_pos <= 55) || (x_pos >= 69 && x_pos <= 83 && y_pos == 39) || (x_pos >= 70 && x_pos <= 82 && y_pos == 38) || (x_pos >= 71 && x_pos <= 81 && y_pos == 37) || (x_pos >= 73 && x_pos <= 79 && y_pos == 36);
     
     reg mole_down1 = 1, mole_down2 = 1, mole_down3 = 1;
     
