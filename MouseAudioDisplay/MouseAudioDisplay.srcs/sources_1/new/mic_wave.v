@@ -30,7 +30,9 @@ module mic_wave(
     input [11:0] ypos,
     input [7:0] x, 
     input [7:0] y,
-    output reg [15:0] oled_data
+    output reg [15:0] oled_data,
+    output reg [15:0] led,
+    input left
 );
     reg [3:0] capture [23:0];
     reg [6:0] x_pos = 0;
@@ -133,15 +135,29 @@ module mic_wave(
                         end 
             end
         end
+        if (y>=53 && y<=63 && x>=84 && x<=94) oled_data = 16'b1001111011011101;;
+        if ((left)&&(ypos>53 && ypos<63 && xpos>84 && xpos<94)) pause = ~pause;
+        if (pause && ((y>=54 && y<=60 && x==87)||(y>=55 && y<=59 && x==88)||(y>=56 && y<=58 && x==89)||(y==57 && x==90))) oled_data = 0;
+        if (!pause && ((y>=55 && y<=62 && x>=87 && x<=88) || (y>=55 && y<=62 && x>=91 && x<=92)) ) oled_data = 0;
         if (cursor) oled_data = 16'hFFFF;
       end
     end
-   
-    always @ (posedge clk) begin
-        if (btnC) pause = ~pause;
-       // if (low) 
-    end
     
+    wire loww,midd,highh;
+    integer L, M, H;
+    assign low = (y_pos == middle + 2 || y_pos == middle - 2) && (oled_data == 2016 );
+    assign mid = (y_pos == middle + 10 || y_pos == middle - 10) && (oled_data == 65504);
+    assign high = (y_pos == middle + 2 || y_pos == middle - 2) && (oled_data == 2016 );
+    
+    always @ (posedge clk) begin
+       if (y_pos == 63) begin H = 0; M = 0; L = 0; end
+       if (highh) H = 1;
+       if (midd) begin if (H == 0) M = 1; end
+       if (loww) begin if (M == 0) L = 1; end
+       led[13:12] = H ? 3'b100 : M ? 3'b010 : L ? 3'b001 : 0;
+    end
+
+   
     always @ (posedge count_10Hz) begin
         if (!pause) begin
             capture[23] = volume;
