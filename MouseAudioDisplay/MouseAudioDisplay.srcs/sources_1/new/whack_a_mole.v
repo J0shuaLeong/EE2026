@@ -29,7 +29,7 @@ module whack_a_mole(
     input clk,
     input [2:0] current_option,
     output reg [15:0] score = 0,
-    output reg led14
+    output reg rst
     );
     
     parameter [15:0] green = 16'h07E0;
@@ -80,6 +80,7 @@ module whack_a_mole(
     wire [15:0] rgb;
     skippy_image img(clk, pixel_index, rgb); 
     
+    integer reset;
     always @ (posedge clk) begin
         if (current_option == 5) begin
             whichmole = (which_mole[3] * 1 + which_mole[2] * 2 + which_mole[1] * 4);
@@ -144,8 +145,7 @@ module whack_a_mole(
                     whichmole <= 8;
                 end
 
-            end
-            
+            end 
          
             if (sky) pixel_color = blue;
             if (ground) pixel_color = green;
@@ -156,7 +156,18 @@ module whack_a_mole(
             if (mole2 && !mole_down2) pixel_color = red;
             if (mole3 && !mole_down3) pixel_color = red;
             if (cursor2) pixel_color = white;
-            if (mole1_flag && mole2_flag && mole3_flag) pixel_color = rgb; //all moles killed
+            if (mole1_flag && mole2_flag && mole3_flag) begin 
+                rst = 1; //all moles killed, game done
+            end
+            if (rst)
+                pixel_color = rgb;
+            
+        end
+    end
+    
+    always @ (rst) begin
+        if (!rst) begin
+            mole1_flag = 0; mole2_flag = 0; mole3_flag = 0;
         end
     end
     
