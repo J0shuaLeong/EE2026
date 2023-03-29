@@ -76,7 +76,7 @@ module Top_Student (
     
     //Menu
     reg [2:0] main_menu_option = 0;
-    reg [2:0] current_option = 5;
+    reg [2:0] current_option = 0;
     reg [2:0] task_option = 0;
     reg [31:0] scroll_count = 0;
     reg game_reset = 0;
@@ -88,8 +88,10 @@ module Top_Student (
             scroll_count <= (scroll_count == 64)? 64 : scroll_count + 1;
         end
     end
-    wire [6:0] dispseg;
-    assign seg = (current_option == 4 || task_option == 1) ? dispseg : 7'b1111111;
+    wire [6:0] dispseg, wave_seg;
+    wire [3:0] disp_an, wave_an;
+//    assign seg = (current_option == 1 && task_option == 2) ? wave_seg : (current_option == 4 || task_option == 1) ? dispseg : 7'b1111111;
+     assign an = (current_option == 1 && task_option == 2) ? 4'b1110 : (current_option == 4 || task_option == 1) ? disp_an : 4'b1111;
     always @ (posedge clock) begin
         if (sw[14]) begin
                 main_menu_option = 0; //display main menu
@@ -148,8 +150,9 @@ module Top_Student (
     display_led dl (volume, current_option, task_option, led); //display led
     
     //Mic improvement
-    //mic_wave mw (clock, volume, pixel_index, task_option, btnC, nxpos, nypos, x, y, oled_data3, led, left);   
-    
+    mic_wave mw (clock, volume, pixel_index, task_option, btnC, nxpos, nypos, x, y, oled_data3, led, left, wave_an, wave_seg);   
+    assign seg = (current_option == 1 && task_option == 2) ? wave_seg : (current_option == 4 || task_option == 1) ? dispseg : 7'b1111111;
+
     //instantiation of MouseCtl
     MouseCtl mouse(.clk(clock), .rst(0), .value(defaultvalue), .setx(setx), .sety(sety), .setmax_x(setmax_x), .setmax_y(setmax_y),
     .xpos(xpos), .ypos(ypos), .zpos(zpos), .left(left), .middle(middle), .right(right), .new_event(newevent),
@@ -157,12 +160,12 @@ module Top_Student (
     );
     xycoordinate xy (.pixel_index(pixel_index), .x(x), .y(y), .xpos(xpos), .ypos(ypos), .nxpos(nxpos), .nypos(nypos));
     //mouse individual task
-    //mouse_task mouseTask(.x(x),.y(y), .xpos(nxpos), .ypos(nypos), .middle(middle), .current_option(current_option), .pixel_color(oled_data4));
+    mouse_task mouseTask(.x(x),.y(y), .xpos(nxpos), .ypos(nypos), .middle(middle), .current_option(current_option), .pixel_color(oled_data4));
    
     //group task
-    //grp_task_module oledGrpTask(.x(x), .y(y), .pixel_color(oled_data6),.xpos(nxpos), .ypos(nypos), .right(right), .left(left), 
-                                //.sw15(sw15), .sw3(sw[3]), .current_option(current_option), .led15(led15), .seg_num1(seg_num1), .seg_num2(seg_num2));
-    //display_seg ds (clock, dispseg, an, volume, dp, seg_num1, seg_num2, current_option, task_option);
+    grp_task_module oledGrpTask(.x(x), .y(y), .pixel_color(oled_data6),.xpos(nxpos), .ypos(nypos), .right(right), .left(left), 
+                                .sw15(sw15), .sw3(sw[3]), .current_option(current_option), .led15(led15), .seg_num1(seg_num1), .seg_num2(seg_num2));
+    display_seg ds (clock, dispseg, disp_an, volume, dp, seg_num1, seg_num2, current_option, task_option);
    
     
     //Oled
@@ -170,13 +173,13 @@ module Top_Student (
     .sample_pixel(sample_pixel), .pixel_index(pixel_index), .pixel_data(oled_data), 
     .cs(JC[0]), .sdin(JC[1]), .sclk(JC[3]), .d_cn(JC[4]), .resn(JC[5]), .vccen(JC[6]), .pmoden(JC[7]));
     //Oled individual task
-    //oled_indiv_task oledTask(.x(x), .y(y), .sw(sw), .current_option(current_option), .pixel_color(oled_data5));
+    oled_indiv_task oledTask(.x(x), .y(y), .sw(sw), .current_option(current_option), .pixel_color(oled_data5));
     
     assign oled_data = current_option == 1 ? task_option == 2 ? oled_data3 : oled_data2 : current_option == 2 ? oled_data4 : current_option == 3 ? oled_data5 : current_option == 4 ? oled_data6 : current_option == 5 ? oled_data7 : oled_data1;
 
     //menu
-    //menu_display (count_6_25MHz, count_0_16s, main_menu_option, pixel_index, current_option, btnD, btnU, nxpos, nypos, x, y, scroll_count, oled_data1);
-    //menu_2 (clock, count_6_25MHz, pixel_index, current_option, nxpos, nypos, x, y, oled_data2);
+    menu_display (count_6_25MHz, count_0_16s, main_menu_option, pixel_index, current_option, btnD, btnU, nxpos, nypos, x, y, scroll_count, oled_data1);
+    menu_2 (clock, count_6_25MHz, pixel_index, current_option, nxpos, nypos, x, y, oled_data2);
     //meow
     //imagemodule img(clock, pixel_index, display_setting, oled_data1);
     
