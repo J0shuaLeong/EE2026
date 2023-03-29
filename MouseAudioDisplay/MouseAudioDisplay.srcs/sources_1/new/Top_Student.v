@@ -179,7 +179,7 @@ module Top_Student (
     //imagemodule img(clock, pixel_index, display_setting, oled_data1);
     
     //Whack a mole
-    whack_a_mole wm (.x(x), .y(y), .pixel_color(oled_data7),.x_pos(nxpos), .y_pos(nypos), .left(left), .clk(clock), .current_option(current_option), .score(score), .led14(led[14]));
+    whack_a_mole wm (.x(x), .y(y), .pixel_color(oled_data7), .pixel_index(pixel_index),.x_pos(nxpos), .y_pos(nypos), .left(left), .clk(clock), .current_option(current_option), .score(score), .led14(led[14]));
     //random_generator rg (clock, reset_n, Q);
     
 endmodule

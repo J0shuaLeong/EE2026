@@ -111,6 +111,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/skippy_image.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/whack_a_mole.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../MouseAudioDisplay.srcs/sources_1/new/whack_a_mole.v"/>
