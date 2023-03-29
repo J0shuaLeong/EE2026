@@ -79,7 +79,7 @@ module Top_Student (
     reg [2:0] current_option = 5;
     reg [2:0] task_option = 0;
     reg [31:0] scroll_count = 0;
-    wire game_reset = 0;
+    reg game_reset = 0;
     always @ (posedge count_100hz) begin
         if (btnU) begin
             scroll_count <= (scroll_count == 0) ? 0 : scroll_count - 1;

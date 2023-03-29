@@ -1,0 +1,460 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 18252
+License: Customer
+
+Current time: 	Wed Mar 29 18:36:51 SGT 2023
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 255 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Naychi
+User home directory: C:/Users/Naychi
+User working directory: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Naychi/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Naychi/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Naychi/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/vivado.log
+Vivado journal file location: 	C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/vivado.jou
+Engine tmp dir: 	C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/.Xil/Vivado-18252-LAPTOP-MVMLE90N
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	205 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 617 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Naychi\Documents\GitHub\EE2026\MouseAudioDisplay\MouseAudioDisplay.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// [GUI Memory]: 67 MB (+67578kb) [00:00:05]
+// [Engine Memory]: 497 MB (+369867kb) [00:00:05]
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 72 MB (+2386kb) [00:00:07]
+// [Engine Memory]: 563 MB (+42637kb) [00:00:07]
+// [GUI Memory]: 88 MB (+12846kb) [00:00:07]
+// [Engine Memory]: 603 MB (+12671kb) [00:00:07]
+// Project name: MouseAudioDisplay; location: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (ck)
+// [GUI Memory]: 93 MB (+431kb) [00:00:09]
+// HMemoryUtils.trashcanNow. Engine heap size: 618 MB. GUI used memory: 38 MB. Current time: 3/29/23 6:36:52 PM SGT
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1); // B (D, ck)
+// [Engine Memory]: 633 MB (+128kb) [00:00:27]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), wm : whack_a_mole (whack_a_mole.v)]", 12, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), wm : whack_a_mole (whack_a_mole.v), test_rand : random_generator (random_generator.v)]", 14, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 80 seconds
+selectCodeEditor("whack_a_mole.v", 153, 350); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 364, 344); // ce (w, ck)
+// Elapsed time: 80 seconds
+selectCodeEditor("whack_a_mole.v", 417, 347); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 3, 317); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 3, 317); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 162, 336); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 86, 351); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 417, 352); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 28, 319); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 114, 329); // ce (w, ck)
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 13 seconds
+selectCodeEditor("Top_Student.v", 39, 12); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 39, 12, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 396, 270); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 640 MB. GUI used memory: 41 MB. Current time: 3/29/23 6:41:01 PM SGT
+// Elapsed time: 23 seconds
+selectCodeEditor("Top_Student.v", 556, 391); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 660 MB. GUI used memory: 41 MB. Current time: 3/29/23 6:41:31 PM SGT
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed Mar 29 18:41:31 2023] Launched synth_1... Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log [Wed Mar 29 18:41:31 2023] Launched impl_1... Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 12 seconds
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "whack_a_mole.v", 1); // k (j, ck)
+selectCodeEditor("whack_a_mole.v", 45, 335); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 45, 335, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("whack_a_mole.v", 45, 335); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("whack_a_mole.v", 74, 335, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("whack_a_mole.v", 51, 324); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 90, 334); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 77, 334); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 77, 334, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("whack_a_mole.v", 119, 179); // ce (w, ck)
+// Elapsed time: 30 seconds
+selectCodeEditor("whack_a_mole.v", 44, 335); // ce (w, ck)
+// Elapsed time: 30 seconds
+selectCodeEditor("whack_a_mole.v", 67, 384); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 43, 145); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 43, 145, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("whack_a_mole.v", 88, 195); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 132, 335); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 127, 385); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 127, 385); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 236, 224); // ce (w, ck)
+// Elapsed time: 56 seconds
+selectCodeEditor("whack_a_mole.v", 293, 127); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("whack_a_mole.v", 243, 160); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed Mar 29 18:44:45 2023] Launched synth_1... Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log [Wed Mar 29 18:44:45 2023] Launched impl_1... Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'game_reset' should not be used in output port connection [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:184]. ]", 1, false); // ah (O, ck)
+selectCodeEditor("whack_a_mole.v", 188, 319); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("whack_a_mole.v", 118, 276); // ce (w, ck)
+// Elapsed time: 95 seconds
+selectCodeEditor("whack_a_mole.v", 26, 61); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 136, 358); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 112, 130); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("whack_a_mole.v", 87, 110); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 87, 110, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("whack_a_mole.v", 91, 112); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 86, 110); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 424, 108); // ce (w, ck)
+// Elapsed time: 43 seconds
+selectCodeEditor("whack_a_mole.v", 420, 295); // ce (w, ck)
+typeControlKey((HResource) null, "whack_a_mole.v", 'c'); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 399, 128); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 184, 127); // ce (w, ck)
+typeControlKey((HResource) null, "whack_a_mole.v", 'v'); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 676, 127); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 66, 338); // ce (w, ck)
+// Elapsed time: 84 seconds
+selectCodeEditor("whack_a_mole.v", 124, 147); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("whack_a_mole.v", 405, 111); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 456, 128); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("whack_a_mole.v", 112, 199); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 153, 148); // ce (w, ck)
+typeControlKey((HResource) null, "whack_a_mole.v", 'v'); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 108, 143); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 78, 108); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 440, 107); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 116, 132); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 404, 108); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 84, 229); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("whack_a_mole.v", 147, 181); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 52, 198); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (ck): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 14 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed Mar 29 18:52:04 2023] Launched synth_1... Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log [Wed Mar 29 18:52:04 2023] Launched impl_1... Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log 
+// [GUI Memory]: 98 MB (+153kb) [00:15:25]
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 206 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+// Elapsed time: 367 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'game_reset' should not be used in output port connection [C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:184]. ]", 1, false); // ah (O, ck)
+selectCodeEditor("whack_a_mole.v", 48, 283); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 116, 244); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 459, 244); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 122, 246); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 220, 254); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed Mar 29 19:02:18 2023] Launched synth_1... Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log [Wed Mar 29 19:02:18 2023] Launched impl_1... Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log 
+// Elapsed time: 29 seconds
+selectCodeEditor("whack_a_mole.v", 209, 279); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 437, 284); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 216, 298); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 104, 287); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 126, 306); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 206, 302); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 111, 283); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 417, 282); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 417, 282, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("whack_a_mole.v", 82, 279); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 118, 304); // ce (w, ck)
+selectCodeEditor("whack_a_mole.v", 82, 283); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// [Engine Memory]: 673 MB (+8780kb) [00:26:52]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// [GUI Memory]: 104 MB (+802kb) [00:30:15]
+// Elapsed time: 368 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// HMemoryUtils.trashcanNow. Engine heap size: 702 MB. GUI used memory: 49 MB. Current time: 3/29/23 7:09:42 PM SGT
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714583A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// [Engine Memory]: 1,347 MB (+670903kb) [00:33:04]
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false, false, false, false, true, false); // u (O, ck) - Popup Trigger
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714583A 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,352 MB. GUI used memory: 46 MB. Current time: 3/29/23 8:20:11 PM SGT
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 4550 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 234 seconds
+selectCodeEditor("whack_a_mole.v", 405, 170); // ce (w, ck)
