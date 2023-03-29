@@ -70,7 +70,6 @@ module grp_task_module( input [7:0] x, y, output reg [15:0] pixel_color,input [1
     assign s9 = a_on & b_on & c_on & d_on & ~e_on & f_on & g_on;
         
     always @ (*) begin
-        //if (current_option == 4) begin
             if (left) begin
                 if (a_pos) a_on = 1; if (b_pos) b_on = 1; if (c_pos) c_on = 1; if (d_pos) d_on = 1; 
                 if (e_pos) e_on = 1; if (f_pos) f_on = 1; if (g_pos) g_on = 1;
@@ -124,6 +123,5 @@ module grp_task_module( input [7:0] x, y, output reg [15:0] pixel_color,input [1
             if (cursor) pixel_color = red;
             if (void) pixel_color = black;
         
-        //end
     end
 endmodule

@@ -38,13 +38,6 @@ read_verilog -library xil_defaultlib {
   C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v
   C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_level_calc.v
   C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clk_variable.v
-  C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/display_seg.v
-  C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/grp_task.v
-  C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/menu_2.v
-  C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/menu_display.v
-  C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v
-  C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mouse_task.v
-  C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/oled_indiv_task.v
   C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/random_generator.v
   C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/whack_a_mole.v
   C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/xycoordinate.v

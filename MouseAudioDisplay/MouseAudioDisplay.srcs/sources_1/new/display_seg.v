@@ -39,7 +39,6 @@ module display_seg(
     reg [3:0] an_on = 4'b0001;
     
     always @(*) begin
-        //if (task_option == 1 || current_option == 4) begin
             an <= ~an_on;
             if (an_on == 4'b0001) begin
                 dp <= 1;
@@ -81,15 +80,11 @@ module display_seg(
                     default: begin seg <= 7'b1111111; end
                 endcase
             end 
-        end
-    //end
+    end
+    
     
     always @ (posedge clk200) begin
-        //if (task_option == 1 || current_option == 4) begin
-            an_on <= (an_on == 4'b1000) ? 4'b0001 : an_on << 1;
-        //end /*else if (task_option == 1) begin
-           // an_on <= 4'b0001;
-        //end*/
+        an_on <= (an_on == 4'b1000) ? 4'b0001 : an_on << 1;
     end
     
 endmodule
