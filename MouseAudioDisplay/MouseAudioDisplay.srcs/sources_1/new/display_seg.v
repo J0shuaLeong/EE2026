@@ -26,7 +26,7 @@ module display_seg(
     output reg [3:0] an,
     input [3:0] volume,
     output reg dp,
-    input [3:0] seg_num1, 
+    input [6:0] seg_num1, 
     input [1:0] seg_num2,
     input reset_n,
     input [2:0] current_option,
@@ -39,7 +39,7 @@ module display_seg(
     reg [3:0] an_on = 4'b0001;
     
     always @(*) begin
-        if (task_option == 1 || current_option == 4) begin
+        //if (task_option == 1 || current_option == 4) begin
             an <= ~an_on;
             if (an_on == 4'b0001) begin
                 dp <= 1;
@@ -82,14 +82,14 @@ module display_seg(
                 endcase
             end 
         end
-    end
+    //end
     
     always @ (posedge clk200) begin
-        if (task_option == 1 || current_option == 4) begin
+        //if (task_option == 1 || current_option == 4) begin
             an_on <= (an_on == 4'b1000) ? 4'b0001 : an_on << 1;
-        end /*else if (task_option == 1) begin
-            an_on <= 4'b0001;
-        end*/
+        //end /*else if (task_option == 1) begin
+           // an_on <= 4'b0001;
+        //end*/
     end
     
 endmodule

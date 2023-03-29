@@ -19,14 +19,16 @@ module Top_Student (
     // Delete this comment and include Basys3 inputs and outputs here
     input clock,
     inout ps2clk,
-    input [15:0] sw,
+    input [14:0] sw,
+    input sw15,
     inout ps2data,
     input J_MIC_Pin3,
     input btnD, btnU, btnC,
     output J_MIC_Pin1,
     output J_MIC_Pin4,
     output [7:0] JC,
-    output [15:0] led,
+    output [14:0] led,
+    output led15,
     output [3:0] an,
     output [6:0] seg, 
     output dp
@@ -85,7 +87,8 @@ module Top_Student (
             scroll_count <= (scroll_count == 64)? 64 : scroll_count + 1;
         end
     end
-    
+    wire [6:0] dispseg;
+    assign seg = (current_option == 4 || task_option == 1) ? dispseg : 7'b1111111;
     always @ (posedge clock) begin
         if (sw[14]) begin
                 main_menu_option = 0; //display main menu
@@ -152,12 +155,12 @@ module Top_Student (
     );
     xycoordinate xy (.pixel_index(pixel_index), .x(x), .y(y), .xpos(xpos), .ypos(ypos), .nxpos(nxpos), .nypos(nypos));
     //mouse individual task
-    mouse_task mouseTask(.x(x),.y(y), .xpos(nxpos), .ypos(nypos), .middle(middle), .current_option(current_option), .pixel_color(oled_data4));
+   mouse_task mouseTask(.x(x),.y(y), .xpos(nxpos), .ypos(nypos), .middle(middle), .current_option(current_option), .pixel_color(oled_data4));
    
     //group task
     grp_task_module oledGrpTask(.x(x), .y(y), .pixel_color(oled_data6),.xpos(nxpos), .ypos(nypos), .right(right), .left(left), 
-                                .sw(sw), .current_option(current_option), .led15(led[15]), .seg_num1(seg_num1), .seg_num2(seg_num2));
-    display_seg ds (clock, seg, an, volume, dp, seg_num1, seg_num2, current_option, task_option);
+                                .sw15(sw15), .sw3(sw[3]), .current_option(current_option), .led15(led15), .seg_num1(seg_num1), .seg_num2(seg_num2));
+    display_seg ds (clock, dispseg, an, volume, dp, seg_num1, seg_num2, current_option, task_option);
    
     
     //Oled

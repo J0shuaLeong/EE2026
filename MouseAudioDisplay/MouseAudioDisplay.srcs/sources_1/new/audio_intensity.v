@@ -24,7 +24,7 @@ module display_led(
     input [3:0] volume,
     input [2:0] current_option,
     input [2:0] task_option,
-    output reg [15:0] led
+    output reg [8:0] led
     );
     always @(*) begin
         if (task_option == 1 || current_option == 4) begin
@@ -32,7 +32,7 @@ module display_led(
         //dp <= 1;
         case(volume)
             4'd0: begin led = 0; end
-            4'd1: begin led = {1{1'b1}} ; end
+            4'd1: begin led = {1{1'b1}}; end
             4'd2: begin led = {2{1'b1}}; end
             4'd3: begin led = {3{1'b1}}; end
             4'd4: begin led = {4{1'b1}}; end

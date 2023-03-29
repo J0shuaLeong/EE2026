@@ -21,7 +21,7 @@
 
 
 module grp_task_module( input [7:0] x, y, output reg [15:0] pixel_color,input [11:0] xpos, input [11:0] ypos, input right, input left,
- input [15:0] sw, input [2:0] current_option, output reg led15, output reg [3:0] seg_num1, output reg [1:0] seg_num2);
+ input sw15, input sw3, input [2:0] current_option, output reg led15, output reg [6:0] seg_num1, output reg [1:0] seg_num2);
  
     parameter [15:0] green = 16'h07E0;
     parameter [15:0] red = 16'hF800;
@@ -70,7 +70,7 @@ module grp_task_module( input [7:0] x, y, output reg [15:0] pixel_color,input [1
     assign s9 = a_on & b_on & c_on & d_on & ~e_on & f_on & g_on;
         
     always @ (*) begin
-        if (current_option == 4) begin
+        //if (current_option == 4) begin
             if (left) begin
                 if (a_pos) a_on = 1; if (b_pos) b_on = 1; if (c_pos) c_on = 1; if (d_pos) d_on = 1; 
                 if (e_pos) e_on = 1; if (f_pos) f_on = 1; if (g_pos) g_on = 1;
@@ -102,7 +102,7 @@ module grp_task_module( input [7:0] x, y, output reg [15:0] pixel_color,input [1
             else begin if (g) pixel_color = black; end    
         
             if (s0 || s1 || s2 || s3 || s4 || s5 || s6 || s7 || s8 || s9) begin
-                led15 = sw[15] ? 1 : 0;
+                led15 = sw15 ? 1 : 0;
                 if (s0) begin seg_num2 = 0; seg_num1 = 1; end
                 if (s1) begin seg_num2 = 0; seg_num1 = 2; end
                 if (s2) begin seg_num2 = 0; seg_num1 = 3; end
@@ -120,10 +120,10 @@ module grp_task_module( input [7:0] x, y, output reg [15:0] pixel_color,input [1
                 end                                                                                                                           
         
             if (seg7) pixel_color = white;
-            if (lines) pixel_color = sw[3] ? green : black;             
+            if (lines) pixel_color = sw3 ? green : black;             
             if (cursor) pixel_color = red;
             if (void) pixel_color = black;
         
-        end
+        //end
     end
 endmodule
