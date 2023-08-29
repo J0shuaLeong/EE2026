@@ -1,0 +1,568 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Feb  3 13:35:33 2023
+# Process ID: 1048
+# Current directory: C:/Users/Joshua/Desktop/EE2026/4bit_full_adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13408 C:\Users\Joshua\Desktop\EE2026\4bit_full_adder\4bit_full_adder.xpr
+# Log file: C:/Users/Joshua/Desktop/EE2026/4bit_full_adder/vivado.log
+# Journal file: C:/Users/Joshua/Desktop/EE2026/4bit_full_adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Joshua/Desktop/EE2026/4bit_full_adder/4bit_full_adder.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 899.410 ; gain = 165.113
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: my_control_module
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1062.918 ; gain = 114.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'my_control_module' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:24]
+INFO: [Synth 8-6157] synthesizing module 'my_full_adder_3' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:58]
+INFO: [Synth 8-6157] synthesizing module 'my_full_adder' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'my_full_adder' (1#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'my_full_adder_3' (2#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:58]
+INFO: [Synth 8-6157] synthesizing module 'my_full_adder_4' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:68]
+WARNING: [Synth 8-689] width (4) of port connection 'CIN' does not match port width (1) of module 'my_full_adder' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'my_full_adder_4' (3#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:68]
+WARNING: [Synth 8-689] width (1) of port connection 'CIN' does not match port width (4) of module 'my_full_adder_4' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'my_control_module' (4#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:24]
+WARNING: [Synth 8-3917] design my_control_module has port seg[4] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port seg[2] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port seg[0] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port an[1] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port an[0] driven by constant 0
+WARNING: [Synth 8-3331] design my_full_adder_4 has unconnected port CIN[3]
+WARNING: [Synth 8-3331] design my_full_adder_4 has unconnected port CIN[2]
+WARNING: [Synth 8-3331] design my_full_adder_4 has unconnected port CIN[1]
+WARNING: [Synth 8-3331] design my_control_module has unconnected port seg[6]
+WARNING: [Synth 8-3331] design my_control_module has unconnected port seg[5]
+WARNING: [Synth 8-3331] design my_control_module has unconnected port seg[3]
+WARNING: [Synth 8-3331] design my_control_module has unconnected port seg[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.570 ; gain = 137.035
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.570 ; gain = 137.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.570 ; gain = 137.035
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 7 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Joshua/Downloads/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Joshua/Downloads/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1407.129 ; gain = 458.594
+13 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1407.129 ; gain = 458.594
+file mkdir C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sim_1/new/my_contol_module_simulation.v w ]
+add_files -fileset sim_1 C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sim_1/new/my_contol_module_simulation.v
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Feb  3 14:21:08 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.runs/synth_1/runme.log
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'my_contol_module_simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj my_contol_module_simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_control_module
+INFO: [VRFC 10-311] analyzing module my_full_adder_3
+INFO: [VRFC 10-311] analyzing module my_full_adder_4
+INFO: [VRFC 10-311] analyzing module my_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sim_1/new/my_contol_module_simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_contol_module_simulation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4219bffa81b040dcb3d0f99cffebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot my_contol_module_simulation_behav xil_defaultlib.my_contol_module_simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CIN [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:62]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port CIN [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:45]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 1 for port CIN [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:72]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.my_full_adder
+Compiling module xil_defaultlib.my_full_adder_3
+Compiling module xil_defaultlib.my_full_adder_4
+Compiling module xil_defaultlib.my_control_module
+Compiling module xil_defaultlib.my_contol_module_simulation
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot my_contol_module_simulation_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.sim/sim_1/behav/xsim/xsim.dir/my_contol_module_simulation_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Feb  3 14:22:15 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "my_contol_module_simulation_behav -key {Behavioral:sim_1:Functional:my_contol_module_simulation} -tclbatch {my_contol_module_simulation.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source my_contol_module_simulation.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'my_contol_module_simulation_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1438.508 ; gain = 9.996
+run 10 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Fri Feb  3 14:40:42 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'my_contol_module_simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj my_contol_module_simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_control_module
+INFO: [VRFC 10-311] analyzing module my_full_adder_3
+INFO: [VRFC 10-311] analyzing module my_full_adder_4
+INFO: [VRFC 10-311] analyzing module my_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sim_1/new/my_contol_module_simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_contol_module_simulation
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4219bffa81b040dcb3d0f99cffebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot my_contol_module_simulation_behav xil_defaultlib.my_contol_module_simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CIN [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:58]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port CIN [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:41]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 1 for port CIN [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:68]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.my_full_adder
+Compiling module xil_defaultlib.my_full_adder_3
+Compiling module xil_defaultlib.my_full_adder_4
+Compiling module xil_defaultlib.my_control_module
+Compiling module xil_defaultlib.my_contol_module_simulation
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot my_contol_module_simulation_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "my_contol_module_simulation_behav -key {Behavioral:sim_1:Functional:my_contol_module_simulation} -tclbatch {my_contol_module_simulation.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source my_contol_module_simulation.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'my_contol_module_simulation_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 60 ns
+run 60 ns
+run 60 ns
+add_bp {C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v} 29
+remove_bps -file {C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v} -line 29
+add_bp {C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v} 29
+remove_bps -file {C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v} -line 29
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1462.730 ; gain = 16.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'my_control_module' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:24]
+INFO: [Synth 8-6157] synthesizing module 'my_full_adder_3' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:54]
+INFO: [Synth 8-6157] synthesizing module 'my_full_adder' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'my_full_adder' (1#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'my_full_adder_3' (2#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:54]
+INFO: [Synth 8-6157] synthesizing module 'my_full_adder_4' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:64]
+WARNING: [Synth 8-689] width (4) of port connection 'CIN' does not match port width (1) of module 'my_full_adder' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'my_full_adder_4' (3#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:64]
+WARNING: [Synth 8-689] width (1) of port connection 'CIN' does not match port width (4) of module 'my_full_adder_4' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'my_control_module' (4#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:24]
+WARNING: [Synth 8-3917] design my_control_module has port seg[6] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port seg[5] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port seg[4] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port seg[3] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port seg[2] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port seg[1] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port seg[0] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port an[1] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port an[0] driven by constant 0
+WARNING: [Synth 8-3331] design my_full_adder_4 has unconnected port CIN[3]
+WARNING: [Synth 8-3331] design my_full_adder_4 has unconnected port CIN[2]
+WARNING: [Synth 8-3331] design my_full_adder_4 has unconnected port CIN[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1505.066 ; gain = 58.668
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1505.066 ; gain = 58.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1505.066 ; gain = 58.668
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 11 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Joshua/Downloads/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Joshua/Downloads/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1505.066 ; gain = 58.668
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1505.066 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'my_control_module' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:24]
+INFO: [Synth 8-6157] synthesizing module 'my_full_adder_3' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:53]
+INFO: [Synth 8-6157] synthesizing module 'my_full_adder' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'my_full_adder' (1#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:74]
+WARNING: [Synth 8-3848] Net c3 in module/entity my_full_adder_3 does not have driver. [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'my_full_adder_3' (2#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:53]
+INFO: [Synth 8-6157] synthesizing module 'my_full_adder_4' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'my_full_adder_4' (3#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'my_control_module' (4#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:24]
+WARNING: [Synth 8-3917] design my_control_module has port seg[6] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port seg[5] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port seg[4] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port seg[3] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port seg[2] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port seg[1] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port seg[0] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port an[1] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port an[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.000 ; gain = 11.934
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin fa0:CIN to constant 0 [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:57]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.000 ; gain = 11.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.000 ; gain = 11.934
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 11 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Joshua/Downloads/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Joshua/Downloads/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1517.000 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'my_control_module' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:24]
+INFO: [Synth 8-6157] synthesizing module 'three_bit_adder' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:53]
+INFO: [Synth 8-6157] synthesizing module 'my_full_adder' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'my_full_adder' (1#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:74]
+WARNING: [Synth 8-3848] Net c3 in module/entity three_bit_adder does not have driver. [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'three_bit_adder' (2#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:53]
+INFO: [Synth 8-6157] synthesizing module 'four_bit_adder' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'four_bit_adder' (3#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'my_control_module' (4#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:24]
+WARNING: [Synth 8-3917] design my_control_module has port seg[6] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port seg[5] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port seg[4] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port seg[3] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port seg[2] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port seg[1] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port seg[0] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port an[1] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port an[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1528.062 ; gain = 11.062
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin fa0:CIN to constant 0 [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:57]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1528.062 ; gain = 11.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1528.062 ; gain = 11.062
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 11 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Joshua/Downloads/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Joshua/Downloads/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1551.895 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'my_control_module' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:24]
+INFO: [Synth 8-6157] synthesizing module 'three_bit_adder' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:53]
+INFO: [Synth 8-6157] synthesizing module 'my_full_adder' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'my_full_adder' (1#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:74]
+WARNING: [Synth 8-3848] Net c3 in module/entity three_bit_adder does not have driver. [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'three_bit_adder' (2#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:53]
+INFO: [Synth 8-6157] synthesizing module 'four_bit_adder' [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'four_bit_adder' (3#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'my_control_module' (4#1) [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:24]
+WARNING: [Synth 8-3917] design my_control_module has port seg[6] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port seg[5] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port seg[4] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port seg[3] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port seg[2] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port seg[1] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port seg[0] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design my_control_module has port an[1] driven by constant 0
+WARNING: [Synth 8-3917] design my_control_module has port an[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1551.895 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin fa0:CIN to constant 0 [C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v:57]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1551.895 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1551.895 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 11 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Joshua/Downloads/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Joshua/Downloads/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1575.934 ; gain = 24.039
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+ERROR: [Labtools 27-3419] Disconnecting from hw_server since it's not responding to requests.  It is recommended to investigate hw_server to find any issues.
+ERROR: [Labtools 27-2223] Unable to connect to hw_server with URL "TCP:localhost:3121".
+Resolution: 1. Check the host name, port number and network connectivity.
+2. Check to ensure the hw_server is running on the target.
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:05:35 . Memory (MB): peak = 1575.934 ; gain = 0.000
+INFO: [Common 17-344] 'connect_hw_server' was cancelled
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Labtools 27-2058] connect_hw_server command cancelled.
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 1575.934 ; gain = 0.000
+INFO: [Common 17-344] 'connect_hw_server' was cancelled
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714600A
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Feb  3 15:09:14 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.runs/synth_1/runme.log
+[Fri Feb  3 15:09:14 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 2757.359 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 2757.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2806.113 ; gain = 663.801
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.runs/impl_1/my_control_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714600A
+archive_project {C:/Users/Joshua/Desktop/EE2026/L2_Wed_AM_LEONG HOI MING JOSHUA_256_Archive.xpr.zip} -temp_dir C:/Users/Joshua/Desktop/EE2026/4bit_full_adder/.Xil/Vivado-1048-DESKTOP-GHKQD81 -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Joshua/Desktop/EE2026/4bit_full_adder/.Xil/Vivado-1048-DESKTOP-GHKQD81' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/Joshua/Desktop/EE2026/4bit_full_adder/.Xil/Vivado-1048-DESKTOP-GHKQD81/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

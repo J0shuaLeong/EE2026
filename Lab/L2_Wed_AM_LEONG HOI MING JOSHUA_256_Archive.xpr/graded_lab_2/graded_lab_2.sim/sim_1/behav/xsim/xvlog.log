@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sources_1/new/my_full_adder_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_control_module
+INFO: [VRFC 10-311] analyzing module my_full_adder_3
+INFO: [VRFC 10-311] analyzing module my_full_adder_4
+INFO: [VRFC 10-311] analyzing module my_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Joshua/Desktop/EE2026/graded_lab_2/graded_lab_2.srcs/sim_1/new/my_contol_module_simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_contol_module_simulation

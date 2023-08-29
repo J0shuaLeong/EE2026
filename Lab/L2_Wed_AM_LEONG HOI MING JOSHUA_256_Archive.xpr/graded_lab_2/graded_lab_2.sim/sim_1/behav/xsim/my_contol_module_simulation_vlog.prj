@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../graded_lab_2.srcs/sources_1/new/my_full_adder_7.v" \
+"../../../../graded_lab_2.srcs/sim_1/new/my_contol_module_simulation.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
