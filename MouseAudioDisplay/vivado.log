@@ -2,22 +2,46 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Mar 28 21:46:50 2023
-# Process ID: 9628
-# Current directory: C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16272 C:\Users\Joshua\Documents\GitHub\EE2026\MouseAudioDisplay\MouseAudioDisplay.xpr
-# Log file: C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/vivado.log
-# Journal file: C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay\vivado.jou
+# Start of session at: Wed Mar 29 18:36:39 2023
+# Process ID: 18252
+# Current directory: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24504 C:\Users\Naychi\Documents\GitHub\EE2026\MouseAudioDisplay\MouseAudioDisplay.xpr
+# Log file: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/vivado.log
+# Journal file: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.xpr
+open_project C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/tangs/OneDrive/Documents/GitHub/EE2026/MouseAudioDisplay' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 924.062 ; gain = 181.445
 update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 18:41:31 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 18:41:31 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 18:44:45 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 18:44:45 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 18:52:04 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 18:52:04 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 19:02:18 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 19:02:18 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
 open_hw
 connect_hw_server
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -30,14 +54,64 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713916A
-set_property PROGRAM.FILE {C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714583A
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
 current_hw_device [get_hw_devices xc7a35t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714583A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714583A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 21:03:26 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 21:03:26 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 21:05:12 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 21:05:12 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 21:07:36 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
@@ -48,14 +122,14 @@ Resolution:
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Tue Mar 28 22:06:14 2023] Launched synth_1...
-Run output will be captured here: C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
-[Tue Mar 28 22:06:14 2023] Launched impl_1...
-Run output will be captured here: C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 21:11:45 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 21:11:45 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
@@ -66,14 +140,14 @@ Resolution:
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Tue Mar 28 22:57:56 2023] Launched synth_1...
-Run output will be captured here: C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
-[Tue Mar 28 22:57:56 2023] Launched impl_1...
-Run output will be captured here: C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 21:14:25 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 21:14:25 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
@@ -84,14 +158,14 @@ Resolution:
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Tue Mar 28 23:13:10 2023] Launched synth_1...
-Run output will be captured here: C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
-[Tue Mar 28 23:13:10 2023] Launched impl_1...
-Run output will be captured here: C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 21:21:42 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 21:21:42 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
@@ -101,5 +175,326 @@ Resolution:
 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-exit
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 28 23:22:53 2023...
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 21:31:28 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 21:31:28 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 21:36:50 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 21:36:50 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 21:38:19 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 21:38:19 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 21:43:53 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 21:43:53 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 21:47:05 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 21:47:05 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 21:50:19 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 21:50:19 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 21:55:32 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 21:55:32 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Wed Mar 29 22:01:57 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 22:02:26 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 22:02:26 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 22:07:57 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 22:07:57 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+ERROR: [Labtools 27-3165] End of startup status: LOW
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714583A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 1612.152 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714583A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210183714583A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714583A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183714583A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714583A
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 22:18:04 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 22:18:04 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 22:23:25 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 22:23:25 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714583A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714583A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+ERROR: [Labtools 27-3165] End of startup status: LOW
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714583A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714583A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714583A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714583A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 22:28:52 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 22:28:52 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714583A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183714583A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183714583A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183714583A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714583A
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 29 22:37:01 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/runme.log
+[Wed Mar 29 22:37:01 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).

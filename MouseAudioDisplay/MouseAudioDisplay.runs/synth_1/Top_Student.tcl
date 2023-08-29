@@ -23,33 +23,34 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.cache/wt [current_project]
-set_property parent.project_path C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.cache/wt [current_project]
+set_property parent.project_path C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Input.v
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_level_calc.v
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clk_variable.v
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/display_seg.v
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/grp_task.v
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/menu_2.v
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/menu_display.v
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mouse_task.v
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/oled_indiv_task.v
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/random_generator.v
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/whack_a_mole.v
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/xycoordinate.v
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Input.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_intensity.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/audio_level_calc.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clk_variable.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/display_seg.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/grp_task.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/menu_2.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/menu_display.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mic_wave.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/mouse_task.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/oled_indiv_task.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/random_generator.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/skippy_image.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/whack_a_mole.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/xycoordinate.v
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v
 }
 read_vhdl -library xil_defaultlib {
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd
-  C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Ps2Interface.vhd
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Mouse_Control.vhd
+  C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Ps2Interface.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -59,8 +60,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/Joshua/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+read_xdc C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/Naychi/Documents/GitHub/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

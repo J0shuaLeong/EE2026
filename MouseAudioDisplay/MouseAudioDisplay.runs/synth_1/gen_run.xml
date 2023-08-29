@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1680016390">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1680100621">
   <File Type="PA-TCL" Name="Top_Student.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Top_Student_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Top_Student_reports.tcl"/>
@@ -110,6 +110,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/random_generator.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/skippy_image.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

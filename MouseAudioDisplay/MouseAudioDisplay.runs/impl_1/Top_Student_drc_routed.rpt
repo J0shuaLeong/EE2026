@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Tue Mar 28 23:18:44 2023
-| Host         : DESKTOP-GHKQD81 running 64-bit major release  (build 9200)
+| Date         : Wed Mar 29 22:46:58 2023
+| Host         : LAPTOP-MVMLE90N running 64-bit major release  (build 9200)
 | Command      : report_drc -file Top_Student_drc_routed.rpt -pb Top_Student_drc_routed.pb -rpx Top_Student_drc_routed.rpx
 | Design       : Top_Student
 | Device       : xc7a35tcpg236-1
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 15
+             Violations found: 18
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153 | Warning  | Gated clock check                                   | 14         |
+| PDRC-153 | Warning  | Gated clock check                                   | 17         |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -49,72 +49,87 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net lvl/E[0] is a gated clock net sourced by a combinational pin lvl/led_reg[8]_i_2/O, cell lvl/led_reg[8]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ds/seg_reg[6]_i_2_n_0 is a gated clock net sourced by a combinational pin ds/seg_reg[6]_i_2/O, cell ds/seg_reg[6]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net mouse/spi_word_reg[28] is a gated clock net sourced by a combinational pin mouse/g_on_reg_i_2/O, cell mouse/g_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net lvl/E[0] is a gated clock net sourced by a combinational pin lvl/led_reg[8]_i_2/O, cell lvl/led_reg[8]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net mouse/spi_word_reg[34]_0 is a gated clock net sourced by a combinational pin mouse/c_on_reg_i_2/O, cell mouse/c_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net mouse/capture_reg[0][0] is a gated clock net sourced by a combinational pin mouse/pause_reg_i_2/O, cell mouse/pause_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#4 Warning
 Gated clock check  
-Net mouse/spi_word_reg[34]_2 is a gated clock net sourced by a combinational pin mouse/d_on_reg_i_2/O, cell mouse/d_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net mouse/spi_word_reg[28] is a gated clock net sourced by a combinational pin mouse/g_on_reg_i_2/O, cell mouse/g_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#5 Warning
 Gated clock check  
-Net mouse/spi_word_reg[35] is a gated clock net sourced by a combinational pin mouse/e_on_reg_i_2/O, cell mouse/e_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net mouse/spi_word_reg[31]_0 is a gated clock net sourced by a combinational pin mouse/a_on_reg_i_2/O, cell mouse/a_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#6 Warning
 Gated clock check  
-Net mouse/spi_word_reg[35]_1 is a gated clock net sourced by a combinational pin mouse/a_on_reg_i_2/O, cell mouse/a_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net mouse/spi_word_reg[31]_1 is a gated clock net sourced by a combinational pin mouse/d_on_reg_i_2/O, cell mouse/d_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#7 Warning
 Gated clock check  
-Net mouse/spi_word_reg[35]_4 is a gated clock net sourced by a combinational pin mouse/b_on_reg_i_2/O, cell mouse/b_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net mouse/spi_word_reg[31]_6 is a gated clock net sourced by a combinational pin mouse/b_on_reg_i_2/O, cell mouse/b_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#8 Warning
 Gated clock check  
-Net mouse/spi_word_reg[35]_6 is a gated clock net sourced by a combinational pin mouse/f_on_reg_i_2/O, cell mouse/f_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net mouse/spi_word_reg[31]_7 is a gated clock net sourced by a combinational pin mouse/f_on_reg_i_2/O, cell mouse/f_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#9 Warning
 Gated clock check  
-Net mouseTask/pixel_color_reg[15]_i_2__2_n_0 is a gated clock net sourced by a combinational pin mouseTask/pixel_color_reg[15]_i_2__2/O, cell mouseTask/pixel_color_reg[15]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net mouse/spi_word_reg[31]_8 is a gated clock net sourced by a combinational pin mouse/e_on_reg_i_2/O, cell mouse/e_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#10 Warning
 Gated clock check  
-Net oled/E[0] is a gated clock net sourced by a combinational pin oled/pixel_color_reg[15]_i_2__0/O, cell oled/pixel_color_reg[15]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net mouse/spi_word_reg[31]_9 is a gated clock net sourced by a combinational pin mouse/c_on_reg_i_2/O, cell mouse/c_on_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#11 Warning
 Gated clock check  
-Net oled/spi_word_reg[39]_21[0] is a gated clock net sourced by a combinational pin oled/oled_data_reg[15]_i_2/O, cell oled/oled_data_reg[15]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net mouseTask/pixel_color_n_0 is a gated clock net sourced by a combinational pin mouseTask/pixel_color/O, cell mouseTask/pixel_color. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#12 Warning
 Gated clock check  
-Net oledGrpTask/pixel_color_reg[15]_i_2_n_0 is a gated clock net sourced by a combinational pin oledGrpTask/pixel_color_reg[15]_i_2/O, cell oledGrpTask/pixel_color_reg[15]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net oled/E[0] is a gated clock net sourced by a combinational pin oled/oled_data_reg[15]_i_2/O, cell oled/oled_data_reg[15]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#13 Warning
 Gated clock check  
-Net oledTask/pixel_color_reg[15]_i_2__1_n_0 is a gated clock net sourced by a combinational pin oledTask/pixel_color_reg[15]_i_2__1/O, cell oledTask/pixel_color_reg[15]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net oledGrpTask/seg_num1_reg[2]_i_2_n_0 is a gated clock net sourced by a combinational pin oledGrpTask/seg_num1_reg[2]_i_2/O, cell oledGrpTask/seg_num1_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#14 Warning
 Gated clock check  
-Net wm/mole_down1_reg_i_2_n_0 is a gated clock net sourced by a combinational pin wm/mole_down1_reg_i_2/O, cell wm/mole_down1_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net oledGrpTask/seg_num1_reg[3]_i_2_n_0 is a gated clock net sourced by a combinational pin oledGrpTask/seg_num1_reg[3]_i_2/O, cell oledGrpTask/seg_num1_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net oledGrpTask/seg_num2_reg[0]/G0 is a gated clock net sourced by a combinational pin oledGrpTask/seg_num2_reg[0]/L3_2/O, cell oledGrpTask/seg_num2_reg[0]/L3_2 (in oledGrpTask/seg_num2_reg[0] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net oledGrpTask/seg_num2_reg[1]/G0 is a gated clock net sourced by a combinational pin oledGrpTask/seg_num2_reg[1]/L3_2/O, cell oledGrpTask/seg_num2_reg[1]/L3_2 (in oledGrpTask/seg_num2_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net oledTask/pixel_color_inferred__0/i__n_0 is a gated clock net sourced by a combinational pin oledTask/pixel_color_inferred__0/i_/O, cell oledTask/pixel_color_inferred__0/i_. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

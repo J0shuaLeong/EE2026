@@ -19,17 +19,17 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-parameter N = 3;
-
 module whack_a_mole(
     input [7:0] x, y, 
     output reg [15:0] pixel_color,
+    input [12:0] pixel_index,
     input [11:0] x_pos, 
     input [11:0] y_pos, 
     input left,
     input clk,
     input [2:0] current_option,
-    output reg [15:0] score = 0
+    output reg [15:0] score = 0,
+    input rst
     );
     
     parameter [15:0] green = 16'h07E0;
@@ -49,16 +49,18 @@ module whack_a_mole(
     assign mole1 = (x >= 11 && x <= 27 && y >= 40 && y <= 55) || (x >= 12 && x <= 26 && y == 39) || (x >= 13 && x <= 25 && y == 38) || (x >= 14 && x <= 24 && y == 37) || (x >= 16 && x <= 22 && y == 36)  ;
     assign mole2 = (x >= 39 && x <= 55 && y >= 30 && y <= 45) || (x >= 40 && x <= 54 && y == 29) || (x >= 41 && x <= 53 && y == 28) || (x >= 42 && x <= 52 && y == 27) || (x >= 44 && x <= 50 && y == 26)  ;
     assign mole3 = (x >= 68 && x <= 84 && y >= 40 && y <= 55) || (x >= 69 && x <= 83 && y == 39) || (x >= 70 && x <= 82 && y == 38) || (x >= 71 && x <= 81 && y == 37) || (x >= 73 && x <= 79 && y == 36)  ;
-    //assign cursor = ( x <= ((x_pos%96) + 3) && x >= (x_pos%96) && (y <= (y_pos%64) + 3) && y >= (y_pos%64));
-    assign cursor = ( (x == (x_pos%96) && y == ((y_pos%64) + 5)) && (x == ((x_pos%96) + 1) && y >= ((y_pos%64) + 4) && y <= ((y_pos%64) + 6))
-                        && ((x == (x_pos%96) + 2) && y >= ((y_pos%64) + 3) && y <= ((y_pos%64) + 7)) 
-                        && ((x == (x_pos%96) + 3) && y >= ((y_pos%64) + 2) && y <= ((y_pos%64) + 8))
-                        && (x == ((x_pos%96) + 4) && y >= ((y_pos%64) + 1) && y <= ((y_pos%64) + 7))
-                        && (x == ((x_pos%96) + 5) && y >= (y_pos%64) && y <= ((y_pos%64) + 6))
-                        && (x == ((x_pos%96) + 6) && y >= ((y_pos%64) + 1) && y <= ((y_pos%64) + 7))
-                        && (x == ((x_pos%96) + 7) && y >= ((y_pos%64) + 2) && y <= ((y_pos%64) + 4) && y >= ((y_pos%64) + 6) && y <= ((y_pos%64) + 8))
-                        && (x == ((x_pos%96) + 8) && y == ((y_pos%64) + 3) && y >= ((y_pos%64) + 7) && y <= ((y_pos%64) + 9))
-                        && (x == ((x_pos%96) + 9) && y >= ((y_pos%64) + 8) && y <= ((y_pos%64) + 9)));
+    
+    wire cursor2;
+    assign cursor2 = ( (x == (x_pos - 3) && y == (y_pos + 2)) 
+                        || (x == (x_pos - 2) && y >= (y_pos + 1) && y <= (y_pos + 3)) 
+                        || (x == (x_pos - 1) && y >= y_pos && y <= (y_pos + 4)) 
+                        || (x == x_pos && y >= (y_pos - 1) && y <= (y_pos + 5))
+                        || (x == (x_pos + 1) && y >= (y_pos - 2) && y <= (y_pos + 4))
+                        || (x == (x_pos + 2) && y >= (y_pos - 3) && y <= (y_pos + 3))
+                        || (x == (x_pos + 3) && y >= (y_pos - 2) && y <= (y_pos + 4))
+                        || (x == (x_pos + 4) && y >= (y_pos - 1) && y <= (y_pos + 5) && !(y == y_pos + 2))
+                        || (x == (x_pos + 5) && y >= y_pos && y <= (y_pos + 6) && !(y >= (y_pos + 1) && y <= (y_pos + 3)))
+                        || (x == (x_pos + 6) && y >= (y_pos + 5) && y <= (y_pos + 6)));
     
     wire mole_pos1, mole_pos2, mole_pos3;
     //if cursor is on mole
@@ -67,15 +69,18 @@ module whack_a_mole(
     assign mole_pos3 = (x_pos >= 68 && x_pos <= 84 && y_pos >= 40 && y_pos <= 55) || (x_pos >= 69 && x_pos <= 83 && y_pos == 39) || (x_pos >= 70 && x_pos <= 82 && y_pos == 38) || (x_pos >= 71 && x_pos <= 81 && y_pos == 37) || (x_pos >= 73 && x_pos <= 79 && y_pos == 36);
     
     reg mole_down1 = 1, mole_down2 = 1, mole_down3 = 1;
-    
+    reg mole1_flag = 0, mole2_flag = 0, mole3_flag = 0;
     
     reg [25:0] COUNT1 = -1; integer whichmole = 0; wire [3:1] which_mole;
     
-    wire one_hz; 
-    clk_variable clk1hz(clk, 49000000, one_hz);
-    random_generator test_rand(one_hz, 1, which_mole);
+    wire hz_20; 
+    clk_variable halfhz(clk, 2500000, hz_20);
+    random_generator test_rand(hz_20, 1, which_mole);
     
-    always @ (*) begin
+    wire [15:0] rgb;
+    skippy_image img(clk, pixel_index, rgb); 
+    
+    always @ (posedge clk) begin
         if (current_option == 5) begin
             whichmole = (which_mole[3] * 1 + which_mole[2] * 2 + which_mole[1] * 4);
             case(whichmole)
@@ -83,36 +88,37 @@ module whack_a_mole(
                     mole_down1 <= 1;
                     mole_down2 <= 1;
                     mole_down3 <= 1;
+                    
                 end
                 2:begin
-                    mole_down1 <= 0;
+                    mole_down1 = mole1_flag ? 1 : 0;
                     mole_down2 <= 1;
                     mole_down3 <= 1;
                 end
                 3:begin
                     mole_down1 <= 1;
-                    mole_down2 <= 0;
+                    mole_down2 <= mole2_flag ? 1 : 0;
                     mole_down3 <= 1;
                 end
                 4:begin
                     mole_down1 <= 1;
                     mole_down2 <= 1;
-                    mole_down3 <= 0;
+                    mole_down3 <= mole3_flag ? 1 : 0;
                 end
                 5:begin
-                    mole_down1 <= 0;
+                    mole_down1 = mole1_flag ? 1 : 0;
                     mole_down2 <= 1;
-                    mole_down3 <= 0;
+                    mole_down3 <= mole3_flag ? 1 : 0;
                 end
                 6:begin
                     mole_down1 <= 1;
-                    mole_down2 <= 0;
-                    mole_down3 <= 0;
+                    mole_down2 <= mole2_flag ? 1 : 0;
+                    mole_down3 <= mole3_flag ? 1 : 0;
                 end
                 7:begin
-                    mole_down1 <= 0;
-                    mole_down2 <= 0;
-                    mole_down3 <= 0;
+                    mole_down1 = mole1_flag ? 1 : 0;
+                    mole_down2 <= mole2_flag ? 1 : 0;
+                    mole_down3 <= mole3_flag ? 1 : 0;
                 end
                 default: begin
                     mole_down1 <= 1;
@@ -123,22 +129,22 @@ module whack_a_mole(
             if (left) begin
                 //if mole is clicked
                 if (mole_pos1) begin
-                    mole_down1 <= 1;
+                    mole1_flag = 1;
                     score <= score + 1;
                     whichmole <= 8;
                 end
                 if (mole_pos2) begin
-                    mole_down2 <= 1;
+                    mole2_flag = 1;
                     score <= score + 1;
                     whichmole <= 8;
                 end
                 if (mole_pos3) begin
-                    mole_down3 <= 1;
+                    mole3_flag = 1;
                     score <= score + 1;
                     whichmole <= 8;
                 end
 
-            end
+            end 
          
             if (sky) pixel_color = blue;
             if (ground) pixel_color = green;
@@ -148,8 +154,13 @@ module whack_a_mole(
             if (mole1 && !mole_down1) pixel_color = red;
             if (mole2 && !mole_down2) pixel_color = red;
             if (mole3 && !mole_down3) pixel_color = red;
-            if (cursor) pixel_color = white;
+            if (cursor2) pixel_color = white;
+            if (mole1_flag && mole2_flag && mole3_flag && !rst) begin 
+                 mole1_flag = 0; mole2_flag = 0; mole3_flag = 0; 
+                 pixel_color = rgb;
+            end     
         end
     end
+
     
 endmodule

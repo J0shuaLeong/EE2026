@@ -19,14 +19,16 @@ module Top_Student (
     // Delete this comment and include Basys3 inputs and outputs here
     input clock,
     inout ps2clk,
-    input [15:0] sw,
+    input [14:0] sw,
+    input sw15,
     inout ps2data,
     input J_MIC_Pin3,
     input btnD, btnU, btnC,
     output J_MIC_Pin1,
     output J_MIC_Pin4,
     output [7:0] JC,
-    output [15:0] led,
+    output [14:0] led,
+    output led15,
     output [3:0] an,
     output [6:0] seg, 
     output dp
@@ -77,6 +79,7 @@ module Top_Student (
     reg [2:0] current_option = 0;
     reg [2:0] task_option = 0;
     reg [31:0] scroll_count = 0;
+    reg game_reset = 0;
     always @ (posedge count_100hz) begin
         if (btnU) begin
             scroll_count <= (scroll_count == 0) ? 0 : scroll_count - 1;
@@ -85,12 +88,16 @@ module Top_Student (
             scroll_count <= (scroll_count == 64)? 64 : scroll_count + 1;
         end
     end
-    
+    wire [6:0] dispseg, wave_seg;
+    wire [3:0] disp_an, wave_an;
+//    assign seg = (current_option == 1 && task_option == 2) ? wave_seg : (current_option == 4 || task_option == 1) ? dispseg : 7'b1111111;
+     assign an = (current_option == 1 && task_option == 2) ? 4'b1110 : (current_option == 4 || task_option == 1) ? disp_an : 4'b1111;
     always @ (posedge clock) begin
         if (sw[14]) begin
                 main_menu_option = 0; //display main menu
                 current_option = 0; //display task
                 task_option = 0;
+                game_reset = 0;
         end 
         if (nxpos >= 10 && nxpos <= 84 && (nypos >= 16 - scroll_count) && (nypos <= 30 - scroll_count) && main_menu_option == 0) begin
             current_option = left ? 1 : current_option; //Joshua
@@ -143,8 +150,9 @@ module Top_Student (
     display_led dl (volume, current_option, task_option, led); //display led
     
     //Mic improvement
-    mic_wave mw (clock, volume, pixel_index, task_option, btnC, nxpos, nypos, x, y, oled_data3);   
-    
+    mic_wave mw (clock, volume, pixel_index, task_option, btnC, nxpos, nypos, x, y, oled_data3, led, left, wave_an, wave_seg);   
+    assign seg = (current_option == 1 && task_option == 2) ? wave_seg : (current_option == 4 || task_option == 1) ? dispseg : 7'b1111111;
+
     //instantiation of MouseCtl
     MouseCtl mouse(.clk(clock), .rst(0), .value(defaultvalue), .setx(setx), .sety(sety), .setmax_x(setmax_x), .setmax_y(setmax_y),
     .xpos(xpos), .ypos(ypos), .zpos(zpos), .left(left), .middle(middle), .right(right), .new_event(newevent),
@@ -156,8 +164,8 @@ module Top_Student (
    
     //group task
     grp_task_module oledGrpTask(.x(x), .y(y), .pixel_color(oled_data6),.xpos(nxpos), .ypos(nypos), .right(right), .left(left), 
-                                .sw(sw), .current_option(current_option), .led15(led[15]), .seg_num1(seg_num1), .seg_num2(seg_num2));
-    display_seg ds (clock, seg, an, volume, dp, seg_num1, seg_num2, current_option, task_option);
+                                .sw15(sw15), .sw3(sw[3]), .current_option(current_option), .led15(led15), .seg_num1(seg_num1), .seg_num2(seg_num2));
+    display_seg ds (clock, dispseg, disp_an, volume, dp, seg_num1, seg_num2, current_option, task_option);
    
     
     //Oled
@@ -176,7 +184,7 @@ module Top_Student (
     //imagemodule img(clock, pixel_index, display_setting, oled_data1);
     
     //Whack a mole
-    whack_a_mole wm (.x(x), .y(y), .pixel_color(oled_data7),.x_pos(nxpos), .y_pos(nypos), .left(left), .clk(clock), .current_option(current_option), .score(score));
+    whack_a_mole wm (.x(x), .y(y), .pixel_color(oled_data7), .pixel_index(pixel_index),.x_pos(nxpos), .y_pos(nypos), .left(left), .clk(clock), .current_option(current_option), .score(score), .rst(game_reset));
     //random_generator rg (clock, reset_n, Q);
     
 endmodule
